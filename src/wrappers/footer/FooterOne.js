@@ -3,6 +3,10 @@ import clsx from "clsx";
 import { Link } from "react-router-dom";
 import FooterCopyright from "../../components/footer/FooterCopyright";
 import FooterNewsletter from "../../components/footer/FooterNewsletter";
+import LeftSideNav from "../../components/header/LeftSideNav";
+import RightSideNav from "../../components/header/RightSideNav";
+import Logo from "../../components/header/Logo";
+
 
 
 const FooterOne = ({
@@ -13,57 +17,58 @@ const FooterOne = ({
   spaceRightClass,
   containerClass,
   extraFooterClass,
-  sideMenu
+  sideMenu,
+  layout
 }) => {
   return (
-    <footer className={clsx("footer-area", backgroundColorClass, spaceTopClass, spaceBottomClass, extraFooterClass, spaceLeftClass, spaceRightClass )}>
+    <footer className={clsx("footer-area", backgroundColorClass, spaceTopClass, spaceBottomClass, extraFooterClass, spaceLeftClass, spaceRightClass )} style={{backgroundColor:'white'}}>
       <div className={`${containerClass ? containerClass : "container"}`}>
         <div className="row">
-          <div
+          {/* <div
             className={`${
               sideMenu ? "col-xl-2 col-sm-4" : "col-lg-2 col-sm-4"
             }`}
           >
-            {/* footer copyright */}
+           
             <FooterCopyright
               footerLogo="/assets/img/logo/logo.png"
               spaceBottomClass="mb-30"
             />
-          </div>
+          </div> */}
           <div
             className={`${
-              sideMenu ? "col-xl-2 col-sm-4" : "col-lg-2 col-sm-4"
+              sideMenu ? "col-xl-2 col-sm-4" : "col-lg-12 col-sm-4"
             }`}
+            style={{backgroundColor:'black' ,padding:'40px'}}
           >
-            <div className="footer-widget mb-30 ml-30">
+            <div className="footer-widget mb-30 ml-30" style={{textAlign:'center'}}>
               <div className="footer-title">
-                <h3>ABOUT US</h3>
-              </div>
-              <div className="footer-list">
-                <ul>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/about"}>About us</Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "#/"}>
-                      Store location
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/contact"}>
-                      Contact
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "#/"}>
-                      Orders tracking
-                    </Link>
-                  </li>
-                </ul>
+                <h3 style={{fontSize:'35px', color:'#ffffff'}}>STAY UP TO DATE WITH OUR LATEST NEWS & EVENTS</h3>
+                <h5 style={{fontSize:'18px', color:'#ffffff'}}>Subscribe to our newsletter</h5>
               </div>
             </div>
           </div>
-          <div
+          <div className={layout === "container-fluid" ? layout : "container"}>
+          <div className="row">
+            <div className="col-xl-5 col-lg-5 d-none d-lg-block" style={{marginTop:'30px'}}>
+              {/* Nav menu */}
+              {/* <LeftSideNav /> */}
+              <hr style={{height: "10px", backgroundColor:'black', opacity:1}}/>
+            </div>
+            <div className="col-xl-2 col-lg-2 col-md-6 col-4">
+              {/* header logo */}
+              <Logo imageUrl="/assets/img/logo/Trovelogo.png" logoClass="logo"  />
+            </div>
+            <div className="col-xl-5 col-lg-5 col-md-6 col-8" style={{marginTop:'30px'}}>
+              {/* Icon group */}
+              {/* <IconGroup /> */}
+              {/* <RightSideNav /> */}
+              <hr style={{height: "10px", backgroundColor:'black', opacity:1}}/>
+            </div>
+
+          </div>
+        </div>
+          {/* <div
             className={`${
               sideMenu ? "col-xl-2 col-sm-4" : "col-lg-2 col-sm-4"
             }`}
@@ -154,19 +159,19 @@ const FooterOne = ({
                 </ul>
               </div>
             </div>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className={`${
               sideMenu ? "col-xl-3 col-sm-8" : "col-lg-4 col-sm-6"
             }`}
           >
-            {/* footer newsletter */}
+            footer newsletter
             <FooterNewsletter
               spaceBottomClass="mb-30"
               spaceLeftClass="ml-70"
               sideMenu={sideMenu}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

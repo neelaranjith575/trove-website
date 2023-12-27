@@ -6,6 +6,8 @@ import NavMenu from "../../components/header/NavMenu";
 import IconGroup from "../../components/header/IconGroup";
 import MobileMenu from "../../components/header/MobileMenu";
 import HeaderTop from "../../components/header/HeaderTop";
+import LeftSideNav from "../../components/header/LeftSideNav";
+import RightSideNav from "../../components/header/RightSideNav";
 
 const HeaderOne = ({
   layout,
@@ -57,7 +59,7 @@ const HeaderOne = ({
           <div className="row">
             <div className="col-xl-5 col-lg-5 d-none d-lg-block">
               {/* Nav menu */}
-              <NavMenu />
+              <LeftSideNav />
             </div>
             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
               {/* header logo */}
@@ -66,13 +68,15 @@ const HeaderOne = ({
             <div className="col-xl-5 col-lg-5 col-md-6 col-8">
               {/* Icon group */}
               {/* <IconGroup /> */}
-              <NavMenu />
+              <RightSideNav />
             </div>
+
           </div>
         </div>
         {/* mobile menu */}
         <MobileMenu />
       </div>
+      
     </header>
   );
 };
