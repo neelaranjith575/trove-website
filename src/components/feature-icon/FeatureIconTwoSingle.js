@@ -9,6 +9,8 @@ const FeatureIconTwoSingle = ({ data, spaceBottomClass, textAlignClass }) => {
             className="animated"
             src={process.env.PUBLIC_URL + data.image}
             alt=""
+            width={100}
+            height={100}
           />
           <h5>{data.title}</h5>
           <p>{data.subtitle}</p>

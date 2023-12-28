@@ -1,20 +1,26 @@
 [
   {
     "id": 1,
-    "image": "/assets/img/icon-img/support-1.png",
-    "title": "Free Shipping",
+    "image": "/assets/img/icon-img/Design.png",
+    "title": "DESIGN CONSULTATION",
     "subtitle": "Lorem ipsum dolor sit amet consectetu adipisicing elit sed"
   },
   {
     "id": 2,
-    "image": "/assets/img/icon-img/support-2.png",
-    "title": "Support 24/7",
+    "image": "/assets/img/icon-img/Customize.png",
+    "title": "CUSTOMIZED PRINT",
     "subtitle": "Lorem ipsum dolor sit amet consectetu adipisicing elit sed"
   },
   {
     "id": 3,
-    "image": "/assets/img/icon-img/support-3.png",
-    "title": "Money Return",
+    "image": "/assets/img/icon-img/Install.png",
+    "title": "INSTALLATION SERVICES",
+    "subtitle": "Lorem ipsum dolor sit amet consectetu adipisicing elit sed"
+  },
+  {
+    "id": 4,
+    "image": "/assets/img/icon-img/Maintaince.png",
+    "title": "MAINTENANCE AND CARE",
     "subtitle": "Lorem ipsum dolor sit amet consectetu adipisicing elit sed"
   }
 ]

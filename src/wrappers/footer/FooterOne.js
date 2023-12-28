@@ -1,11 +1,14 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import { Link } from "react-router-dom";
-import FooterCopyright from "../../components/footer/FooterCopyright";
-import FooterNewsletter from "../../components/footer/FooterNewsletter";
-import LeftSideNav from "../../components/header/LeftSideNav";
-import RightSideNav from "../../components/header/RightSideNav";
+// import { Link } from "react-router-dom";
+// import FooterCopyright from "../../components/footer/FooterCopyright";
+// import FooterNewsletter from "../../components/footer/FooterNewsletter";
+// import LeftSideNav from "../../components/header/LeftSideNav";
+// import RightSideNav from "../../components/header/RightSideNav";
+// import IconGroup from "../../components/header/IconGroup";
 import Logo from "../../components/header/Logo";
+import SocialIcons from "./SocialIcons";
+import FooterNav from "./FooterNav";
 
 
 
@@ -21,7 +24,7 @@ const FooterOne = ({
   layout
 }) => {
   return (
-    <footer className={clsx("footer-area", backgroundColorClass, spaceTopClass, spaceBottomClass, extraFooterClass, spaceLeftClass, spaceRightClass )} style={{backgroundColor:'white'}}>
+    <footer className={clsx("footer-area", backgroundColorClass, spaceTopClass, extraFooterClass, spaceLeftClass, spaceRightClass )} style={{backgroundColor:'white'}}>
       <div className={`${containerClass ? containerClass : "container"}`}>
         <div className="row">
           {/* <div
@@ -58,6 +61,9 @@ const FooterOne = ({
             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
               {/* header logo */}
               <Logo imageUrl="/assets/img/logo/Trovelogo.png" logoClass="logo"  />
+              <SocialIcons />
+              
+              
             </div>
             <div className="col-xl-5 col-lg-5 col-md-6 col-8" style={{marginTop:'30px'}}>
               {/* Icon group */}
@@ -173,6 +179,19 @@ const FooterOne = ({
             />
           </div> */}
         </div>
+        <div
+            className={`${
+              sideMenu ? "col-xl-2 col-sm-4" : "col-lg-12 col-sm-4"
+            }`}
+            style={{ padding:'40px'}}
+          >
+            <div className="footer-widget mb-10 ml-30" style={{textAlign:'center'}}>
+              <div className="footer-title">
+                <FooterNav />
+                <h5 style={{fontSize:'15px', color:'#0A142F'}}>© 2024 . All rights reserved. Trove</h5>
+              </div>
+            </div>
+          </div>
       </div>
     </footer>
   );

@@ -13,10 +13,10 @@ import HeroSliderTwentyNine from "../../wrappers/hero-slider/HeroSliderTwentyNin
 const HomeFurnitureFour = () => {
   return (
     <Fragment>
-      <SEO
+      {/* <SEO
         titleTemplate="Furniture Home"
         description="Furniture home of flone react minimalist eCommerce template."
-      />
+      /> */}
       <LayoutOne
         headerContainerClass="container-fluid"
         headerPaddingClass="header-padding-1"

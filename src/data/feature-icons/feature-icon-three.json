@@ -14,7 +14,13 @@
   {
     "id": 3,
     "image": "/assets/img/icon-img/support-3.png",
-    "title": "Money Return",
+    "title": "Money Returns",
+    "subtitle": "Free shipping on all order"
+  },
+  {
+    "id": 4,
+    "image": "/assets/img/icon-img/support-3.png",
+    "title": "Money Returns",
     "subtitle": "Free shipping on all order"
   }
 ]
