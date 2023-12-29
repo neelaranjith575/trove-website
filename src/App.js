@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import ScrollToTop from "./helpers/scroll-top";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 // home pages
 const HomeFashion = lazy(() => import("./pages/home/HomeFashion"));
 const HomeFashionTwo = lazy(() => import("./pages/home/HomeFashionTwo"));

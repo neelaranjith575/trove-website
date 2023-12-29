@@ -396,7 +396,7 @@ const RightSideNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+            <Link to={process.env.PUBLIC_URL + "/about"}>
               {t("LOCATIONS")}
             </Link>
           </li>
