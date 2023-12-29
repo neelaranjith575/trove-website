@@ -9,6 +9,7 @@ import clsx from "clsx";
 import Logo from "../../components/header/Logo";
 import SocialIcons from "./SocialIcons";
 import FooterNav from "./FooterNav";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 
@@ -46,8 +47,8 @@ const FooterOne = ({
           >
             <div className="footer-widget mb-30 ml-30" style={{textAlign:'center'}}>
               <div className="footer-title">
-                <h3 style={{fontSize:'35px', color:'#ffffff'}}>STAY UP TO DATE WITH OUR LATEST NEWS & EVENTS</h3>
-                <h5 style={{fontSize:'18px', color:'#ffffff'}}>Subscribe to our newsletter</h5>
+                <h3 style={{fontSize:'35px', color:'#ffffff'}}>TAKE ONE STEP CLOSER TO YOUR DREAM HOME</h3>
+                <h5 style={{fontSize:'18px', color:'#ffffff',fontFamily:'Montserrat'}}>Find your nearest Trove <ArrowForwardIcon sx={{color:'white'}} /> </h5>
               </div>
             </div>
           </div>

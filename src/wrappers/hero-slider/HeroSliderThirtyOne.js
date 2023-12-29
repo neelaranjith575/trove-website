@@ -20,10 +20,11 @@ const params = {
 const HeroSliderThirtyOne = ({
   spaceLeftClass,
   spaceRightClass,
-  spaceBottomClass
+  spaceBottomClass,
+  spaceTopClass,
 }) => {
   return (
-    <div className={clsx("slider-area", spaceLeftClass, spaceRightClass, spaceBottomClass)}>
+    <div className={clsx("slider-area", spaceLeftClass, spaceRightClass, spaceBottomClass,spaceTopClass)}>
       <div className="slider-active nav-style-3 nav-style-3--blue">
         {sliderData && (
           <Swiper options={params}>

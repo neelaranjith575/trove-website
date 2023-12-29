@@ -1,6 +1,6 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
+import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 
 
 
@@ -34,7 +34,7 @@ const Features = () => {
             <Box sx={{ p: 4 }}>
                 <Stack>
                     <Typography sx={{ fontSize: '50px', textAlign: 'center', mb: 1, mt: 10, fontWeight: 500, textTransform: 'uppercase' }}>features</Typography>
-                    <Typography sx={{ fontSize: '16px', textAlign: 'center', mb: 5, }}>Lorem ipsum dolor sit amet consectetur.
+                    <Typography sx={{ fontSize: '16px', textAlign: 'center', mb: 5, fontFamily:'Montserrat'}}>Lorem ipsum dolor sit amet consectetur.
                         Turpis sit mauris vitae sed. Quis a<br></br> feugiat mauris elit feugiat vivamus consequat turpis lorem.
                         Praesent est risus<br></br> nascetur sed at sem in commodo phasellus. Diam.</Typography>
                 </Stack>
@@ -58,13 +58,16 @@ const Features = () => {
                         </Grid>
                     </Grid>
                     <Stack sx={{ mt: 5 }}>
-                        <Button variant="contained" endIcon={<SendIcon />}
+                        <Button variant="contained" endIcon={<ShareOutlinedIcon />}
                             sx={{
                                 backgroundColor: '#1A1A1A',
                                 borderRadius: '0px',
                                 width: '375px',
                                 height: '65px',
                                 fontSize: '20px',
+                                '&:hover': {
+                                    backgroundColor: '#FACE4E', 
+                                  }
                             }}>View More</Button>
                     </Stack>
                 </Stack>

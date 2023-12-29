@@ -6,12 +6,12 @@ const HeroSliderThirtyOneSingle = ({ data }) => {
   return (
     <div
       className="single-slider slider-height-1 slider-height-res15 d-flex align-items-center slider-height-res bg-img"
-      style={{ backgroundImage: `url(${process.env.PUBLIC_URL + data.image})` }}
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL + data.image})`, height: '550px', }}
     >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-7">
-            <div className="slider-content slider-content-10 slider-animated-1">
+            {/* <div className="slider-content slider-content-10 slider-animated-1">
               <h3 className="animated">{data.title}</h3>
               <h1
                 className="animated"
@@ -25,7 +25,7 @@ const HeroSliderThirtyOneSingle = ({ data }) => {
                   SHOP NOW
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -2,25 +2,25 @@
   {
     "id": 1,
     "image": "/assets/img/icon-img/Design.png",
-    "title": "DESIGN CONSULTATION",
-    "subtitle": "Lorem ipsum dolor sit amet consectetu adipisicing elit sed"
+    "title": "CONCEPT CONSULTATION",
+    "subtitle": "Our team provides tailored solutions to elevate your space with style and function."
   },
   {
     "id": 2,
     "image": "/assets/img/icon-img/Customize.png",
-    "title": "CUSTOMIZED PRINT",
-    "subtitle": "Lorem ipsum dolor sit amet consectetu adipisicing elit sed"
+    "title": "VIRTUAL VISUALIZATION",
+    "subtitle": "Our team offers complimentary, personalized 3D renders, bringing your dream spaces to life."
   },
   {
     "id": 3,
     "image": "/assets/img/icon-img/Install.png",
-    "title": "INSTALLATION SERVICES",
-    "subtitle": "Lorem ipsum dolor sit amet consectetu adipisicing elit sed"
+    "title": "CREATIVE CUSTOMIZATION",
+    "subtitle": "Our team can turn your vision into reality, offering personalized tile printing for a truly unique touch."
   },
   {
     "id": 4,
     "image": "/assets/img/icon-img/Maintaince.png",
-    "title": "MAINTENANCE AND CARE",
-    "subtitle": "Lorem ipsum dolor sit amet consectetu adipisicing elit sed"
+    "title": "SWIFT SHIPPING",
+    "subtitle": "At Trove, enjoy swift shipping with complimentary delivery anywhere across Bengaluru city."
   }
 ]

@@ -12,8 +12,8 @@ const FeatureIconTwoSingle = ({ data, spaceBottomClass, textAlignClass }) => {
             width={100}
             height={100}
           />
-          <h5>{data.title}</h5>
-          <p>{data.subtitle}</p>
+          <h5 style={{fontFamily:'Montserrat', fontWeight:'500'}} >{data.title}</h5>
+          <p style={{fontFamily:'Montserrat'}}>{data.subtitle}</p>
         </div>
     </div>
   );

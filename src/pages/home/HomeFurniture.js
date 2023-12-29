@@ -11,6 +11,8 @@ import ImageSliderTwo from "../../wrappers/image-slider/ImageSliderTwo";
 import ImageSliderThree from "../../wrappers/image-slider/ImagSliderThree";
 import ImageSliderFour from "../../wrappers/image-slider/ImageSliderFour";
 import Features from "../../wrappers/feature/Features";
+import HeroSliderThirtyOne from "../../wrappers/hero-slider/HeroSliderThirtyOne";
+import Craftmanship from "../../wrappers/craftmanship/Craftmanship";
 
 const HomeFurniture = () => {
   return (
@@ -20,8 +22,16 @@ const HomeFurniture = () => {
         description="Furniture home of flone react minimalist eCommerce template."
       />
       <LayoutOne headerTop="visible">
-        {/* hero slider */}
-        <HeroSliderTwo />
+       {/* hero slider */}
+       <HeroSliderThirtyOne
+          spaceLeftClass="ml-100"
+          spaceRightClass="mr-100"
+          spaceBottomClass="pb-100"
+          spaceTopClass="mt-50"
+        />
+
+        <Craftmanship spaceLeftClass="ml-100"
+          spaceRightClass="mr-100" />
 
         {/* banner */}
         {/* <BannerTwo spaceTopClass="pt-80" spaceBottomClass="pb-60" /> */}
