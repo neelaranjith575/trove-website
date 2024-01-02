@@ -254,7 +254,7 @@ const FooterNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+            <Link to={process.env.PUBLIC_URL + "/about-us"}>
               {" "}
               {t("EXPERIENCE")}
               {/* {sidebarMenu ? (
@@ -411,7 +411,7 @@ const FooterNav = ({ menuWhiteClass, sidebarMenu }) => {
             </Link>
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+            <Link to={process.env.PUBLIC_URL + "/locations"}>
               {t("LOCATIONS")}
             </Link>
           </li>

@@ -5,14 +5,18 @@ const ImageSliderOneSingle = ({ data }) => {
   return (
     <div className="single-image">
       <Link to={process.env.PUBLIC_URL + data.link}>
-        <img src={process.env.PUBLIC_URL + data.image} alt="" />
+        <img src={process.env.PUBLIC_URL + data.image} alt=""  />
       </Link>
     </div>
   );
 };
 
 ImageSliderOneSingle.propTypes = {
-  data: PropTypes.shape({})
+  data: PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }),
 };
 
 export default ImageSliderOneSingle;

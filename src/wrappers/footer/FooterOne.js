@@ -47,7 +47,7 @@ const FooterOne = ({
           >
             <div className="footer-widget mb-30 ml-30" style={{textAlign:'center'}}>
               <div className="footer-title">
-                <h3 style={{fontSize:'35px', color:'#ffffff'}}>TAKE ONE STEP CLOSER TO YOUR DREAM HOME</h3>
+                <h3 style={{fontSize:'35px', color:'#ffffff',fontFamily: "Cinzel",}}>TAKE ONE STEP CLOSER TO YOUR DREAM HOME</h3>
                 <h5 style={{fontSize:'18px', color:'#ffffff',fontFamily:'Montserrat'}}>Find your nearest Trove <ArrowForwardIcon sx={{color:'white'}} /> </h5>
               </div>
             </div>

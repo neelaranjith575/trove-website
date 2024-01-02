@@ -29,7 +29,7 @@ const ImageSliderTwo = () => {
   return (
     <div className="image-slider-area" style={{margin:'25px'}}>
       <div className="image-slider-active">
-      <Typography sx={{fontSize:'50px', textAlign:'center', mb:5, mt:10, fontWeight:500, textTransform:'uppercase'}}>Latest and On-Trending Tiles</Typography>
+      <Typography sx={{fontSize:'50px', textAlign:'center', mb:5, mt:10, fontWeight:500, textTransform:'uppercase',fontFamily: "Cinzel",}}>Latest and On-Trending Tiles</Typography>
         {imageData && (
           <Swiper options={settings}>
             {imageData.map((single, key) => (

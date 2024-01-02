@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import ScrollToTop from "./helpers/scroll-top";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import AboutUs from "./pages/about/aboutus";
 
 
 // home pages
@@ -93,7 +94,8 @@ const BlogDetailsStandard = lazy(() =>
 );
 
 // other pages
-const About = lazy(() => import("./pages/other/About"));
+const Locations = lazy(() => import("./pages/locations/locations"));
+const AboutUs = lazy(() => import("./pages/about/aboutus"));
 const Contact = lazy(() => import("./pages/other/Contact"));
 const MyAccount = lazy(() => import("./pages/other/MyAccount"));
 const LoginRegister = lazy(() => import("./pages/other/LoginRegister"));
@@ -363,8 +365,12 @@ const App = () => {
 
               {/* Other pages */}
               <Route
-                path={process.env.PUBLIC_URL + "/about"}
-                element={<About/>}
+                path={process.env.PUBLIC_URL + "/locations"}
+                element={<Locations/>}
+              />
+              <Route
+                path={process.env.PUBLIC_URL + "/about-us"}
+                element={<AboutUs/>}
               />
               <Route
                 path={process.env.PUBLIC_URL + "/contact"}

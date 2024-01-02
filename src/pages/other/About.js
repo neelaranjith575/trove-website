@@ -125,14 +125,14 @@ const About = () => {
       />
       <LayoutOne headerTop="visible">
         <Grid container sx={{ pl: 8, p: 15 }}>
-          <Stack direction="row" spacing={60}>
+          <Stack direction="row" spacing={40} >
             <Typography
               sx={{
-                pl: 2,
-                fontSize: "50px",
+               
+                fontSize: "45px",
                 lineHeight: "48px",
                 fontWeight: 400,
-                fontFamily: "Montserrat",
+                fontFamily: 'Cinzel',
               }}
             >
               Find us near you
@@ -141,7 +141,7 @@ const About = () => {
               size="small"
               placeholder="Search..."
               sx={{
-                width: "40ch",
+                width: "50ch",
                 pt: 1,
                 "& .MuiOutlinedInput-root": {
                   "&.Mui-focused fieldset": {

@@ -396,7 +396,7 @@ const RightSideNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/about"}>
+            <Link to={process.env.PUBLIC_URL + "/locations"}>
               {t("LOCATIONS")}
             </Link>
           </li>

@@ -254,7 +254,7 @@ const LeftSideNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+            <Link to={process.env.PUBLIC_URL + "/about-us"}>
               {" "}
               {t("EXPERIENCE")}
               {/* {sidebarMenu ? (

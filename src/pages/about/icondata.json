@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "image": "/assets/img/icon-img/tools.png",
+      "title": "Build",
+      "subtitle": "To build a community of like-minded business people benefiting from one another and growing their entrepreneurship."
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/icon-img/exchange.png",
+      "title": "Transform",
+      "subtitle": "To transform the way a businessperson runs their business by prioritizing systems over people."
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/icon-img/excellent.png",
+      "title": "Lead",
+      "subtitle": "To lead with vision, inspire teams, and drive success - A journey of guiding others to greatness."
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/icon-img/setting.png",
+      "title": "Serve",
+      "subtitle": "Serve with dedication and compassion - Giving great experience, nurturing lasting relationships through genuine care."
+    }
+  ]
+  
