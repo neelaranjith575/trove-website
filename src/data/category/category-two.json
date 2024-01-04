@@ -4,6 +4,7 @@
     "image": "/assets/img/product/hm8-pro-1.jpg",
     "subtitle": "2 Products",
     "title": "Living Room",
+    "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
     "link": "/shop-grid-standard"
   },
   {
@@ -11,6 +12,7 @@
     "image": "/assets/img/product/hm8-pro-2.jpg",
     "subtitle": "3 Products",
     "title": "Drawing Room",
+    "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
     "link": "/shop-grid-standard"
   },
   {
@@ -18,12 +20,14 @@
     "image": "/assets/img/product/hm8-pro-3.jpg",
     "subtitle": "6 Products",
     "title": "Dining Room",
+    "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
     "link": "/shop-grid-standard"
   },
   {
     "id": "4",
     "image": "/assets/img/product/hm8-pro-4.jpg",
     "subtitle": "5 Products",
+    "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
     "title": "Drawing Room",
     "link": "/shop-grid-standard"
   },
@@ -31,7 +35,16 @@
     "id": "5",
     "image": "/assets/img/product/hm8-pro-2.jpg",
     "subtitle": "3 Products",
+    "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
     "title": "Living Room",
+    "link": "/shop-grid-standard"
+  },
+  {
+    "id": "5",
+    "image": "/assets/img/product/hm8-pro-2.jpg",
+    "subtitle": "3 Products",
+    "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
+    "title": "bed Room",
     "link": "/shop-grid-standard"
   }
 ]

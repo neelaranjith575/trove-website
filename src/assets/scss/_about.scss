@@ -67,7 +67,8 @@
   }
   h2 {
     & > span {
-      color: $theme-color;
+      color: white;
+      font-Family: "Cinzel";
       font-size: 40px;
       font-weight: bold;
       margin: 25px 0 12px;
@@ -83,10 +84,12 @@
     }
   }
   span {
-    color: #333;
-    font-size: 20px;
+    color: white;
+    font-Family: "Cinzel";
+    font-size: 22px;
     text-transform: capitalize;
     font-weight: 500;
+    line-height: 22px;
   }
 }
 
