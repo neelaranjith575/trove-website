@@ -30,8 +30,8 @@ const HomeFurniture = () => {
           spaceTopClass="mt-50"
         />
 
-        <Craftmanship spaceLeftClass="ml-100"
-          spaceRightClass="mr-100" />
+        {/* <Craftmanship spaceLeftClass="ml-100"
+          spaceRightClass="mr-100" /> */}
 
         {/* banner */}
         {/* <BannerTwo spaceTopClass="pt-80" spaceBottomClass="pb-60" /> */}
