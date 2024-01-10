@@ -16,8 +16,8 @@ const Craftmanship = () => {
                             mb: 1, mt: 5,
                             fontWeight: 500,
                             textTransform: 'uppercase',
-                            fontFamily: "Cinzel",
-                        }}>the Art of Tile Craftsmanship</Typography>
+                            fontFamily: "Libre Baskerville",
+                        }}>Whe Art of Tile Craftsmanship</Typography>
                     <Typography sx={{ fontSize: '16px', textAlign: 'center', mb: 5, fontFamily:'Montserrat' }}>Explore our artisans' process, 
                     creating timeless elegance in every tile, <br></br>blending tradition with innovation for inspiring spaces.
 </Typography>
