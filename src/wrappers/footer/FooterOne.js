@@ -10,6 +10,7 @@ import Logo from "../../components/header/Logo";
 import SocialIcons from "./SocialIcons";
 import FooterNav from "./FooterNav";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { ReactComponent as ArrowIcon } from "./../../assets/icons/svg/Group 52.svg";
 
 
 
@@ -25,7 +26,7 @@ const FooterOne = ({
   layout
 }) => {
   return (
-    <footer className={clsx("footer-area", backgroundColorClass, spaceTopClass, extraFooterClass, spaceLeftClass, spaceRightClass )} style={{backgroundColor:'white'}}>
+    <footer className={clsx("footer-area", backgroundColorClass, spaceTopClass, extraFooterClass)} style={{ backgroundColor: 'white' }}>
       <div className={`${containerClass ? containerClass : "container"}`}>
         <div className="row">
           {/* <div
@@ -39,42 +40,39 @@ const FooterOne = ({
               spaceBottomClass="mb-30"
             />
           </div> */}
-          <div
-            className={`${
-              sideMenu ? "col-xl-2 col-sm-4" : "col-lg-12 col-sm-4"
-            }`}
-            style={{backgroundColor:'black' ,padding:'40px'}}
-          >
-            <div className="footer-widget mb-30 ml-30" style={{textAlign:'center'}}>
+          <div className={`${sideMenu ? "col-xl-2 col-sm-4" : "col-lg-12 col-sm-4"
+            }`} style={{ backgroundColor: 'black', padding: '40px', textAlign: 'center' }}>
+            <div className="footer-widget mb-30 ml-30">
               <div className="footer-title">
-                <h3 style={{fontSize:'35px', color:'#ffffff',fontFamily: "Cinzel",}}>TAKE ONE STEP CLOSER TO YOUR DREAM HOME</h3>
-                <h5 style={{fontSize:'18px', color:'#ffffff',fontFamily:'Montserrat'}}>Find your nearest Trove <ArrowForwardIcon sx={{color:'white'}} /> </h5>
+                <h3 style={{ fontSize: '35px', color: '#ffffff', fontFamily: "Cinzel" }}>TAKE ONE STEP CLOSER TO YOUR DREAM HOME</h3>
+                <h5 style={{ fontSize: '18px', color: '#ffffff', fontFamily: 'Montserrat' }}>Find your nearest Trove <ArrowIcon sx={{ color: 'white' }} /> </h5>
               </div>
             </div>
           </div>
-          <div className={layout === "container-fluid" ? layout : "container"}>
-          <div className="row">
-            <div className="col-xl-5 col-lg-5 d-none d-lg-block" style={{marginTop:'30px'}}>
-              {/* Nav menu */}
-              {/* <LeftSideNav /> */}
-              <hr style={{height: "10px", backgroundColor:'black', opacity:1}}/>
-            </div>
-            <div className="col-xl-2 col-lg-2 col-md-6 col-4">
-              {/* header logo */}
-              <Logo imageUrl="/assets/img/logo/Trovelogo.png" logoClass="logo"  />
-              <SocialIcons />
-              
-              
-            </div>
-            <div className="col-xl-5 col-lg-5 col-md-6 col-8" style={{marginTop:'30px'}}>
-              {/* Icon group */}
-              {/* <IconGroup /> */}
-              {/* <RightSideNav /> */}
-              <hr style={{height: "10px", backgroundColor:'black', opacity:1}}/>
-            </div>
 
+          <div className={layout === "container-fluid" ? layout : "container"}>
+            <div className="row">
+              <div className="col-xl-5 col-lg-5 d-none d-lg-block" style={{ marginTop: '30px' }}>
+                {/* Nav menu */}
+                {/* <LeftSideNav /> */}
+                <hr style={{ height: "10px", backgroundColor: 'black', opacity: 1 }} />
+              </div>
+              <div className="col-xl-2 col-lg-2 col-md-6 col-4">
+                {/* header logo */}
+                <Logo imageUrl="/assets/img/logo/Trovelogo.png" logoClass="logo" />
+                <SocialIcons />
+
+
+              </div>
+              <div className="col-xl-5 col-lg-5 col-md-6 col-8" style={{ marginTop: '30px' }}>
+                {/* Icon group */}
+                {/* <IconGroup /> */}
+                {/* <RightSideNav /> */}
+                <hr style={{ height: "10px", backgroundColor: 'black', opacity: 1 }} />
+              </div>
+
+            </div>
           </div>
-        </div>
           {/* <div
             className={`${
               sideMenu ? "col-xl-2 col-sm-4" : "col-lg-2 col-sm-4"
@@ -180,19 +178,21 @@ const FooterOne = ({
             />
           </div> */}
         </div>
+
+
         <div
-            className={`${
-              sideMenu ? "col-xl-2 col-sm-4" : "col-lg-12 col-sm-4"
+          className={`${sideMenu ? "col-xl-2 col-sm-4" : "col-lg-12 col-sm-4"
             }`}
-            style={{ padding:'40px'}}
-          >
-            <div className="footer-widget mb-10 ml-30" style={{textAlign:'center'}}>
-              <div className="footer-title">
-                <FooterNav />
-                <h5 style={{fontSize:'15px', color:'#0A142F'}}>© 2024 . All rights reserved. Trove</h5>
-              </div>
+          style={{ padding: '40px' }}
+        >
+          <div className="footer-widget mb-10 ml-30" style={{ textAlign: 'center' }}>
+            <div className="footer-title">
+              <FooterNav />
+              <h5 style={{ fontSize: '15px', color: '#0A142F', fontFamily: 'Montserrat' }}>© 2024 . All rights reserved. Trove</h5>
             </div>
           </div>
+        </div>
+
       </div>
     </footer>
   );

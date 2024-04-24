@@ -1,18 +1,14 @@
 import React, { Fragment } from "react";
 import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
-import HeroSliderTwo from "../../wrappers/hero-slider/HeroSliderTwo";
-import BannerTwo from "../../wrappers/banner/BannerTwo";
-import TabProductTwo from "../../wrappers/product/TabProductTwo";
-import CountDownOne from "../../wrappers/countdown/CountDownOne";
 import FeatureIconTwo from "../../wrappers/feature-icon/FeatureIconTwo";
-import BlogFeatured from "../../wrappers/blog-featured/BlogFeatured";
-import ImageSliderTwo from "../../wrappers/image-slider/ImageSliderTwo";
-import ImageSliderThree from "../../wrappers/image-slider/ImagSliderThree";
-import ImageSliderFour from "../../wrappers/image-slider/ImageSliderFour";
 import Features from "../../wrappers/feature/Features";
-import HeroSliderThirtyOne from "../../wrappers/hero-slider/HeroSliderThirtyOne";
 import Craftmanship from "../../wrappers/craftmanship/Craftmanship";
+import Portofolio from "../portfolio/Portfolio";
+import HeroSliderEleven from "../../wrappers/hero-slider/HeroSliderEleven";
+import HomeSlider from "../../data/hero-sliders/homeSlider";
+import { Stack } from "@mui/material";
+// import Slider from "./../../data/slider/slider"
 
 const HomeFurniture = () => {
   return (
@@ -22,16 +18,15 @@ const HomeFurniture = () => {
         description="Furniture home of flone react minimalist eCommerce template."
       />
       <LayoutOne headerTop="visible">
-       {/* hero slider */}
-       <HeroSliderThirtyOne
-          spaceLeftClass="ml-100"
-          spaceRightClass="mr-100"
-          spaceBottomClass="pb-100"
-          spaceTopClass="mt-50"
-        />
-
-        {/* <Craftmanship spaceLeftClass="ml-100"
-          spaceRightClass="mr-100" /> */}
+        {/* hero slider */}
+        <Stack sx={{display:{xs:'block', md:'none'}}}>
+        <HeroSliderEleven  />
+        </Stack>
+        <Stack sx={{display:{xs:'none', md:'block'}}}>
+        <HomeSlider />
+        </Stack>
+        {/* video section */}
+        <Craftmanship />
 
         {/* banner */}
         {/* <BannerTwo spaceTopClass="pt-80" spaceBottomClass="pb-60" /> */}
@@ -46,15 +41,15 @@ const HomeFurniture = () => {
           bgImg="/assets/img/bg/bg-1.jpg"
           dateTime="November 13, 2023 12:12:00"
         /> */}
-        <Features />
-        <h1></h1>
-        <ImageSliderTwo />
-        <ImageSliderThree />
-        <ImageSliderFour />
+
+        {/* category section */}
+        <Features  />
+
+        {/* Portofolio section */}
+        <Portofolio />
 
         {/* feature icon */}
-        <FeatureIconTwo spaceTopClass="pt-100" spaceBottomClass="pb-60" />
-       
+        <FeatureIconTwo  spaceBottomClass="pb-60" />
 
         {/* blog featured */}
         {/* <BlogFeatured spaceBottomClass="pb-55" /> */}

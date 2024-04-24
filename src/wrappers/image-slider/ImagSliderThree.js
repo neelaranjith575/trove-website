@@ -9,7 +9,7 @@ const settings = {
   spaceBetween: 16,
   breakpoints: {
     320: {
-      slidesPerView: 2
+      slidesPerView: 3
     },
     640: {
       slidesPerView: 3

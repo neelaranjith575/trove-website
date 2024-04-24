@@ -28,7 +28,7 @@ const TestimonialOne = ({
               {testimonialData && (
                 <Swiper options={settings}>
                   {testimonialData.map((single, key) => (
-                      <SwiperSlide key={key}>
+                      <SwiperSlide key={key} >
                         <TestimonialOneSingle
                           data={single}
                           testimonialClass={testimonialClass}

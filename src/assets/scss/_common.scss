@@ -353,7 +353,7 @@ a:hover {
 }
 
 .mr-100 {
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .mr-110 {
@@ -548,7 +548,7 @@ a:hover {
 }
 
 .ml-100 {
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .ml-110 {
@@ -942,7 +942,7 @@ a:hover {
 }
 
 .pb-100 {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   @media #{$xs-layout} {
     padding-bottom: 30px;
   }
@@ -1596,7 +1596,7 @@ textarea:focus {
   position: fixed;
   z-index: 9811 !important;
   right: 20px;
-  bottom: 60px;
+  bottom: 120px;
 
   // visibility: hidden;
   overflow: hidden;

@@ -1,38 +1,71 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
-import Button from '@mui/material/Button';
-import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
-
+import { Box, Stack, Typography } from "@mui/material";
+import { useState } from 'react';
 
 const Craftmanship = () => {
-    return (
-        <>
+    const videoUrl = 'assets/video/video.mp4'; // Replace with your video URL
+    const [isPlaying, setIsPlaying] = useState(false);
 
-            <Box sx={{ p: 4 }}>
+    const handlePlayPause = () => {
+        setIsPlaying(!isPlaying);
+    };
+
+    return (
+        
+            <Box sx={{ m: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <Stack>
                     <Typography
                         sx={{
-                            fontSize: '50px',
+                            fontSize: { xs: "30px", md: "50px" },
                             textAlign: 'center',
                             mb: 1, mt: 5,
                             fontWeight: 500,
                             textTransform: 'uppercase',
                             fontFamily: "Libre Baskerville",
-                        }}>Whe Art of Tile Craftsmanship</Typography>
-                    <Typography sx={{ fontSize: '16px', textAlign: 'center', mb: 5, fontFamily:'Montserrat' }}>Explore our artisans' process, 
-                    creating timeless elegance in every tile, <br></br>blending tradition with innovation for inspiring spaces.
-</Typography>
+                        }}>AN EXPERIENCE TO TREASURE</Typography>
+                    <Typography sx={{ fontSize: { xs: "13px", md: "17px" }, textAlign: 'center', mb: 5, fontFamily: 'Montserrat' }}>Transforming spaces into experiences. Elevate your home with our exquisite <br></br>collections — a touch of elegance in every tile.
+    
+                    </Typography>
                 </Stack>
-                <Stack paddingTop={5} alignItems={"center"} >
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/gxflcmIiUVs?si=td4HumzUkvbwJVGL" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe>
-
+    
+                <Stack  alignItems={"center"} sx={{ display: { xs: 'block', md: 'none', }, paddingTop:{xs:0, md:5} , mt:3 }}>
+                    <video
+                        width="100%" // Use 100% width for mobile screens
+                        height="200"
+                        controls
+                        autoPlay // Autoplay enabled
+                        muted // Mute the sound
+                        onClick={handlePlayPause}
+                        sx={{
+                            maxWidth: "560px", // Set max width for larger screens
+                            width: "100%", // Ensure responsive width
+                            height: "150px", // Ensure responsive height
+                        }}
+                    >
+                        <source src={videoUrl} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </Stack>
-
-
+    
+                <Stack paddingTop={5} alignItems={"center"} sx={{ display: { xs: 'none', md: 'block' } }}>
+                    <video
+                        width="100%" // Use 50% width for larger screens
+                        height="380"
+                        controls
+                        autoPlay // Autoplay enabled
+                        muted // Mute the sound
+                        onClick={handlePlayPause}
+                        sx={{
+                            maxWidth: "560px", // Set max width for larger screens
+                            width: "50%", // Ensure responsive width
+                            height: "auto", // Ensure responsive height
+                        }}
+                    >
+                        <source src={videoUrl} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </Stack>
             </Box>
-        </>
-    )
-}
-export default Craftmanship;
+        );
+    };
+    
+    export default Craftmanship;

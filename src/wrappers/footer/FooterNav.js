@@ -254,7 +254,7 @@ const FooterNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/about-us"}>
+            <Link to={process.env.PUBLIC_URL + "/experience"}>
               {" "}
               {t("EXPERIENCE")}
               {/* {sidebarMenu ? (
@@ -396,17 +396,17 @@ const FooterNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+            <Link to={process.env.PUBLIC_URL + "/franchise"}>
               {t("FRANCHISE")}
             </Link>
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+            <Link to={process.env.PUBLIC_URL + "/coming-soon"}>
               {t("PRODUCTS")}
             </Link>
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+            <Link to={process.env.PUBLIC_URL + "/coming-soon"}>
               {t("CAREERS")}
             </Link>
           </li>

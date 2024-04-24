@@ -253,10 +253,11 @@ const LeftSideNav = ({ menuWhiteClass, sidebarMenu }) => {
               </li>
             </ul> */}
           </li>
+
           <li>
-            <Link to={process.env.PUBLIC_URL + "/experience"}>
+            <Link to={process.env.PUBLIC_URL + "/franchise"}>
               {" "}
-              {t("EXPERIENCE")}
+              {t("FRANCHISE")}
               {/* {sidebarMenu ? (
                 <span>
                   <i className="fa fa-angle-right"></i>
@@ -396,8 +397,8 @@ const LeftSideNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/about-us"}>
-              {t("FRANCHISE")}
+            <Link to={process.env.PUBLIC_URL + "/experience"}>
+              {t("EXPERIENCE")}
             </Link>
           </li>
           {/* <li>

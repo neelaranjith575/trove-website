@@ -1,30 +1,36 @@
 [
-    {
+    { 
+      "title" : "DINING AREA",
       "id": "1",
       "image": "/assets/img/image-slider/image 17.png",
       "link": "/shop-grid-standard"
     },
     {
+      "title" : "KITCHEN",
       "id": "2",
       "image": "/assets/img/image-slider/image 18.png",
       "link": "/shop-grid-standard"
     },
     {
+      "title" : "HEADBOARDS",
       "id": "3",
       "image": "/assets/img/image-slider/image 19.png",
       "link": "/shop-grid-standard"
     },
     {
+      "title" : "VANITY WALL",
       "id": "4",
       "image": "/assets/img/image-slider/image 20.png",
       "link": "/shop-grid-standard"
     },
     {
+      "title" : "DINING AREA",
       "id": "5",
       "image": "/assets/img/image-slider/image 21.png",
       "link": "/shop-grid-standard"
     },
     {
+      "title" : "BALCONY",
       "id": "6",
       "image": "/assets/img/image-slider/image 22.png",
       "link": "/shop-grid-standard"

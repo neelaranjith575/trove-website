@@ -3,6 +3,7 @@ import MobileMenuSearch from "./sub-components/MobileSearch";
 import MobileNavMenu from "./sub-components/MobileNavMenu";
 import MobileLangCurChange from "./sub-components/MobileLangCurrChange";
 import MobileWidgets from "./sub-components/MobileWidgets";
+import Logo from "../../components/header/Logo";
 
 const MobileMenu = () => {
   useEffect(() => {
@@ -54,15 +55,16 @@ const MobileMenu = () => {
         <i className="pe-7s-close"></i>
       </button>
       <div className="offcanvas-wrapper">
-        <div className="offcanvas-inner-content">
+        <div className="offcanvas-inner-content" style={{marginTop:'20px'}}>
           {/* mobile search */}
-          <MobileMenuSearch />
+          {/* <MobileMenuSearch /> */}
+         
 
           {/* mobile nav menu */}
           <MobileNavMenu />
 
           {/* mobile language and currency */}
-          <MobileLangCurChange />
+          {/* <MobileLangCurChange /> */}
 
           {/* mobile widgets */}
           <MobileWidgets />

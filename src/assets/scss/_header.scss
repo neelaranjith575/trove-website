@@ -22,12 +22,9 @@
   z-index: 999;
   top: 0;
   left: 0;
-
   width: 100%;
-
   transition: all 0.3s ease 0s;
-  animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
-
+  animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
   border-bottom: 0 solid #4a90e2;
   background-color: #fff;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.06);
@@ -36,6 +33,7 @@
     display: none;
     @media #{$md-layout} {
       display: block;
+      
     }
     @media #{$xs-layout} {
       display: block;
@@ -85,6 +83,7 @@
 .header-res-padding {
   @media #{$md-layout} {
     padding: 20px 0 15px;
+    
   }
   @media #{$xs-layout} {
     padding: 20px 0 15px;
@@ -92,11 +91,12 @@
 }
 .logo {
   // margin-top: 32px;
+  
   @media #{$md-layout} {
     margin-top: 0;
   }
   @media #{$xs-layout} {
-    margin-top: 0;
+    margin-top: -15px;
   }
   &.logo-hm5 {
     margin-top: 41px;
@@ -105,6 +105,8 @@
       @media #{$md-layout,
       $xs-layout} {
         display: block;
+        width: "50px";
+        height: "50px";
       }
     }
     a.sticky-none {
@@ -142,15 +144,11 @@
   nav {
     ul {
       display: block;
-
       margin-top: -5px;
-
       text-align: center;
       li {
         position: relative;
-
         display: inline-block;
-
         padding: 0 15px;
         ul.submenu {
           position: absolute;
@@ -424,6 +422,11 @@
   }
   @media #{$md-layout} {
     margin-top: 0;
+  }
+}
+.stick .logo {
+  @media #{$xs-layout} {
+    margin-top: -15px;
   }
 }
 .stick .header-right-wrap .same-style.cart-wrap .shopping-cart-content,
@@ -2254,7 +2257,7 @@
   flex-direction: column;
 
   height: 100%;
-  padding: 90px 35px 0;
+  padding: 20px 35px 0;
 
   @media #{$sm-layout} {
     padding: 70px 25px 0;

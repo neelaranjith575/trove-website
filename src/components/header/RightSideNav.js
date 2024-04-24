@@ -15,7 +15,7 @@ const RightSideNav = ({ menuWhiteClass, sidebarMenu }) => {
       <nav>
         <ul>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/"}>
+            <Link to={process.env.PUBLIC_URL + "/coming-soon"}>
               {t("PRODUCTS")}
               {/* {sidebarMenu ? (
                 <span>
@@ -254,7 +254,7 @@ const RightSideNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+            <Link to={process.env.PUBLIC_URL + "/coming-soon"}>
               {" "}
               {t("CAREERS")}
               {/* {sidebarMenu ? (

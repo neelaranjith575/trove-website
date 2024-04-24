@@ -1,32 +1,27 @@
 [
     {
-      "id": "1",
-      "countNum": 18,
-      "title1": "Completed ",
-      "title2": "Projects",
-      "imageUrl": "/assets/img/brand-logo/d.png"
+      "id": 1,
+      "image": "/assets/img/icon-img/tools.png",
+      "title": "Build",
+      "subtitle": "To build a community of like minded business people benefiting from one another, utilizing their PR and growing their entrepreneurship."
     },
     {
-      "id": "2",
-      "imageUrl": "/assets/img/brand-logo/b.png",
-      "countNum": 21,
-      "title1": "Varieties",
-      "title2": "Released"
+      "id": 2,
+      "image": "/assets/img/icon-img/exchange.png",
+      "title": "Transform",
+      "subtitle": "To transform the way a businessperson efficiently runs their business by prioritizing structured systems over individual dependence."
     },
     {
-      "id": "3",
-      "countNum": 325,
-      "title1": "Happy",
-      "title2": "Customers",
-      "imageUrl": "/assets/img/brand-logo/e.png"
+      "id": 3,
+      "image": "/assets/img/icon-img/excellent.png",
+      "title": "Lead",
+      "subtitle": "To lead with vision, inspire teams, and drive success - A journey of guiding others to greatness, forging new paths, and leaving a lasting impact."
     },
     {
-      "id": "4",
-      "iconClass": "pe-7s-smile",
-      "countNum": 5,
-      "title1": "Winning",
-      "title2": "Awards",
-      "imageUrl": "/assets/img/brand-logo/c.png"
+      "id": 4,
+      "image": "/assets/img/icon-img/setting.png",
+      "title": "Serve",
+      "subtitle": "Serve with dedication and compassion - Fulfilling needs, giving great experience, and nurturing lasting relationships through genuine care."
     }
   ]
   

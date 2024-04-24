@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import HeaderOne from "../wrappers/header/HeaderOne";
 import FooterOne from "../wrappers/footer/FooterOne";
 import ScrollToTop from "../components/scroll-to-top"
+import Footer from "../wrappers/footer/Footer";
 
 const LayoutOne = ({
   children,
@@ -20,12 +21,18 @@ const LayoutOne = ({
         headerPositionClass={headerPositionClass}
       />
       {children}
-      <FooterOne
+      {/* <FooterOne
         backgroundColorClass="bg-gray"
         spaceTopClass="pt-100"
         spaceBottomClass="pb-70"
+      /> */}
+      <Footer
+       backgroundColorClass="bg-gray"
+       spaceTopClass="pt-100"
+       spaceBottomClass="pb-70"
       />
-      <ScrollToTop/>
+      
+      {/* <ScrollToTop/> */}
     </Fragment>
   );
 };

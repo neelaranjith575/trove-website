@@ -95,8 +95,9 @@ const BlogDetailsStandard = lazy(() =>
 
 // other pages
 const Locations = lazy(() => import("./pages/locations/locations"));
-const AboutUs = lazy(() => import("./pages/about/aboutus"));
-const Experience = lazy(() => import("./pages/experience/experience"));
+const Experience = lazy(() => import("./pages/Experience/Experience"));
+const Franchise = lazy(() => import("./pages/Franchise/Franchise"));
+const ComingSoon = lazy(() => import("./pages/ComingSoon/ComingSoon"));
 const Contact = lazy(() => import("./pages/other/Contact"));
 const MyAccount = lazy(() => import("./pages/other/MyAccount"));
 const LoginRegister = lazy(() => import("./pages/other/LoginRegister"));
@@ -370,8 +371,12 @@ const App = () => {
                 element={<Locations/>}
               />
               <Route
-                path={process.env.PUBLIC_URL + "/about-us"}
-                element={<AboutUs/>}
+                path={process.env.PUBLIC_URL + "/coming-soon"}
+                element={<ComingSoon/>}
+              />
+              <Route
+                path={process.env.PUBLIC_URL + "/franchise"}
+                element={<Experience/>}
               />
               <Route
                 path={process.env.PUBLIC_URL + "/contact"}
@@ -379,7 +384,7 @@ const App = () => {
               />
               <Route
                 path={process.env.PUBLIC_URL + "/experience"}
-                element={<Experience/>}
+                element={<Franchise/>}
               />
               <Route
                 path={process.env.PUBLIC_URL + "/my-account"}

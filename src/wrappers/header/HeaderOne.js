@@ -8,6 +8,7 @@ import MobileMenu from "../../components/header/MobileMenu";
 import HeaderTop from "../../components/header/HeaderTop";
 import LeftSideNav from "../../components/header/LeftSideNav";
 import RightSideNav from "../../components/header/RightSideNav";
+import { Grid, Paper, Stack, Typography, Box, Link } from "@mui/material";
 
 const HeaderOne = ({
   layout,
@@ -37,9 +38,9 @@ const HeaderOne = ({
     <header className={clsx("header-area clearfix", headerBgClass, headerPositionClass)}>
       <div
         className={clsx(
-          "header-top-area", 
-          headerPaddingClass, top === "visible" ? "d-none d-lg-block" : "d-none", 
-          borderStyle === "fluid-border" && "border-none" 
+          "header-top-area",
+          headerPaddingClass, top === "visible" ? "d-none d-lg-block" : "d-none",
+          borderStyle === "fluid-border" && "border-none"
         )}
       >
         <div className={layout === "container-fluid" ? layout : "container"}>
@@ -50,8 +51,8 @@ const HeaderOne = ({
 
       <div
         className={clsx(
-          headerPaddingClass, 
-          "sticky-bar header-res-padding clearfix", 
+          headerPaddingClass,
+          "sticky-bar header-res-padding clearfix",
           scroll > headerTop && "stick"
         )}
       >
@@ -63,12 +64,24 @@ const HeaderOne = ({
             </div>
             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
               {/* header logo */}
-              <Logo imageUrl="/assets/img/logo/Trovelogo.png" logoClass="logo"  />
+              <Logo imageUrl="/assets/img/logo/Trovelogo.png" logoClass="logo"   />
+              {/* <Link to="/" style={{
+                textDecoration: 'none', alignItems: 'center',
+                justifyContent: 'center',
+                display: 'flex'
+              }}>
+                <Box
+                  component="img"
+                  src={require("../../assets/img/Logo/Trovelogo.png")}
+                  alt=""
+                  sx={{ width: "80%" }}
+                />
+              </Link> */}
             </div>
             <div className="col-xl-5 col-lg-5 col-md-6 col-8">
               {/* Icon group */}
               <IconGroup />
-             
+
               <MobileMenu />
             </div>
 
@@ -77,7 +90,7 @@ const HeaderOne = ({
         {/* mobile menu */}
         <MobileMenu />
       </div>
-      
+
     </header>
   );
 };

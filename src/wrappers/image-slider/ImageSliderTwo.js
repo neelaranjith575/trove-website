@@ -3,6 +3,8 @@ import Swiper, { SwiperSlide } from "../../components/swiper";
 import ImageSliderOneSingle from "../../components/image-slider/ImageSliderOneSingle";
 import imageData from "../../data/image-slider/image-slider-two.json";
 import { Typography } from "@mui/material";
+import PropTypes from "prop-types";
+import clsx from "clsx"
 
 const settings = {
   loop: false,
@@ -10,7 +12,7 @@ const settings = {
   spaceBetween: 16,
   breakpoints: {
     320: {
-      slidesPerView: 2
+      slidesPerView: 3
     },
     640: {
       slidesPerView: 3
@@ -25,11 +27,19 @@ const settings = {
   }
 };
 
-const ImageSliderTwo = () => {
+const ImageSliderTwo = (
+  spaceLeftClass,
+  spaceRightClass,
+  spaceBottomClass,
+  spaceTopClass,
+) => {
   return (
-    <div className="image-slider-area" style={{margin:'25px'}}>
+    <div style={{margin:'25px'}} className={clsx("slider-area", spaceLeftClass, spaceRightClass, spaceBottomClass,spaceTopClass)}>
       <div className="image-slider-active">
-      <Typography sx={{fontSize:'50px', textAlign:'center', mb:5, mt:10, fontWeight:500, textTransform:'uppercase',fontFamily: "Cinzel",}}>Latest and On-Trending Tiles</Typography>
+      <Typography sx={{fontSize: { xs: "30px", md: "50px" }, textAlign:'center', 
+      mb:5, mt:10, fontWeight:500, textTransform:'uppercase',
+      fontFamily: "Libre Baskerville",}}>
+        WE'VE GOT JUST ABOUT EVERYTHING YOU NEED!</Typography>
         {imageData && (
           <Swiper options={settings}>
             {imageData.map((single, key) => (
@@ -44,6 +54,11 @@ const ImageSliderTwo = () => {
       </div>
     </div>
   );
+};
+
+ImageSliderTwo.propTypes = {
+  spaceLeftClass: PropTypes.string,
+  spaceRightClass: PropTypes.string
 };
 
 export default ImageSliderTwo;

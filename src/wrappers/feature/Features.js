@@ -1,120 +1,266 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
-import Button from '@mui/material/Button';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Box, Grid, Typography, Stack } from "@mui/material";
+import Button from "@mui/material/Button";
+import { ReactComponent as ArrowIcon } from "./../../assets/icons/svg/Group 52.svg";
+import SliderOne from "./Slider1";
+import SliderTwo from "./Slider2";
+import SliderThree from "./Slider3";
 
-const images = [
-    {
-        title: "Tailored ",
-        subtitle: "Customization Suite",
-        src: "/assets/img/features/image 32.png",
-        alt: "Image 1",
-    },
-    {
-        title: "Seamless Installation",
-        subtitle: "Support",
-        src: "/assets/img/features/image 33.png",
-        alt: "Image 2",
-    },
-    {
-        title: "Eco-conscious",
-        subtitle: "Material Sourcing",
-        src: "/assets/img/features/image 34.png",
-        alt: "Image 3",
-    },
-];
 
 const Features = () => {
-    return (
-        <>
-            <Box>
-                <Stack>
-                    <Typography sx={{ fontSize: { xs: '30px', md: '50px' }, textAlign: 'center', mb: 1, mt: 10, fontWeight: 500, textTransform: 'uppercase', fontFamily: "Libre Baskerville" }}>features</Typography>
-                    <Typography sx={{ fontSize: { xs: '13px', md: '16px' }, textAlign: 'center', mb: 5, fontFamily: 'Montserrat' }}>Lorem ipsum dolor sit amet consectetur. Turpis sit mauris vitae sed. Quis a<br></br> feugiat mauris elit feugiat vivamus consequat turpis lorem. Praesent est risus<br></br> nascetur sed at sem in commodo phasellus. Diam.</Typography>
-                </Stack>
-                <Stack paddingTop={5} alignItems={"center"}  >
-                    <Grid container spacing={10} >
-                    {images.map((image, index) => (
-    <Grid item key={index} xs={12} md={4} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }} >
-        {index === 1 ? (
-            <>
-                <Typography
-                    sx={{
-                        fontSize: { xs: '20px', md: '30px' },
-                        color: '#1A1A1A',
-                        textTransform: 'uppercase',
-                        fontFamily: 'Cinzel',
-                        textAlign: { xs: 'center', md: 'left' }, // Align left for md screens and center for xs screens
-                    }}
-                >
-                    {image.title}
-                </Typography>
-                <Typography
-                    variant="caption"
-                    sx={{
-                        fontSize: { xs: '20px', md: '30px' },
-                        textDecoration: 'underline',
-                        textTransform: 'uppercase',
-                        color: '#1A1A1A',
-                        fontFamily: 'Cinzel',
-                        textAlign: { xs: 'center', md: 'left' }, // Align left for md screens and center for xs screens
-                    }}
-                >
-                    {image.subtitle}
-                </Typography>
-            </>
-        ) : null}
-        <img src={image.src} alt={image.alt} width={376} height={269} />
-        {index !== 1 ? (
-            <>
-                <Typography
-                    sx={{
-                        fontSize: { xs: '20px', md: '30px' },
-                        color: '#1A1A1A',
-                        textTransform: 'uppercase',
-                        fontFamily: 'Cinzel',
-                        textAlign: { xs: 'center', md: 'left' }, // Align left for md screens and center for xs screens
-                    }}
-                >
-                    {image.title}
-                </Typography>
-                <Typography
-                    variant="caption"
-                    sx={{
-                        fontSize: { xs: '20px', md: '30px' },
-                        textDecoration: 'underline',
-                        textTransform: 'uppercase',
-                        color: '#1A1A1A',
-                        fontFamily: 'Cinzel',
-                        textAlign: { xs: 'center', md: 'left' }, // Align left for md screens and center for xs screens
-                    }}
-                >
-                    {image.subtitle}
-                </Typography>
-            </>
-        ) : null}
+  return (
+    <>
+   <Box m={10} sx={{m:{xs:5, md:10}}}>
+  <Stack sx={{ mb: 10, mt: 5 }}>
+    <Typography
+      sx={{
+        fontSize: { xs: "30px", md: "50px" },
+        textAlign: "center",
+        fontWeight: 500,
+        textTransform: "uppercase",
+        fontFamily: "Libre Baskerville",
+      }}
+    >
+      SEARCHING YOUR DREAM DESIGN?
+    </Typography>
+  </Stack>
+  <Grid container spacing={10} justifyContent="center" sx={{display:{xs:'none',md:"flex"}}}>
+    <Grid item xs={4}>
+      <SliderOne />
+      <Typography
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          color: "#1A1A1A",
+          textTransform: "uppercase",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign: { xs: "center", md: "left" },
+        }}
+      >
+        THE ULTIMATE
+      </Typography>
+      <Typography
+        variant="caption"
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          textDecoration: "underline",
+          textTransform: "uppercase",
+          color: "#1A1A1A",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign: { xs: "center", md: "left" },
+          pb: 2,
+        }}
+      >
+        TILE EXPERIENCE
+      </Typography>
     </Grid>
-))}
+    <Grid item xs={4}>
+      <Typography
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          color: "#1A1A1A",
+          textTransform: "uppercase",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          mt: -2,
+          textAlign: { xs: "center", md: "left" },
+        }}
+      >
+        TWO DECADES OF
+      </Typography>
+      <Typography
+        variant="caption"
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          textDecoration: "underline",
+          textTransform: "uppercase",
+          color: "#1A1A1A",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign: { xs: "center", md: "left" },
+          pb: 2,
+        }}
+      >
+        PROFOUND EXPERTISE
+      </Typography>
+      <SliderTwo />
+      <Button
+        fullWidth
+        variant="contained"
+        endIcon={<ArrowIcon sx={{ color: "white" }} />}
+        sx={{
+          backgroundColor: "#1A1A1A",
+          borderRadius: "0px",
+          height: "65px",
+          width: '100%',
+          fontSize: "20px",
+          mt: 5,
+          fontFamily: "Libre Baskerville",
+          "&:hover": {
+            backgroundColor: "#FACE4E",
+          },
+        }}
+      >
+        Start Building
+      </Button>
+    </Grid>
+    <Grid item xs={4}>
+      <SliderThree />
+      <Typography
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          color: "#1A1A1A",
+          textTransform: "uppercase",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign: { xs: "center", md: "left" },
+        }}
+      >
+        YOU NAME IT
+      </Typography>
+      <Typography
+        variant="caption"
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          textDecoration: "underline",
+          textTransform: "uppercase",
+          color: "#1A1A1A",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign: { xs: "center", md: "left" },
+          pb: 2,
+        }}
+      >
+        WE CREATE IT
+      </Typography>
+    </Grid>
+  </Grid>
 
 
-                    </Grid>
-                    <Stack sx={{ mt: 5 }}>
-                        <Button variant="contained" endIcon={<ArrowForwardIcon sx={{ color: 'white' }} />}
-                            sx={{
-                                backgroundColor: '#1A1A1A',
-                                borderRadius: '0px',
-                                width: '375px',
-                                height: '65px',
-                                fontSize: '20px',
-                                fontFamily: 'Libre Baskerville',
-                                '&:hover': {
-                                    backgroundColor: '#FACE4E',
-                                }
-                            }}>View More</Button>
-                    </Stack>
-                </Stack>
-            </Box>
-        </>
-    )
-}
+
+{/* Mobile Version */}
+
+
+  <Grid container spacing={3} justifyContent="center" alignContent={'center'} sx={{display:{xs:'block',md:'none'}}}>
+    <Grid item xs={12}>
+      <SliderOne />
+      <Typography
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          color: "#1A1A1A",
+          textTransform: "uppercase",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign:'center',
+          mt:1,
+        }}
+      >
+        THE ULTIMATE
+      </Typography>
+      <Typography
+        
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          textDecoration: "underline",
+          textTransform: "uppercase",
+          color: "#1A1A1A",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign:'center',
+          pb: 2,
+        }}
+      >
+        TILE EXPERIENCE
+      </Typography>
+    </Grid>
+    <Grid item xs={12}>
+    <SliderTwo />
+      <Typography
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          color: "#1A1A1A",
+          textTransform: "uppercase",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign:'center',
+          mt:1,
+        }}
+      >
+        TWO DECADES OF
+      </Typography>
+      <Typography
+        
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          textDecoration: "underline",
+          textTransform: "uppercase",
+          color: "#1A1A1A",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign:'center',
+          pb: 2,
+        }}
+      >
+        PROFOUND EXPERTISE
+      </Typography>
+     
+      
+    </Grid>
+    <Grid item xs={12}>
+      <SliderThree />
+      <Typography
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          color: "#1A1A1A",
+          textTransform: "uppercase",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign:'center',
+          mt:1,
+        }}
+      >
+        YOU NAME IT
+      </Typography>
+      <Typography
+        
+        sx={{
+          fontSize: { xs: "20px", md: "30px" },
+          textDecoration: "underline",
+          textTransform: "uppercase",
+          color: "#1A1A1A",
+          fontWeight: 400,
+          fontFamily: "Cinzel",
+          textAlign:'center',
+          pb: 2,
+        }}
+      >
+        WE CREATE IT
+      </Typography>
+      <Button
+        fullWidth
+        variant="contained"
+        endIcon={<ArrowIcon sx={{ color: "white" }} />}
+        sx={{
+          backgroundColor: "#1A1A1A",
+          borderRadius: "0px",
+          height: "65px",
+          width: '100%',
+          fontSize: "20px",
+          mt: 5,
+          fontFamily: "Libre Baskerville",
+          "&:hover": {
+            backgroundColor: "#FACE4E",
+          },
+        }}
+      >
+        Start Building
+      </Button>
+    </Grid>
+  </Grid>
+</Box>
+
+    </>
+  );
+};
 
 export default Features;

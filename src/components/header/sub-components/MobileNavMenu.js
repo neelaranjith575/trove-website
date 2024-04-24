@@ -7,9 +7,9 @@ const MobileNavMenu = () => {
   return (
     <nav className="offcanvas-navigation" id="offcanvas-navigation">
       <ul>
-        <li className="menu-item-has-children">
+        <li >
           <Link to={process.env.PUBLIC_URL + "/"}>{t("home")}</Link>
-          <ul className="sub-menu">
+          {/* <ul className="sub-menu">
             <li className="menu-item-has-children">
               <Link to={process.env.PUBLIC_URL + "/"}>
                 {t("home_group_one")}
@@ -221,14 +221,15 @@ const MobileNavMenu = () => {
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> */}
         </li>
+        
 
-        <li className="menu-item-has-children">
-          <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
-            {t("shop")}
+        <li >
+          <Link to={process.env.PUBLIC_URL + "/experience"}>
+            {t("EXPERIENCE")}
           </Link>
-          <ul className="sub-menu">
+          {/* <ul className="sub-menu">
             <li className="menu-item-has-children">
               <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
                 {t("shop_layout")}
@@ -335,16 +336,16 @@ const MobileNavMenu = () => {
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> */}
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
-            {t("collection")}
+          <Link to={process.env.PUBLIC_URL + "/franchise"}>
+            {t("FRANCHISE")}
           </Link>
         </li>
-        <li className="menu-item-has-children">
+         {/*<li >
           <Link to={process.env.PUBLIC_URL + "/"}>{t("pages")}</Link>
-          <ul className="sub-menu">
+           <ul className="sub-menu">
             <li>
               <Link to={process.env.PUBLIC_URL + "/cart"}>
                 {t("cart")}
@@ -390,13 +391,14 @@ const MobileNavMenu = () => {
                 {t("404_page")}
               </Link>
             </li>
-          </ul>
-        </li>
-        <li className="menu-item-has-children">
-          <Link to={process.env.PUBLIC_URL + "/blog-standard"}>
-            {t("blog")}
+          </ul> 
+        </li> */}
+        <li >
+        {/* <li className="menu-item-has-children"> for sub Menu */} 
+          <Link to={process.env.PUBLIC_URL + "/hop-grid-standard"}>
+            {t("PRODUCTS")}
           </Link>
-          <ul className="sub-menu">
+          {/* <ul className="sub-menu">
             <li>
               <Link to={process.env.PUBLIC_URL + "/blog-standard"}>
                 {t("blog_standard")}
@@ -417,11 +419,17 @@ const MobileNavMenu = () => {
                 {t("blog_details_standard")}
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </li>
+        
         <li>
           <Link to={process.env.PUBLIC_URL + "/contact"}>
-            {t("contact_us")}
+            {t("Careers")}
+          </Link>
+        </li>
+        <li>
+          <Link to={process.env.PUBLIC_URL + "/locations"}>
+            {t("Location")}
           </Link>
         </li>
       </ul>

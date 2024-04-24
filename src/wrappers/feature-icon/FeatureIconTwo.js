@@ -9,7 +9,7 @@ const FeatureIconTwo = ({ spaceTopClass, spaceBottomClass }) => {
     <div className={clsx("support-area", spaceTopClass, spaceBottomClass)}>
       <div className="container">
         <div className="row feature-icon-two-wrap">
-          <Typography sx={{fontSize:'50px', textAlign:'center', mb:5, fontWeight:500,fontFamily: "Cinzel",}}>WHAT CAN TROVE OFFER YOU?</Typography>
+          <Typography sx={{fontSize: { xs: "30px", md: "50px" }, textAlign:'center', mb:5, fontWeight:500,fontFamily: "Libre Baskerville",}}>WHAT CAN TROVE OFFER YOU?</Typography>
           {featureIconData?.map((single, key) => (
             <div className="col-md-3" key={key}>
               <FeatureIconTwoSingle
