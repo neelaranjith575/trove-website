@@ -43,7 +43,7 @@ const HomeSlider = () => {
 
     return (
         <>
-            <Box sx={{ pl: {xs:3, md:12}, pr:{xs:3, md:12}, pt:{xs:3, md:3}, pb:{xs:4, md:5}}}>
+            <Box sx={{ pl: {xs:3, md:12}, pr:{xs:3, md:12}, pt:{xs:3, md:5}, pb:{xs:4, md:5}}}>
                 <Carousel showDots={true} arrows={false} responsive={responsive}
                 autoPlay={true} // Enable auto-loop
                 autoPlaySpeed={1500} // Set auto-loop speed in milliseconds (optional)

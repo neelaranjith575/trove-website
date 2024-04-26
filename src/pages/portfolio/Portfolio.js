@@ -8,8 +8,8 @@ import Typography from '@mui/material/Typography';
 export default function StandardImageList() {
   return (
     <>
-    <Box sx={{display:{xs:'none', md:'block', pt:5, pb:5}}}>
-    <Stack sx={{ p: 8 }}>
+    <Box sx={{display:{xs:'none', md:'block',},pt:10, pb:5,height:'fit-content'}}>
+    <Stack sx={{pl:10,pr:10}}>
       <Typography
         sx={{
           fontSize: { xs: '30px', md: '50px' },

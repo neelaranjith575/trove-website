@@ -44,7 +44,7 @@ const SliderThree = () => {
                 transitionDuration={500} 
                 >
                     {banners.map((banner) => (
-                        <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{  width:'100%', height: "250px" }} />
+                        <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{  width:'100%', height: "300px" }} />
                     ))}
                 </Carousel>
             </Box>

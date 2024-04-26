@@ -90,13 +90,13 @@
   }
 }
 .logo {
-  // margin-top: 32px;
+ 
   
   @media #{$md-layout} {
     margin-top: 0;
   }
   @media #{$xs-layout} {
-    margin-top: -15px;
+    // margin-top: -10px;
   }
   &.logo-hm5 {
     margin-top: 41px;
@@ -140,12 +140,16 @@
   }
 }
 
+// .col-xl-2.col-lg-2.col-md-6.col-4 {
+//   margin-top: -10px;
+// }
+
 .main-menu {
   nav {
     ul {
       display: block;
-      margin-top: -5px;
-      text-align: center;
+      // margin-top: -5px;
+      text-align: end;
       li {
         position: relative;
         display: inline-block;
@@ -426,9 +430,16 @@
 }
 .stick .logo {
   @media #{$xs-layout} {
-    margin-top: -15px;
+    margin-top: 10px;
+  }
+  @media #{$md-layout} {
+    margin-top: -10px;
   }
 }
+.stick .logo {
+  margin-top: -10px;
+}
+
 .stick .header-right-wrap .same-style.cart-wrap .shopping-cart-content,
 .stick .header-right-wrap .same-style .account-dropdown {
   top: 160%;
@@ -450,7 +461,7 @@
 
 .header-right-wrap {
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
 
   // margin-top: 32px;
   @media #{$md-layout} {

@@ -11,7 +11,7 @@ const Craftmanship = () => {
 
     return (
         
-            <Box sx={{ m: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <Box sx={{ m: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',height:'fit-content',pt:{xs:5, md:5}, pb:{xs:5, md:5} }}>
                 <Stack>
                     <Typography
                         sx={{

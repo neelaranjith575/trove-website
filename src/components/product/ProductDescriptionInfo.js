@@ -148,7 +148,7 @@ const ProductDescriptionInfo = ({
         </div>
       ) : (
         <div className="pro-details-quality">
-          <div className="cart-plus-minus">
+          {/* <div className="cart-plus-minus">
             <button
               onClick={() =>
                 setQuantityCount(quantityCount > 1 ? quantityCount - 1 : 1)
@@ -175,28 +175,44 @@ const ProductDescriptionInfo = ({
             >
               +
             </button>
-          </div>
+          </div> */}
           <div className="pro-details-cart btn-hover">
             {productStock && productStock > 0 ? (
               <button
-                onClick={() =>
-                  dispatch(addToCart({
-                    ...product,
-                    quantity: quantityCount,
-                    selectedProductColor: selectedProductColor ? selectedProductColor : product.selectedProductColor ? product.selectedProductColor : null,
-                    selectedProductSize: selectedProductSize ? selectedProductSize : product.selectedProductSize ? product.selectedProductSize : null
-                  }))
-                }
-                disabled={productCartQty >= productStock}
+                // onClick={() =>
+                //   dispatch(addToCart({
+                //     ...product,
+                //     quantity: quantityCount,
+                //     selectedProductColor: selectedProductColor ? selectedProductColor : product.selectedProductColor ? product.selectedProductColor : null,
+                //     selectedProductSize: selectedProductSize ? selectedProductSize : product.selectedProductSize ? product.selectedProductSize : null
+                //   }))
+                // }
+                // disabled={productCartQty >= productStock}
               >
                 {" "}
-                Add To Cart{" "}
+                Enquire {" "}
               </button>
+              
             ) : (
               <button disabled>Out of Stock</button>
             )}
+             <button
+             style={{marginLeft:'50px'}}
+                // onClick={() =>
+                //   dispatch(addToCart({
+                //     ...product,
+                //     quantity: quantityCount,
+                //     selectedProductColor: selectedProductColor ? selectedProductColor : product.selectedProductColor ? product.selectedProductColor : null,
+                //     selectedProductSize: selectedProductSize ? selectedProductSize : product.selectedProductSize ? product.selectedProductSize : null
+                //   }))
+                // }
+                // disabled={productCartQty >= productStock}
+              >
+                {" "}
+                Whatsapp us {" "}
+              </button>
           </div>
-          <div className="pro-details-wishlist">
+          {/* <div className="pro-details-wishlist">
             <button
               className={wishlistItem !== undefined ? "active" : ""}
               disabled={wishlistItem !== undefined}
@@ -209,8 +225,8 @@ const ProductDescriptionInfo = ({
             >
               <i className="pe-7s-like" />
             </button>
-          </div>
-          <div className="pro-details-compare">
+          </div> */}
+          {/* <div className="pro-details-compare">
             <button
               className={compareItem !== undefined ? "active" : ""}
               disabled={compareItem !== undefined}
@@ -223,7 +239,7 @@ const ProductDescriptionInfo = ({
             >
               <i className="pe-7s-shuffle" />
             </button>
-          </div>
+          </div> */}
         </div>
       )}
       {product.category ? (

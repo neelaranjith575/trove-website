@@ -2,10 +2,11 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import featureIconData from "../../data/feature-icons/feature-icon-two.json";
 import FeatureIconTwoSingle from "../../components/feature-icon/FeatureIconTwoSingle.js";
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 const FeatureIconTwo = ({ spaceTopClass, spaceBottomClass }) => {
   return (
+    <Box sx={{height:'fit-content',pt:{xs:5, md:5}, pb:{xs:5, md:10}}}>
     <div className={clsx("support-area", spaceTopClass, spaceBottomClass)}>
       <div className="container">
         <div className="row feature-icon-two-wrap">
@@ -22,6 +23,7 @@ const FeatureIconTwo = ({ spaceTopClass, spaceBottomClass }) => {
         </div>
       </div>
     </div>
+    </Box>
   );
 };
 

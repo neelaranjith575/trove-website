@@ -172,11 +172,12 @@ const Location = () => {
             <Typography
              
               sx={{
-                fontSize: { xs: "30px", md: "50px" },
-                lineHeight: "48px",
-                fontWeight: 400,
-                fontFamily: "Cinzel",
-                ml:{xs:5,md:5},
+                fontSize: { xs: "30px", md: "35px" },
+                lineHeight: "40px",
+                fontWeight: 500,
+                fontFamily: "Libre Baskerville",
+                textTransform:'uppercase',
+                ml:{xs:5,md:0},
                 textAlign: { xs: "center", md: "center", lg: "center" },
               }}
             >

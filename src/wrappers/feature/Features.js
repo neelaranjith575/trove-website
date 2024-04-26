@@ -9,8 +9,8 @@ import SliderThree from "./Slider3";
 const Features = () => {
   return (
     <>
-   <Box m={10} sx={{m:{xs:5, md:10}}}>
-  <Stack sx={{ mb: 10, mt: 5 }}>
+   <Box  sx={{pl:{xs:5, md:10}, pr:{xs:5, md:10}, pt:{xs:5, md:10}, pb:{xs:5, md:5},height:'fit-content'}}>
+  <Stack sx={{ mb: 5,}}>
     <Typography
       sx={{
         fontSize: { xs: "30px", md: "50px" },

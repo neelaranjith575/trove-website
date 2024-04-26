@@ -3,7 +3,6 @@ import { ReactComponent as ArrowIcon } from "./../../assets/icons/svg/black.svg"
 import { ReactComponent as ArrowIcon1 } from "./../../assets/icons/svg/Group 52.svg";
 import Logo from "../../components/header/Logo";
 import SocialIcons from "./SocialIcons";
-import FooterNav from "./FooterNav";
 import * as React from 'react';
 import Button from "@mui/material/Button";
 import { useLocation } from 'react-router-dom';
@@ -133,9 +132,43 @@ const Footer = (sideMenu) => {
                         </Grid>
                     </Grid>
                 </Stack>
-                <Stack pl={20} pr={20} pb={2}>
+                <Stack pl={20} pr={20} pb={2} pt={5}>
                     <div className="footer-title">
-                        <FooterNav />
+                        {/* <FooterNav /> */}
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                justifyContent: 'center',
+                                typography: 'body1',
+                                color: "#0A142F",
+                                pb: 5,
+                                '& > :not(style) ~ :not(style)': {
+                                    ml: 2,
+
+                                },
+                            }}
+
+                        >
+                            <Link href="/" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
+                                HOME
+                            </Link>
+                            <Link href="/experience" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
+                                EXPERIENCE
+                            </Link>
+                            <Link href="/franchise" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
+                                FRANCHISE
+                            </Link>
+                            <Link href="/coming-soon" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
+                                PRODUCTS
+                            </Link>
+                            <Link href="/coming-soon" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
+                                CAREERS
+                            </Link>
+                            <Link href="/locations" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
+                                LOCATIONS
+                            </Link>
+                        </Box>
                         <h5 style={{ fontSize: '15px', color: '#0A142F', fontFamily: 'Montserrat', textAlign: 'center' }}>© 2024 . All rights reserved. Trove</h5>
                     </div>
                 </Stack>

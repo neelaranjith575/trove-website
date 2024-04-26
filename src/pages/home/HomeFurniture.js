@@ -49,7 +49,7 @@ const HomeFurniture = () => {
         <Portofolio />
 
         {/* feature icon */}
-        <FeatureIconTwo  spaceBottomClass="pb-60" />
+        <FeatureIconTwo  spaceBottomClass="pb-50"  spaceTopClass="pt-80" />
 
         {/* blog featured */}
         {/* <BlogFeatured spaceBottomClass="pb-55" /> */}
