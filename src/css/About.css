@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #3A3A1F;
+    padding: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.progressBar {
+    position: sticky;
+    top: 10vw;
+}
+
+.slideSec {
+    width: 40vw;
+    margin: 5vw;
+    padding-bottom: 8vw;
+}
+
+@media (max-width: 480px) {
+
+    .progressBar {
+        max-width: 80px;
+        height: 80px;
+        top: 10vw;
+        margin-top: 0;
+    }
+
+    .slideSec {
+        width: 80vw;
+        margin: 5vw;
+        padding-bottom: 10vw;
+    }
+
+}

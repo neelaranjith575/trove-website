@@ -1,0 +1,40 @@
+/* PointCard.css */
+
+.pointCard {
+    padding: 1vw 0;
+    color: #E8F5E9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0.6;
+    text-align: justify;
+    transition: opacity 0.3s ease;
+}
+
+.pointCard.active {
+    opacity: 2;
+    color: white;
+}
+
+.pointCard.heading {
+    font-size: 24px;
+}
+
+.pointCard.description {
+    font-size: 18px;
+}
+
+h2 {
+    color: #E8F5E9;
+    font-size: 18px;
+}
+
+h1 {
+    color: #E8F5E9;
+    font-size: 32px;
+}
+
+@media (max-width: 480px) {
+    .pointCard {
+        text-align: left;
+    }
+}
+
