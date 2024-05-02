@@ -8,6 +8,7 @@ import Portofolio from "../portfolio/Portfolio";
 import HeroSliderEleven from "../../wrappers/hero-slider/HeroSliderEleven";
 import HomeSlider from "../../data/hero-sliders/homeSlider";
 import { Stack } from "@mui/material";
+import Products from "../../components/product/sub-components/Products"
 // import Slider from "./../../data/slider/slider"
 
 const HomeFurniture = () => {
@@ -47,6 +48,8 @@ const HomeFurniture = () => {
 
         {/* Portofolio section */}
         <Portofolio />
+
+        {/* <Products /> */}
 
         {/* feature icon */}
         <FeatureIconTwo  spaceBottomClass="pb-50"  spaceTopClass="pt-80" />

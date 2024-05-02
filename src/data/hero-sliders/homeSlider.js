@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Box } from "@mui/material";
+import "./homeSlider.css"
 
 
 const HomeSlider = () => {
@@ -49,6 +50,7 @@ const HomeSlider = () => {
                 autoPlaySpeed={1500} // Set auto-loop speed in milliseconds (optional)
                 infinite={true} // Enable infinite loop
                 transitionDuration={500} 
+                itemClass="carousel-item-padding-40"
                 >
                     {banners.map((banner) => (
                         <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{ width:'100%', height: "550px" }} />

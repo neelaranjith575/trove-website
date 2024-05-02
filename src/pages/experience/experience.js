@@ -7,6 +7,7 @@ import Content from "../Experience/content";
 import Business from "./business";
 import SEO from "../../components/seo";
 import Whyus from "../Whyus/Whyus";
+import About from "../About/About"
 // import Counter from "./counter";
 
 
@@ -69,7 +70,8 @@ const Experience = () => {
                 </Box>
                 <WorkProcess />
                 <Content />
-                <Business  />
+                <About />
+                {/* <Business  /> */}
                
                 {/* <Counter /> */}
                

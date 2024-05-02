@@ -2,34 +2,56 @@
 
 .pointCard {
     padding: 1vw 0;
-    color: #E8F5E9;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    opacity: 0.6;
-    text-align: justify;
-    transition: opacity 0.3s ease;
+    /* color: #E8F5E9; */
+    font-family: "Montserrat";
+    opacity: 1;
+    transition: opacity 0.1s ease;
 }
 
 .pointCard.active {
-    opacity: 2;
-    color: white;
+    opacity: 1;
+    color: black;
 }
 
-.pointCard.heading {
-    font-size: 24px;
+.heading {
+    font-size: 22px;
+    font-family: "Montserrat";
+    opacity: 0.5;
+    color: #000000;
+}
+.heading.active {
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: #000000;
+    opacity: 1;
 }
 
-.pointCard.description {
-    font-size: 18px;
+.description {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: #000000;
+    opacity: 0.5;
+}
+.description.active {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: #000000;
+    opacity: 1;
 }
 
 h2 {
-    color: #E8F5E9;
-    font-size: 18px;
+    
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: #000000;
 }
 
 h1 {
-    color: #E8F5E9;
-    font-size: 32px;
+   
+    font-size: 22px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color:'#000000';
 }
 
 @media (max-width: 480px) {
