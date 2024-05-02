@@ -9,14 +9,25 @@ import Box from "@mui/material/Box";
 
 const About = () => {
   const totalSteps = Object.keys(data).length; // Total steps equals to the number of data points
-
   const [activeStep, setActiveStep] = useState(1); // Initially set the first step as active
   const [allStepsCompleted, setAllStepsCompleted] = useState(false);
+  const [scrollTopVal, setScrollTopVal] = useState(1)
 
   useEffect(() => {
+    const page = document.querySelector('.page');
+
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const documentHeight = document.documentElement.scrollHeight;
+
+      if (page) {
+        const rect = page.getBoundingClientRect();
+        if (rect.top < 0){
+          const val = Math.abs(rect.top)
+          setScrollTopVal(val);
+        }
+      }
+
+      const scrollTop = scrollTopVal
+      const documentHeight = page.scrollHeight;
       const windowHeight = window.innerHeight;
       const maxScroll = documentHeight - windowHeight;
 
@@ -33,7 +44,7 @@ const About = () => {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [totalSteps]);
+  }, [totalSteps, scrollTopVal]);
 
   useEffect(() => {
     if (activeStep === totalSteps) {
