@@ -54,9 +54,9 @@ const About = () => {
 
   return (
     <>
-      <Box sx={{ mb: 5 }}>
+      <Box sx={{ pb: 5 }}>
         <div className="page">
-          <div style={{ width: 450, height: 450 }} className="progressBar">
+          <div style={{ width: 450, height: 550 }} className="progressBar">
             <Typography
               sx={{
                 fontSize: "45px",
@@ -64,7 +64,7 @@ const About = () => {
                 fontFamily: "Libre Baskerville",
                 fontWeight: 500,
                 textTransform: "uppercase",
-                ml: 10,
+                // ml: 5,
                 mb: 5,
               }}
             >
@@ -79,9 +79,9 @@ const About = () => {
                 textSize: "8px",
                 pathTransitionDuration: 0.5,
                 pathColor: `#6B6B6B`,
-                textColor: "#D9D9D9",
+                textColor: "#6B6B6B",
                 trailColor: "#D9D9D9",
-                fontfamily: "Montserrat",
+                
               })}
             />
           </div>

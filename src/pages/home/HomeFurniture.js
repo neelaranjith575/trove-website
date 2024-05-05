@@ -15,8 +15,8 @@ const HomeFurniture = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="Trove "
-        description="Furniture home of flone react minimalist eCommerce template."
+        titleTemplate="HOME"
+        description="The Ultimste Tile Studio"
       />
       <LayoutOne headerTop="visible">
         {/* hero slider */}

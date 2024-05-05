@@ -18,7 +18,7 @@ const IconBackgroundSingle = ({ data, spaceBottomClass, textAlignClass }) => {
           {/* <i className={data.iconClass} /> */}
           <img src={data.imageUrl} alt="Count Image"  width={60} height={60}/>
         </div>
-        <h2 className="count">
+        <h2 className="count" style={{color:'white', fontFamily:'monospace' }}>
           <VisibilitySensor
             onChange={onVisibilityChange}
             offset={{ top: 10 }}
@@ -26,6 +26,7 @@ const IconBackgroundSingle = ({ data, spaceBottomClass, textAlignClass }) => {
           >
             <CountUp end={didViewCountUp ? data.countNum : 0} style={{fontWeight:'normal'}} />
           </VisibilitySensor>
+          +
         </h2>
         <span style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:500}}>{data.title1}</span><br/>
         <span style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:500}}>{data.title2}</span>

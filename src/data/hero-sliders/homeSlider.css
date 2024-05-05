@@ -1,3 +1,25 @@
 .carousel-item-padding-40 {
     padding: 0 4px; /* Adjust the padding as per your requirement */
 }
+/* Add smooth transition for carousel items */
+.carousel-container {
+    overflow: hidden;
+}
+
+
+/* Define a custom animation for carousel items */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the custom animation to carousel items */
+.carousel-item {
+    animation: slideInFromLeft 0.5s ease;
+}

@@ -1,8 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Box } from "@mui/material";
-import "./homeSlider.css"
-
+import "./homeSlider.css";
 
 const HomeSlider = () => {
     const banners = [
@@ -18,43 +17,59 @@ const HomeSlider = () => {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 1024 },
-            items: 1.5,
+            effect: "fade",
+            items: 1.80,
             slidesToSlide: 1,
+            fadeEffect: {
+                crossFade: true
+              },
             style: {
                 padding: '20px'
             }
-            
         },
         desktop: {
             breakpoint: { max: 1024, min: 800 },
-            items: 1.5,
+            effect: "fade",
+            items: 1.80,
+            fadeEffect: {
+                crossFade: true
+              },
             slidesToSlide: 1,
         },
         tablet: {
             breakpoint: { max: 800, min: 464 },
-            items: 1.5,
+            effect: "fade",
+            items: 1.80,
             slidesToSlide: 1,
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 1.5,
+            effect: "fade",
+            items: 1.80,
             slidesToSlide: 1,
         },
     };
 
+    
+
     return (
         <>
             <Box sx={{ pl: {xs:3, md:12}, pr:{xs:3, md:12}, pt:{xs:3, md:5}, pb:{xs:4, md:5}}}>
-                <Carousel showDots={true} arrows={false} responsive={responsive}
-                autoPlay={true} // Enable auto-loop
-                autoPlaySpeed={1500} // Set auto-loop speed in milliseconds (optional)
-                infinite={true} // Enable infinite loop
-                transitionDuration={500} 
-                itemClass="carousel-item-padding-40"
+                <Carousel 
+                    showDots={true} 
+                    arrows={false} 
+                    responsive={responsive}
+                    autoPlay={true} // Enable auto-loop
+                    autoPlaySpeed={2000} // Set auto-loop speed in milliseconds (optional)
+                    infinite={true} // Enable infinite loop
+                    transitionDuration={1000} 
+                    itemClass="carousel-item-padding-40"
+                    containerClass="carousel-container"
                 >
-                    {banners.map((banner) => (
+                     {banners.map((banner) => (
                         <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{ width:'100%', height: "550px" }} />
                     ))}
+                    
                 </Carousel>
             </Box>
         </>

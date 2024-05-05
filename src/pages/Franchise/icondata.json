@@ -1,32 +1,32 @@
 [
     {
       "id": "1",
-      "countNum": 18,
-      "title1": "Completed ",
-      "title2": "Projects",
-      "imageUrl": "/assets/img/brand-logo/Complete.png"
+      "countNum": 40000,
+      "title1": "Houses Completed",
+      "title2": "",
+      "imageUrl": "/assets/img/brand-logo/loan.png"
     },
     {
       "id": "2",
-      "imageUrl": "/assets/img/brand-logo/Released.png",
-      "countNum": 21,
-      "title1": "Varieties",
-      "title2": "Released"
+      "imageUrl": "/assets/img/brand-logo/completion.png",
+      "countNum": 4050,
+      "title1": "Projects Completed",
+      "title2": ""
     },
     {
       "id": "3",
-      "countNum": 325,
-      "title1": "Happy",
-      "title2": "Customers",
-      "imageUrl": "/assets/img/brand-logo/Review.png"
+      "countNum": 800,
+      "title1": "Restaurants Tiled",
+      "title2": "",
+      "imageUrl": "/assets/img/brand-logo/pattern.png"
     },
     {
       "id": "4",
       "iconClass": "pe-7s-smile",
-      "countNum": 5,
-      "title1": "Winning",
-      "title2": "Awards",
-      "imageUrl": "/assets/img/brand-logo/Achievements.png"
+      "countNum": 40,
+      "title1": "Mega-Spaces Tiled",
+      "title2": "",
+      "imageUrl": "/assets/img/brand-logo/tile.png"
     }
   ]
   

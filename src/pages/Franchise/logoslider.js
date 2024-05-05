@@ -3,10 +3,12 @@ import clsx from "clsx";
 import Swiper, { SwiperSlide } from "../../components/swiper";
 import BrandLogoOneSingle from "../../components/brand-logo/BrandLogoOneSingle";
 import brandLogoData from "./brandlogo.json";
+import { Typography } from "@mui/material";
+import { Stack } from "@mui/system";
 
 const settings = {
-  loop: false,
-  autoplay: false,
+  loop: true,
+  autoplay: true,
   grabCursor: true,
   breakpoints: {
     320: {
@@ -27,7 +29,24 @@ const settings = {
 const LogoSlider = ({ spaceBottomClass, spaceTopClass }) => {
   return (
     <div className={clsx("brand-logo-area", spaceBottomClass, spaceTopClass)}>
-      <div className="container mt-100 mb-80">
+      <Stack>
+        <Typography
+          sx={{
+            color: "#1A1A1A",
+
+            fontSize: { xs: "30px", md: "50px" },
+            fontFamily: 'Libre Baskerville',
+            textTransform: 'uppercase',
+            textAlign: "center",
+            pt:5,
+
+
+          }}
+        >
+          OUR CLIENTS
+        </Typography>
+      </Stack>
+      <div className="container mt-50 mb-100">
         <div className="brand-logo-active">
           {brandLogoData && (
             <Swiper options={settings}>

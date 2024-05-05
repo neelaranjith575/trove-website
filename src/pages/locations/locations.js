@@ -156,7 +156,7 @@ const Location = () => {
 
   return (
     <Fragment>
-      <SEO titleTemplate="Locations" description="Locations page of Trove" />
+      <SEO titleTemplate="LOCATIONS" description="Locations page of Trove" />
       <LayoutOne headerTop="visible">
         <Grid
           container

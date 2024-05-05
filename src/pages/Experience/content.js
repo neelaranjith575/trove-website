@@ -56,7 +56,7 @@ const Content = () => {
                   <Typography
                     sx={{
                       color: "#1A1A1A",
-                      fontSize: { xs: "28px", md: "45px" },
+                      fontSize: { xs: "28px", md: "48px" },
                       fontFamily: "Libre Baskerville",
                       textTransform: "uppercase",
                       textAlign: { xs: "center", md: "left" },
@@ -69,7 +69,7 @@ const Content = () => {
                     sx={{
                       fontFamily: "Montserrat",
                       color: "#1A2D4C",
-                      fontSize: { xs: "13px", md: "15px" },
+                      fontSize: { xs: "13px", md: "17px" },
                       lineHeight: "30px",
                       textAlign: { xs: "center", md: "left" },
                     }}

@@ -13,8 +13,8 @@ const Franchise = () => {
   return (
     <>
       <SEO
-        titleTemplate="FRANCHISE"
-        description="Furniture home of flone react minimalist eCommerce template."
+        titleTemplate="EXPERIENCE"
+        description="The Ultimste Tile Studio"
       />
       <LayoutOne headerTop="visible">
         <Box
@@ -80,8 +80,8 @@ const Franchise = () => {
         <ProjectSlider spaceTopClass="pt-100" />
         <LogoSlider spaceTopClass="pt-50"
            />
-          <LogoSlider 
-          spaceBottomClass="pb-50" />
+          {/* <LogoSlider 
+          spaceBottomClass="pb-50" /> */}
         <TestimonialOne
           spaceTopClass="pt-100"
           spaceBottomClass="pb-95"

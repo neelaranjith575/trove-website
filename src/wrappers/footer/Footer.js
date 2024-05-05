@@ -153,11 +153,11 @@ const Footer = (sideMenu) => {
                             <Link href="/" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
                                 HOME
                             </Link>
-                            <Link href="/experience" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
-                                EXPERIENCE
-                            </Link>
                             <Link href="/franchise" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
                                 FRANCHISE
+                            </Link>
+                            <Link href="/experience" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
+                                EXPERIENCE
                             </Link>
                             <Link href="/coming-soon" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat',mr:5 }}>
                                 PRODUCTS
@@ -169,7 +169,7 @@ const Footer = (sideMenu) => {
                                 LOCATIONS
                             </Link>
                         </Box>
-                        <h5 style={{ fontSize: '15px', color: '#0A142F', fontFamily: 'Montserrat', textAlign: 'center' }}>© 2024 . All rights reserved. Trove</h5>
+                        <h5 style={{ fontSize: '15px', color: '#0A142F', fontFamily: 'Montserrat ', textAlign: 'center' }}>© 2024. T R O V E® - All rights reserved.</h5>
                     </div>
                 </Stack>
 

@@ -16,8 +16,8 @@ const Experience = () => {
     return (
         <>
         <SEO
-        titleTemplate="Experience"
-        description="Furniture home of flone react minimalist eCommerce template."
+        titleTemplate="FRANCHISE"
+        description="The Ultimste Tile Studio."
       />
             <LayoutOne headerTop="visible">
                 <Box

@@ -32,7 +32,7 @@ const NotFound = () => {
                     Sorry but the page you are looking for does not exist, have
                     been removed, name changed or is temporarity unavailable.
                   </p>
-                  <form className="searchform mb-50">
+                  {/* <form className="searchform mb-50">
                     <input
                       type="text"
                       name="search"
@@ -43,7 +43,7 @@ const NotFound = () => {
                     <button type="submit" className="searchform__submit">
                       <i className="fa fa-search" />
                     </button>
-                  </form>
+                  </form> */}
                   <Link to={process.env.PUBLIC_URL + "/"} className="error-btn">
                     Back to home page
                   </Link>

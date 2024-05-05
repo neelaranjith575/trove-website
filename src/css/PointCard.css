@@ -14,26 +14,26 @@
 }
 
 .heading {
-    font-size: 22px;
+    font-size: 23px;
     font-family: "Montserrat";
     opacity: 0.5;
     color: #000000;
 }
 .heading.active {
-    font-size: 22px;
+    font-size: 23px;
     font-family: "Montserrat";
     color: #000000;
     opacity: 1;
 }
 
 .description {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Montserrat";
     color: #000000;
     opacity: 0.5;
 }
 .description.active {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Montserrat";
     color: #000000;
     opacity: 1;
