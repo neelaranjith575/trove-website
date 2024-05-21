@@ -30,7 +30,7 @@ const Experience = () => {
                         justifyContent: "center",
                         overflow: "hidden",
                         height: { xs: "75vh", md: "120vh" },
-                        mt:-13
+                        mt:-13.5
                     }}
                 >
                     {" "}
@@ -64,7 +64,7 @@ const Experience = () => {
                             fontWeight={700}
                             sx={{ fontFamily: "Montserrat", fontSize: { xs: "30px", md: "100px" }, }}
                         >
-                            purpose
+                            Purpose
                         </Typography>
                     </Stack>
                 </Box>

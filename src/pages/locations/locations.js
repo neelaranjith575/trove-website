@@ -177,21 +177,21 @@ const Location = () => {
                 fontWeight: 500,
                 fontFamily: "Libre Baskerville",
                 textTransform:'uppercase',
-                ml:{xs:5,md:0},
-                textAlign: { xs: "center", md: "center", lg: "center" },
+                ml:{xs:3,md:-4},
+                textAlign: { xs: "left", md: "center", lg: "center" },
               }}
             >
               Find us near you
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={12} md={5} lg={6}>
+          {/* <Grid item xs={12} sm={12} md={5} lg={6}>
             <Stack
               direction="row"
               alignItems="center"
               justifyContent="flex-end"
             >
               <Grid item xs={12} sm={12} md={8} lg={6}>
-                <TextField
+                 <TextField
                   size="small"
                   placeholder="Search..."
                   value={searchTerm}
@@ -215,10 +215,10 @@ const Location = () => {
                     },
                     endAdornment: <SearchIcon sx={{ color: "#737373" }} />,
                   }}
-                />
+                /> 
               </Grid>
             </Stack>
-          </Grid>
+          </Grid> */}
         </Grid>
         {chunkedImages.map((chunk, index) => (
           <Grid
@@ -305,40 +305,47 @@ const MobileLayout = ({ item }) => (
         </Typography>
       </Grid>
 
-      <Grid item xs={6} sm={12} md={12}>
+      <Grid item xs={7} sm={12} md={12}>
         <Typography
           sx={{
             fontWeight: 400,
-            fontSize: "15px",
+            fontSize: "13px",
             lineHeight: "40.54px",
             color: "#1A1A1A",
             fontFamily: "Montserrat",
+            textDecoration:'none'
           }}
         >
           {item.phone}
         </Typography>
+        <a href={item?.link}  target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
         <Typography
           sx={{
             fontWeight: 400,
-            fontSize: "15px",
+            fontSize: "13px",
             lineHeight: "40.54px",
             color: "#1A1A1A",
             fontFamily: "Montserrat",
+            textDecoration:'none'
           }}
         >
           {item.email}
         </Typography>
+        </a>
+        <a href={item?.link}  target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
         <Typography
           sx={{
             fontWeight: 400,
-            fontSize: "15px",
+            fontSize: "13px",
             lineHeight: "40.54px",
             color: "#1A1A1A",
             fontFamily: "Montserrat",
+            textDecoration:'none'
           }}
         >
           {item.address}
         </Typography>
+        </a>
       </Grid>
     </Grid>
 
@@ -458,7 +465,8 @@ const DesktopLayout = ({ item }) => (
       >
         {item.phone}
       </Typography>
-      <a href={`mailto:${item?.email}`}  target="_blank" rel="noreferrer">
+      <a href={`mailto:${item?.email}`}  target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
+
       <Typography
         sx={{
           fontWeight: 400,
@@ -471,7 +479,7 @@ const DesktopLayout = ({ item }) => (
         {item.email}
       </Typography>
       </a>
-      <a href={item?.link}  target="_blank" rel="noreferrer">
+      <a href={item?.link}  target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
       <Typography
         sx={{
           fontWeight: 400,

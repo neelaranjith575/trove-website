@@ -39,9 +39,9 @@ const SliderTwo = () => {
             <Box sx={{ }}>
                 <Carousel showDots={false} arrows={false} responsive={responsive}
                 autoPlay={true} // Enable auto-loop
-                autoPlaySpeed={1500} // Set auto-loop speed in milliseconds (optional)
+                autoPlaySpeed={3000} // Set auto-loop speed in milliseconds (optional)
                 infinite={true} // Enable infinite loop
-                transitionDuration={500} 
+                transitionDuration={2000} 
                 >
                     {banners.map((banner) => (
                         <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{ width:'100%', height: "300px" }} />

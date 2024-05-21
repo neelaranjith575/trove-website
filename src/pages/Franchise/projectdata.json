@@ -1,45 +1,38 @@
 [
     {
       "id": "1",
-      "image": "/assets/img/project/40.png",
-      "title": "Living Room",
-      "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
-      "link": "/shop-grid-standard"
+      "image": "/assets/img/project/CA.webp",
+      "title": "Corporate Auditorium",
+      "description": "Experience our elegantly designed auditorium, featuring a soothing palette of green, yellow, and beige, which creates a sophisticated and inspiring ambiance ideal for corporate gatherings and events.",
+      "link": "/"
     },
     {
       "id": "2",
-      "image": "/assets/img/project/39.png",
-      "title": "Drawing Room",
-      "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
-      "link": "/shop-grid-standard"
+      "image": "/assets/img/project/WLF.webp",
+      "title": "Waiting Lounge Flooring",
+      "description": "Discover our creatively designed flooring in the waiting lounge, showcasing circular tiles with eye-catching contrasting inserts, blending modernity with artistic flair to enhance any commercial space.",
+      "link": "/"
     },
     {
       "id": "3",
-      "image": "/assets/img/project/38.png",
-      "title": "Dining Room",
-      "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
-      "link": "/shop-grid-standard"
+      "image": "/assets/img/project/ASB.webp",
+      "title": "Athangudi Style Balcony",
+      "description": "Step out onto our vibrant Athangudi-style balcony, where the classic combination of blue and brown tiles offers a lively and inviting atmosphere, perfect for enjoying outdoor moments.",
+      "link": "/"
     },
     {
       "id": "4",
-      "image": "/assets/img/project/40.png",
-      "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
-      "title": "Drawing Room",
-      "link": "/shop-grid-standard"
+      "image": "/assets/img/project/SCR.webp",
+      "description": "Admire the exquisitely personalized wall mural at 'Coast II Coast,' Bengaluru's esteemed seafood restaurant chain, which stands as the captivating centerpiece, enriching the gastronomic journey for every diner.",
+      "title": "Seafood Cuisine Restaurant",
+      "link": "/"
     },
     {
       "id": "5",
-      "image": "/assets/img/project/39.png",
-      "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
-      "title": "Living Room",
-      "link": "/shop-grid-standard"
-    },
-    {
-      "id": "5",
-      "image": "/assets/img/project/38.png",
-      "description": "Lorem ipsum dolor sit amet consectetur. In facilisis aliquam ut cursus magna tristique morbi faucibus volutpat. Vehicula eu augue nam est aliquam",
-      "title": "Bed Room",
-      "link": "/shop-grid-standard"
+      "image": "/assets/img/project/CH.webp",
+      "description": "Explore our stunningly designed convention hall, inspired by the opulent and intricate architectural elements of Morocco, creating a majestic and unforgettable venue for significant events and gatherings.",
+      "title": "Convention Hall",
+      "link": "/"
     }
   ]
   

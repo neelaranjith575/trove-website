@@ -56,7 +56,7 @@ const Content = () => {
                   <Typography
                     sx={{
                       color: "#1A1A1A",
-                      fontSize: { xs: "28px", md: "48px" },
+                      fontSize: { xs: "28px", md: "45px" },
                       fontFamily: "Libre Baskerville",
                       textTransform: "uppercase",
                       textAlign: { xs: "center", md: "left" },

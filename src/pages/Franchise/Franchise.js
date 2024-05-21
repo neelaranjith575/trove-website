@@ -27,6 +27,7 @@ const Franchise = () => {
             justifyContent: "center",
             overflow: "hidden",
             height: { xs: "75vh", md: "120vh" },
+            mt:-13.5
           }}
         >
           {" "}
@@ -46,7 +47,7 @@ const Franchise = () => {
                 textAlign: { xs: "center", md: "center" },
               }}
             >
-              Join
+              Experience
             </Typography>
             <Typography
               color="#FACE4E"
@@ -56,7 +57,7 @@ const Franchise = () => {
                 fontSize: { xs: "30px", md: "100px" },
               }}
             >
-              the
+               the
             </Typography>
             <Typography
               color="#FACE4E"
@@ -66,25 +67,25 @@ const Franchise = () => {
                 fontSize: { xs: "30px", md: "100px" },
               }}
             >
-              purpose
+               Excellence
             </Typography>
           </Stack>
         </Box>
 
         <ExperienceContent />
         <IconBackground
-          spaceTopClass="pt-100"
-          spaceBottomClass="pb-70"
+          spaceTopClass="pt-150"
+          spaceBottomClass="pb-150"
           bgClass="background-image"
         />
-        <ProjectSlider spaceTopClass="pt-100" />
-        <LogoSlider spaceTopClass="pt-50"
+        <ProjectSlider spaceTopClass="pt-100" spaceBottomClass="pb-100"/>
+        <LogoSlider spaceBottomClass="pb-100"  spaceTopClass="pt-100"
            />
           {/* <LogoSlider 
           spaceBottomClass="pb-50" /> */}
         <TestimonialOne
           spaceTopClass="pt-100"
-          spaceBottomClass="pb-95"
+          spaceBottomClass="pb-100"
           bgColorClass="bg-gray-3"
         />
         

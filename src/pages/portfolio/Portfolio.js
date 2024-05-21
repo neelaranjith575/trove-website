@@ -101,7 +101,7 @@ export default function StandardImageList() {
       </Typography>
       <ImageList cols={2}>
         {itemData.map((item) => (
-          <a key={item.img} href={item.href} target="_blank" rel="noopener noreferrer">
+          <a key={item.img} href={item.href} target='_blank' rel="noopener noreferrer">
             {/* Wrap the ImageListItem with a tag */}
             <ImageListItem sx={{ m: 1 }}>
               <img
@@ -164,91 +164,91 @@ const itemData = [
   {
     img: '/assets/img/image-slider/image1.webp',
     title: 'FACADE',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image2.webp',
     title: 'STAIRCASE WALL',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image3.webp',
     title: 'GARDEN PATH',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image4.webp',
     title: 'LIVING ROOM',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image5.webp',
     title: 'SHOWER AREA',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image6.webp',
     title: 'SWIMMING POOL',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image7.webp',
     title: 'DINING AREA',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image8.webp',
     title: 'KITCHEN',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image9.webp',
     title: 'HEADBOARDS',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image10.webp',
     title: 'VANITY WALL',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image11.webp',
     title: 'PARKING AREA',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image12.webp',
     title: 'BALCONY',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image13.webp',
     title: 'TABLE TOP',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image14.webp',
     title: 'CEILING MURAL',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image15.webp',
     title: 'WALL FRAMES',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image16.webp',
     title: '3D TILES',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image17.webp',
     title: 'JAALI TILES',
-    href: '/link-to-facade',
+    href: '#',
   },
   {
     img: '/assets/img/image-slider/image18.webp',
     title: 'STAIRCASE DECORATOR',
-    href: '/link-to-facade',
+    href: '#',
   },
 ];

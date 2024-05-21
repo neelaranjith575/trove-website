@@ -4,6 +4,7 @@ import { ReactComponent as ArrowIcon } from "./../../assets/icons/svg/Group 52.s
 import SliderOne from "./Slider1";
 import SliderTwo from "./Slider2";
 import SliderThree from "./Slider3";
+import { Link } from 'react-router-dom';
 
 
 const Features = () => {
@@ -84,6 +85,7 @@ const Features = () => {
         PROFOUND EXPERTISE
       </Typography>
       <SliderTwo />
+      <Link to="/experience" style={{ textDecoration: 'none' }}>
       <Button
         fullWidth
         variant="contained"
@@ -103,6 +105,7 @@ const Features = () => {
       >
         Start Building
       </Button>
+      </Link>
     </Grid>
     <Grid item xs={4}>
       <SliderThree />
@@ -236,6 +239,7 @@ const Features = () => {
       >
         WE CREATE IT
       </Typography>
+      <Link to="/experience" style={{ textDecoration: 'none' }}>
       <Button
         fullWidth
         variant="contained"
@@ -255,6 +259,7 @@ const Features = () => {
       >
         Start Building
       </Button>
+      </Link>
     </Grid>
   </Grid>
 </Box>

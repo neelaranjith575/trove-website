@@ -28,8 +28,8 @@ const Footer = (sideMenu) => {
 
                 {Isfranchise ? (
                     <Stack pl={10} pr={10} sx={{ textAlign: 'center', direction: 'row' }}>
-                        <Paper sx={{ backgroundColor: 'black', textAlign: 'center', borderRadius: '0px', boxShadow: 'none', p: 5, display: "flex", justifyContent: 'space-between' }}>
-                            <Typography sx={{ fontSize: '35px', color: '#ffffff', fontFamily: "Libre Baskerville", fontWeight: 500, textTransform:'uppercase' }}>Building something ?</Typography>
+                        {/* <Paper sx={{ backgroundColor: 'black', textAlign: 'center', borderRadius: '0px', boxShadow: 'none', p: 5, display: "flex", justifyContent: 'space-between' }}>
+                            <Typography sx={{ fontSize: '35px', color: '#ffffff', fontFamily: "Libre Baskerville", fontWeight: 500, textTransform:'uppercase' }}>WANT TO EXPLORE THE OPPORTUNITY?</Typography>
                             <Button
                                 variant="contained"
                                 sx={{
@@ -47,6 +47,36 @@ const Footer = (sideMenu) => {
                             >
                                 GET STARTED
                                 <ArrowIcon sx={{ color: "black",ml:2  }} />
+                            </Button>
+                        </Paper> */}
+                        <Paper sx={{ backgroundColor: 'black', textAlign: 'center', borderRadius: '0px', boxShadow: 'none', p: 5 }}>
+                            <Typography sx={{ fontSize: '35px', color: '#ffffff', fontFamily: "Libre Baskerville", fontWeight: 500 }}>
+                            WANT TO EXPLORE THE OPPORTUNITY?</Typography>
+                            
+                            {/* <a href="/locations" >
+                            <Typography sx={{ fontSize: '18px', color: '#ffffff', fontFamily: 'Montserrat' }}>Find your nearest Trove <ArrowIcon1 sx={{ color: "white" }} /> </Typography>
+                            </a> */}
+                            <Button
+                                // variant="contained"
+                                sx={{
+                                    backgroundColor: "#000000",
+                                    borderRadius: "0px",
+                                    color: '#ffffff',
+                                    fontSize: "18px",
+                                    fontFamily: 'Montserrat',
+                                    textTransform:'capitalize', 
+                                    fontWeight:'normal',
+                                    border:'none',
+                                    "&:hover": {
+                                        backgroundColor: "#000000",
+                                        color:'#ffffff',
+                                        border:'none',
+                                    },
+                                }}
+                            >
+                                GET STARTED
+                                {/* <ArrowIcon sx={{ color: "white", }} /> */}
+                                <ArrowIcon1 sx={{ color: "#ffffff",ml:2  }} />
                             </Button>
                         </Paper>
                     </Stack>
@@ -67,7 +97,7 @@ const Footer = (sideMenu) => {
                                     color: '#ffffff',
                                     fontSize: "18px",
                                     fontFamily: 'Montserrat',
-                                    textTransform:'capitalize', 
+                                    textTransform:'upperCase', 
                                     fontWeight:'normal',
                                     border:'none',
                                     "&:hover": {
@@ -179,11 +209,10 @@ const Footer = (sideMenu) => {
             {/* Mobile Version */}
 
             <Box sx={{ pt: 5, display: { xs: "block", md: 'none' } }}>
-
                 {Isfranchise ? (
                     <Stack pl={5} pr={5} sx={{ textAlign: 'center', }}>
                         <Paper sx={{ backgroundColor: 'black', textAlign: 'center', borderRadius: '0px', boxShadow: 'none', p: 3, }}>
-                            <Typography sx={{ fontSize: '20px', color: '#ffffff', fontFamily: "Libre Baskerville", fontWeight: 500, textTransform:'uppercase' }}>Building something ?</Typography>
+                            <Typography sx={{ fontSize: '16px', color: '#ffffff', fontFamily: "Libre Baskerville", fontWeight: 500, textTransform:'uppercase' }}>WANT TO EXPLORE THE OPPORTUNITY?</Typography>
                             <Button
                                 variant="contained"
                                 sx={{
@@ -191,6 +220,7 @@ const Footer = (sideMenu) => {
                                     borderRadius: "0px",
                                     color: '#000000',
                                     fontSize: "15px",
+                                    textTransform:'upperCase',
                                     fontFamily: "Libre Baskerville",
                                     mt:1,
                                     "&:hover": {
@@ -206,17 +236,22 @@ const Footer = (sideMenu) => {
                 ) : (
                     <Stack pl={5} pr={5} sx={{ textAlign: 'center' }}>
                         <Paper sx={{ backgroundColor: 'black', textAlign: 'center', borderRadius: '0px', boxShadow: 'none', p: 3 }}>
-                            <Typography sx={{ fontSize: '18px', color: '#ffffff', fontFamily: "Libre Baskerville", fontWeight: 500 }}>TAKE ONE STEP CLOSER TO YOUR DREAM HOME</Typography>
-                            <a href="/locations" >
+                            <Typography sx={{ fontSize: '16px', color: '#ffffff', fontFamily: "Libre Baskerville", fontWeight: 500 }}>TAKE ONE STEP CLOSER TO YOUR DREAM HOME</Typography>
+                            {/* <a href="/locations" >
                             <Typography sx={{ fontSize: '10px', color: '#ffffff', fontFamily: 'Montserrat' }}>Find your nearest Trove <ArrowIcon1 sx={{ color: "white" }} /> </Typography>
-                            </a>
+                            </a> */}
+                            <Link to="/locations" style={{
+                                    textDecoration: 'none', alignItems: 'center',
+                                    justifyContent: 'center',
+                                    display: 'flex'
+                                }}>
                             <Button
                                 variant="contained"
                                 sx={{
                                     backgroundColor: "#FFFFFF",
                                     borderRadius: "0px",
                                     color: '#000000',
-                                    fontSize: "15px",
+                                    fontSize: "11px",
                                     fontFamily: "Libre Baskerville",
                                     mt:1,
                                     "&:hover": {
@@ -225,8 +260,9 @@ const Footer = (sideMenu) => {
                                 }}
                             >
                                 Find your nearest Trove
-                                <ArrowIcon sx={{ color: "black", ml:2 }} />
+                                <ArrowIcon sx={{ color: "black", ml:2  , }} />
                             </Button>
+                            </Link>
                         </Paper>
                     </Stack>
                 )}

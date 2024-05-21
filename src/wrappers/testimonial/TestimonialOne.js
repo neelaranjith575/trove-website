@@ -3,12 +3,18 @@ import clsx from "clsx"
 import Swiper, { SwiperSlide } from "../../components/swiper";
 import testimonialData from "../../data/testimonial/testimonial-one.json";
 import TestimonialOneSingle from "../../components/testimonial/TestimonialOneSingle.js";
+import { Typography } from "@mui/material";
+import { Stack } from "@mui/system";
 
 // swiper slider settings
 const settings = {
   slidesPerView: 1,
   loop: true,
-  autoplay: true
+  autoplay: true,
+  speed: 5000,
+  
+  
+
 };
 
 const TestimonialOne = ({
@@ -24,7 +30,22 @@ const TestimonialOne = ({
       <div className="container">
         <div className="row">
           <div className="col-lg-10 mx-auto">
-            <div className="testimonial-active nav-style-1 nav-testi-style">
+          <Stack sx={{height:{xs:'800px', md:'550px'}}}>
+          <div className="testimonial-active nav-style-1 nav-testi-style" >
+        <Typography
+          sx={{
+            color: "#1A1A1A",
+            fontSize: { xs: "30px", md: "50px" },
+            fontFamily: 'Libre Baskerville',
+            textTransform: 'uppercase',
+            textAlign: "center",
+            pt:2,
+            pb:5
+          }}
+        >
+          CLIENT REVIEWS
+        </Typography>
+    
               {testimonialData && (
                 <Swiper options={settings}>
                   {testimonialData.map((single, key) => (
@@ -38,6 +59,7 @@ const TestimonialOne = ({
                 </Swiper>
               )}
             </div>
+            </Stack>
           </div>
         </div>
       </div>

@@ -25,6 +25,7 @@ body {
 .progressBar {
     position: sticky;
     top: 10vw;
+    margin-top: 20vh;
 }
 
 .slideSec {

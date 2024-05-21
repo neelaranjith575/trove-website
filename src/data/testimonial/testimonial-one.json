@@ -1,16 +1,65 @@
 [
   {
     "id": "1",
-    "image": "/assets/img/testimonial/testi-1.png",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "customerName": "Grace Alvarado",
+    "image": "/assets/img/testimonial/man.png",
+    "content": "We purchased all Bathroom and terrace tiles from here. They have a good collection of designer tiles and Mr. Pavan helped us with selecting all the tiles and was very patient and showed us all the options. During the tile laying process we had good support as well by providing design options. Overall the experience with Trove is very good and I would recommend them, as they have a good collections and the staff were very supportive during the selection and delivery.",
+    "customerName": "Pradul Kumar",
     "title": "customer"
   },
   {
     "id": "2",
-    "image": "/assets/img/testimonial/testi-1.png",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "customerName": "John Doe",
+    "image": "/assets/img/testimonial/girl.png",
+    "content": "If you are looking for a collection of unique tiles you should go to this place. The sales staff is simply amazing. They show you all the products with so much enthusiasm and courtesy. Even though we had finalized a tile but the sales person still showed us more tiles in the same range so that we can take an informed choice. Kudos to your team Trove. Keep up the good work. Lastly, they are highly professional. They delivered the tiles before the committed timeline. Thank Trove team..",
+    "customerName": "Tulika Agarwal",
+    "title": "customer"
+  },
+  {
+    "id": "3",
+    "image": "/assets/img/testimonial/girl.png",
+    "content": "Trove has the best collection of ceramics I have seen in the city.... a wide range of colours, designs, patterns for a variety of applications with the flexibility of choosing ones that fit your budget... their own craftsmanship of custom designed tiles are excellent too... sky is the limit! Special shout out to Sandya, who was with us through the selection process, procurement and dispatch. She made sure she communicated every step of the way and deliver as committed. Glitches happen just like in any other place but she was quick to correct it and make it right.",
+    "customerName": "Suma Raj",
+    "title": "customer"
+  },
+  {
+    "id": "4",
+    "image": "/assets/img/testimonial/man.png",
+    "content": "Long story short! The best place to buy tiles for your dream home! I came across with Gulecha from one of my friend. I visited the shop once and manager called Nagendra who started assisting us with selection. We have visited multiple times before even making the payment. Buy Nagendra never Lost interest or shown disinterest towards us. Tiles quality is good! But the after sales service is the best! Nagendra helped us till the end. Many times when we had short of one r two tiles he has immediately responded well.Tiles packing was also very good! Total experience was great! Loved the service and item!",
+    "customerName": "Narasimha Prasad",
+    "title": "customer"
+  },
+  {
+    "id": "5",
+    "image": "/assets/img/testimonial/man.png",
+    "content": "This place is a real treasure trove for tile hunters...you get evey kind, design, shapes and colors of choices in tiles... Updated collections are always showcased. You have in-house designers to help you. Very well behaved and helping staff with lots of courtesy. Ms. Pavitra coordinated so dedicatedly and given us all informations, and with lot of patience she showcased all varieties again and again, coordinated with management and given us custom solutions...really she she is an asset for the company, this kind of her behaviour we recommended many of friends and we feel positive to approach again. Great place, Great Service, Great Collection, boon for home 🏠makers, Keep it up all the best🌻",
+    "customerName": "Kishore",
+    "title": "customer"
+  },
+  {
+    "id": "6",
+    "image": "/assets/img/testimonial/girl.png",
+    "content": "Superb collection...perfectly explained and guided by Mr.chiraag...suberbly executed ..overall very very satisfying",
+    "customerName": "Durriya Partapuri",
+    "title": "customer"
+  },
+  {
+    "id": "7",
+    "image": "/assets/img/testimonial/man.png",
+    "content": "We got all our tiles from here. We've gone a million times and the guys at the store are always so considerate and patient. Love the experience, and love the collection they have.",
+    "customerName": "Gopika Varma",
+    "title": "customer"
+  },
+  {
+    "id": "8",
+    "image": "/assets/img/testimonial/man.png",
+    "content": "They have a wonderful collection of wall, floor, bathroom picollo, and designer tiles for every conceivable space in your house. Their designs are very different from Kajaria and the collection of Moroccon tiles is superb. Do pay a visit to this place of you are tile shopping.",
+    "customerName": "Thangam Venky",
+    "title": "customer"
+  },
+  {
+    "id": "9",
+    "image": "/assets/img/testimonial/man.png",
+    "content": "They have a wide range of tiles. Did not have problem with parking as they have their own parking space. Excellent ambience for tile selection along with neat display of products. What I liked about this place is their sensitivity towards our requirement and their ability to match it. Would definitely go back for my future requirements too.",
+    "customerName": "Suvin Abraham Cherian",
     "title": "customer"
   }
 ]

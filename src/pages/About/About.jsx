@@ -55,21 +55,9 @@ const About = () => {
   return (
     <>
       <Box sx={{ pb: 5 }}>
-        <div className="page">
-          <div style={{ width: 450, height: 550 }} className="progressBar">
-            <Typography
-              sx={{
-                fontSize: "45px",
-                color: "#1A1A1A",
-                fontFamily: "Libre Baskerville",
-                fontWeight: 500,
-                textTransform: "uppercase",
-                // ml: 5,
-                mb: 5,
-              }}
-            >
-              why trove?
-            </Typography>
+      
+           <div className="page">
+          <div style={{ width: 450, height: 500 }} className="progressBar"> 
             <CircularProgressbar
               value={(activeStep / totalSteps) * 100}
               text={`${activeStep}/${totalSteps}`}
@@ -87,6 +75,27 @@ const About = () => {
           </div>
 
           <div className="slideSec">
+          <Typography
+               sx={{
+                position: 'sticky',
+                top: 75,
+                zIndex: 1000,
+                fontSize: {xs:"30", md:"50px"},
+                color: "#1A1A1A",
+                fontFamily: "Libre Baskerville",
+                fontWeight: 500,
+                textTransform: "uppercase",
+                ml: -5,
+                mb: 5,
+                pt:2,
+                // pb:5,
+                backgroundColor: 'white', // Add background color if needed
+                //padding: '10px', // Add padding if needed
+                // boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.1)', // Add box shadow if needed
+              }}
+            >
+              WHY CHOOSE TROVE?
+            </Typography>
             {Object.keys(data).map((key, index) => (
               <div className="pointCard" key={key}>
                 <PointCard

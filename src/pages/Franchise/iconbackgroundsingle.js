@@ -28,6 +28,7 @@ const IconBackgroundSingle = ({ data, spaceBottomClass, textAlignClass }) => {
           </VisibilitySensor>
           +
         </h2>
+        {/* <h2 className="count" style={{fontFamily:'Montserrat', fontSize:'35px', fontWeight:500, color:'#ffffff' }}>{data.numbers}</h2> */}
         <span style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:500}}>{data.title1}</span><br/>
         <span style={{fontFamily:'Montserrat', fontSize:'15px', fontWeight:500}}>{data.title2}</span>
       </div>
