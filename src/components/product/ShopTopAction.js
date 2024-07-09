@@ -11,7 +11,7 @@ const ShopTopAction = ({
   return (
     <div className="shop-top-bar mb-35">
       <div className="select-shoing-wrap">
-        <div className="shop-select">
+        {/* <div className="shop-select">
           <select
             onChange={e => getFilterSortParams("filterSort", e.target.value)}
           >
@@ -19,21 +19,21 @@ const ShopTopAction = ({
             <option value="priceHighToLow">Price - High to Low</option>
             <option value="priceLowToHigh">Price - Low to High</option>
           </select>
-        </div>
+        </div> */}
         <p>
           Showing {sortedProductCount} of {productCount} result
         </p>
       </div>
 
       <div className="shop-tab">
-        <button
+        {/* <button
           onClick={e => {
             getLayout("grid two-column");
             setActiveLayout(e);
           }}
         >
           <i className="fa fa-th-large" />
-        </button>
+        </button> */}
         <button
           onClick={e => {
             getLayout("grid three-column");

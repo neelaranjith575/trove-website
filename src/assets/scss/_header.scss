@@ -33,7 +33,6 @@
     display: none;
     @media #{$md-layout} {
       display: block;
-      
     }
     @media #{$xs-layout} {
       display: block;
@@ -83,15 +82,12 @@
 .header-res-padding {
   @media #{$md-layout} {
     padding: 20px 0 15px;
-    
   }
   @media #{$xs-layout} {
     padding: 20px 0 15px;
   }
 }
 .logo {
- 
-  
   @media #{$md-layout} {
     margin-top: 0;
   }
@@ -149,7 +145,7 @@
     ul {
       display: block;
       // margin-top: -5px;
-      text-align: end;
+      text-align: left;
       li {
         position: relative;
         display: inline-block;
@@ -351,12 +347,12 @@
         }
         > a {
           font-size: 15px;
-          font-family:'Montserrat';
+          font-family: "Montserrat";
           font-weight: 700;
           line-height: 94px;
           display: inline-block;
           letter-spacing: 0.8px;
-          color: #1A1A1A;
+          color: #1a1a1a;
           padding-left: 20px;
           i {
             font-size: 15px;
@@ -366,10 +362,10 @@
 
             margin-left: 1px;
           }
-          @media #{$lg-layout}{
+          @media #{$lg-layout} {
             font-size: 12px;
           }
-          @media #{$xl-layout}{
+          @media #{$xl-layout} {
             font-size: 13px;
           }
         }
@@ -424,7 +420,6 @@
   @media #{$xs-layout} {
     margin-top: 15px;
     justify-content: end;
-
   }
   @media #{$md-layout} {
     margin-top: 0;
@@ -452,18 +447,14 @@
   }
   @media #{$md-layout} {
     top: 100%;
-
     margin-top: 14px;
   }
 }
 
-
-
-
-
 .header-right-wrap {
   display: flex;
-  // justify-content: flex-end;
+  justify-content: center;
+  margin-left: 30px;
 
   // margin-top: 32px;
   @media #{$md-layout} {
@@ -961,7 +952,6 @@
   }
 }
 
-
 /* header 3 */
 
 .header-padding-2 .container-fluid {
@@ -1291,8 +1281,6 @@
   }
 }
 
-
-
 .sidebar-menu {
   padding: 0 0 0 108px;
   @media #{$xx-layout} {
@@ -1558,7 +1546,6 @@
   }
 }
 
-
 .header-hm4-none {
   display: none;
   @media #{$xs-layout} {
@@ -1568,7 +1555,6 @@
     display: block;
   }
 }
-
 
 /* home 5 */
 
@@ -1607,8 +1593,6 @@
     padding: 0 15px;
   }
 }
-
-
 
 /* home 7 */
 
@@ -1791,8 +1775,6 @@
   }
 }
 
-
-
 .header-hm-7.stick {
   .clickable-menu {
     margin-top: 19px;
@@ -1869,7 +1851,6 @@
   }
 }
 
-
 /* home 8 */
 
 .header-hm8 {
@@ -1942,10 +1923,10 @@
   }
   .logo {
     @media #{$md-layout} {
-      text-align: left!important;
+      text-align: left !important;
     }
     @media #{$xs-layout} {
-      text-align: left!important;
+      text-align: left !important;
     }
   }
 }
@@ -1966,8 +1947,6 @@
 }
 
 /* home 9 */
-
-
 
 .header-hm9 {
   .main-menu {
@@ -2032,7 +2011,6 @@
   }
 }
 
-
 /* header hm10 */
 
 @media #{$sm-layout} {
@@ -2054,7 +2032,6 @@
   }
 }
 
-
 @media #{$xs-layout} {
   .header-hm9 {
     .header-right-wrap {
@@ -2069,13 +2046,9 @@
   }
 }
 
-
 .mobile-aside-button {
   padding: 0;
 }
-
-
-
 
 /* offcanvas mobile menu */
 
@@ -2146,7 +2119,6 @@
   transition: 0.6s;
   transform: translateX(100%);
 
-
   &.active {
     transform: translateX(0);
   }
@@ -2174,7 +2146,6 @@
   color: #fff;
   border: none;
   background: #343538;
-
 
   // @media #{$sm-layout}{
   //     width: 50px;
@@ -2350,7 +2321,6 @@
         text-transform: uppercase;
       }
 
-
       &.menu-item-has-children {
         position: relative;
 
@@ -2469,7 +2439,6 @@
   }
 }
 
-
 .transparent-bar {
   position: absolute;
   z-index: 999;
@@ -2489,7 +2458,6 @@
   }
 }
 
-
 .mobile-menu-middle {
   margin-bottom: 50px;
   .lang-curr-style {
@@ -2501,7 +2469,6 @@
       border: none;
       background: none;
     }
-
 
     .title {
       font-weight: 500;
@@ -2529,10 +2496,14 @@
   }
 }
 
-.home-sidebar-left .header-right-wrap .same-style.cart-wrap .shopping-cart-content ul{
+.home-sidebar-left
+  .header-right-wrap
+  .same-style.cart-wrap
+  .shopping-cart-content
+  ul {
   &::-webkit-scrollbar {
     display: none;
   }
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }

@@ -1,19 +1,14 @@
 import PropTypes from "prop-types";
-import { Fragment, useState } from "react";
-import { useDispatch } from "react-redux";
+import { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 import { getDiscountPrice } from "../../helpers/product";
-import Rating from "./sub-components/ProductRating";
 import ProductModal from "./ProductModal";
-import { addToCart } from "../../store/slices/cart-slice";
-import { addToWishlist } from "../../store/slices/wishlist-slice";
-import { addToCompare } from "../../store/slices/compare-slice";
+import axios from 'axios';
 
 const ProductGridListSingle = ({
   product,
   currency,
-  cartItem,
   wishlistItem,
   compareItem,
   spaceBottomClass
@@ -24,7 +19,59 @@ const ProductGridListSingle = ({
   const finalDiscountedPrice = +(
     discountedPrice * currency.currencyRate
   ).toFixed(2);
-  const dispatch = useDispatch();
+
+
+  const [products, setProducts] = useState([]);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
+
+
+  const API_BASE_URL="http://tiipl.sixorbit.com/?urlq=service&version=1.0&key=123&task=variation/fetch&user_id=410001927&access_token=6774974255325507588&last_updated&limit=0&searchtext&limit_bit=1&default_limit=100"
+
+  const fetchProducts = async () => {
+    setLoading(true);
+    try {
+      const response = await axios.get(
+        `${API_BASE_URL}`
+      );
+
+      console.log("API Response:", response); // Log the full response
+
+      if (response.data && response.data.data && response.data.data.variations) {
+        const fetchedProducts = response.data.data.variations;
+
+        // Log category and brand for each product
+        fetchedProducts.forEach(product => {
+          console.log(`Category: ${product.category}, Brand: ${product.brand}`);
+        });
+
+        setProducts(prevProducts => [...prevProducts, ...fetchedProducts]);
+        setHasMore(fetchedProducts.length > 0);
+      } else {
+        console.error("Invalid response structure:", response);
+        setHasMore(false);
+      }
+      setLoading(false);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, [page]);
+
+  const handleScroll = () => {
+    if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight || loading || !hasMore) return;
+    setPage(prevPage => prevPage + 1);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [loading, hasMore]);
 
   return (
     <Fragment>
@@ -46,105 +93,28 @@ const ProductGridListSingle = ({
                 ""
               )}
             </Link>
-            {product.discount || product.new ? (
-              <div className="product-img-badges">
-                {product.discount ? (
-                  <span className="pink">-{product.discount}%</span>
-                ) : (
-                  ""
-                )}
-                {product.new ? <span className="purple">New</span> : ""}
-              </div>
-            ) : (
-              ""
-            )}
+           
 
             <div className="product-action">
               <div className="pro-same-action pro-wishlist">
-                <button
-                  className={wishlistItem !== undefined ? "active" : ""}
-                  disabled={wishlistItem !== undefined}
-                  title={
-                    wishlistItem !== undefined
-                      ? "Added to wishlist"
-                      : "Add to wishlist"
-                  }
-                  onClick={() => dispatch(addToWishlist(product))}
-                >
-                  <i className="pe-7s-like" />
-                </button>
               </div>
               <div className="pro-same-action pro-cart">
-                {product.affiliateLink ? (
-                  <a
-                    href={product.affiliateLink}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {" "}
-                    Buy now{" "}
-                  </a>
-                ) : product.variation && product.variation.length >= 1 ? (
-                  <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}>
-                    Select Option
+                <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}>
+                   View Product
                   </Link>
-                ) : product.stock && product.stock > 0 ? (
-                  <button
-                    onClick={() => dispatch(addToCart(product))}
-                    className={
-                      cartItem !== undefined && cartItem.quantity > 0
-                        ? "active"
-                        : ""
-                    }
-                    disabled={cartItem !== undefined && cartItem.quantity > 0}
-                    title={
-                      cartItem !== undefined ? "Added to cart" : "Add to cart"
-                    }
-                  >
-                    {" "}
-                    <i className="pe-7s-cart"></i>{" "}
-                    {cartItem !== undefined && cartItem.quantity > 0
-                      ? "Added"
-                      : "Add to cart"}
-                  </button>
-                ) : (
-                  <button disabled className="active">
-                    Out of Stock
-                  </button>
-                )}
               </div>
               <div className="pro-same-action pro-quickview">
-                <button onClick={() => setModalShow(true)} title="Quick View">
-                  <i className="pe-7s-look" />
-                </button>
               </div>
             </div>
           </div>
+        
           <div className="product-content text-center">
+          {products.slice(0, 9).map(product => (
             <h3>
-              <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>
-                {product.name}
-              </Link>
+                {product?.brand}  
             </h3>
-            {product.rating && product.rating > 0 ? (
-              <div className="product-rating">
-                <Rating ratingValue={product.rating} />
-              </div>
-            ) : (
-              ""
-            )}
-            <div className="product-price">
-              {discountedPrice !== null ? (
-                <Fragment>
-                  <span>{currency.currencySymbol + finalDiscountedPrice}</span>{" "}
-                  <span className="old">
-                    {currency.currencySymbol + finalProductPrice}
-                  </span>
-                </Fragment>
-              ) : (
-                <span>{currency.currencySymbol + finalProductPrice} </span>
-              )}
-            </div>
+          ))}
+            
           </div>
         </div>
         <div className="shop-list-wrap mb-30">
@@ -168,18 +138,7 @@ const ProductGridListSingle = ({
                       ""
                     )}
                   </Link>
-                  {product.discount || product.new ? (
-                    <div className="product-img-badges">
-                      {product.discount ? (
-                        <span className="pink">-{product.discount}%</span>
-                      ) : (
-                        ""
-                      )}
-                      {product.new ? <span className="purple">New</span> : ""}
-                    </div>
-                  ) : (
-                    ""
-                  )}
+                  
                 </div>
               </div>
             </div>
@@ -190,29 +149,9 @@ const ProductGridListSingle = ({
                     {product.name}
                   </Link>
                 </h3>
-                <div className="product-list-price">
-                  {discountedPrice !== null ? (
-                    <Fragment>
-                      <span>
-                        {currency.currencySymbol + finalDiscountedPrice}
-                      </span>{" "}
-                      <span className="old">
-                        {currency.currencySymbol + finalProductPrice}
-                      </span>
-                    </Fragment>
-                  ) : (
-                    <span>{currency.currencySymbol + finalProductPrice} </span>
-                  )}
-                </div>
-                {product.rating && product.rating > 0 ? (
-                  <div className="rating-review">
-                    <div className="product-list-rating">
-                      <Rating ratingValue={product.rating} />
-                    </div>
-                  </div>
-                ) : (
-                  ""
-                )}
+               
+                
+
                 {product.shortDescription ? (
                   <p>{product.shortDescription}</p>
                 ) : (
@@ -221,78 +160,17 @@ const ProductGridListSingle = ({
 
                 <div className="shop-list-actions d-flex align-items-center">
                   <div className="shop-list-btn btn-hover">
-                    {product.affiliateLink ? (
-                      <a
-                        href={product.affiliateLink}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        {" "}
-                        Buy now{" "}
-                      </a>
-                    ) : product.variation && product.variation.length >= 1 ? (
-                      <Link
+                    <Link
                         to={`${process.env.PUBLIC_URL}/product/${product.id}`}
                       >
-                        Select Option
+                        View Product
                       </Link>
-                    ) : product.stock && product.stock > 0 ? (
-                      <button
-                        onClick={() => dispatch(addToCart(product))}
-                        className={
-                          cartItem !== undefined && cartItem.quantity > 0
-                            ? "active"
-                            : ""
-                        }
-                        disabled={
-                          cartItem !== undefined && cartItem.quantity > 0
-                        }
-                        title={
-                          cartItem !== undefined
-                            ? "Added to cart"
-                            : "Add to cart"
-                        }
-                      >
-                        {" "}
-                        <i className="pe-7s-cart"></i>{" "}
-                        {cartItem !== undefined && cartItem.quantity > 0
-                          ? "Added"
-                          : "Add to cart"}
-                      </button>
-                    ) : (
-                      <button disabled className="active">
-                        Out of Stock
-                      </button>
-                    )}
                   </div>
 
                   <div className="shop-list-wishlist ml-10">
-                    <button
-                      className={wishlistItem !== undefined ? "active" : ""}
-                      disabled={wishlistItem !== undefined}
-                      title={
-                        wishlistItem !== undefined
-                          ? "Added to wishlist"
-                          : "Add to wishlist"
-                      }
-                      onClick={() => dispatch(addToWishlist(product))}
-                    >
-                      <i className="pe-7s-like" />
-                    </button>
                   </div>
                   <div className="shop-list-compare ml-10">
-                    <button
-                      className={compareItem !== undefined ? "active" : ""}
-                      disabled={compareItem !== undefined}
-                      title={
-                        compareItem !== undefined
-                          ? "Added to compare"
-                          : "Add to compare"
-                      }
-                      onClick={() => dispatch(addToCompare(product))}
-                    >
-                      <i className="pe-7s-shuffle" />
-                    </button>
+                    
                   </div>
                 </div>
               </div>

@@ -1,0 +1,23 @@
+.product-anotherinfo-wrapper ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; 
+    list-style: none; 
+    padding: 0; 
+}
+
+.product-anotherinfo-wrapper li {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px; 
+}
+
+.products-des{
+    /* display: flex; */
+    background-color: ghostwhite;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

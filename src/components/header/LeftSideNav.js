@@ -5,12 +5,12 @@ import clsx from "clsx";
 
 const LeftSideNav = ({ menuWhiteClass, sidebarMenu }) => {
   const { t } = useTranslation();
-  
+
   return (
     <div
       className={clsx(sidebarMenu
-          ? "sidebar-menu"
-          : `main-menu ${menuWhiteClass ? menuWhiteClass : ""}`)}
+        ? "sidebar-menu"
+        : `main-menu ${menuWhiteClass ? menuWhiteClass : ""}`)}
     >
       <nav>
         <ul>
@@ -255,9 +255,8 @@ const LeftSideNav = ({ menuWhiteClass, sidebarMenu }) => {
           </li>
 
           <li>
-            <Link to={process.env.PUBLIC_URL + "/franchise"}>
-              {" "}
-              {t("FRANCHISE")}
+            <Link to={process.env.PUBLIC_URL + "/all-products"}>
+              {t("PRODUCTS")}
               {/* {sidebarMenu ? (
                 <span>
                   <i className="fa fa-angle-right"></i>
@@ -266,6 +265,7 @@ const LeftSideNav = ({ menuWhiteClass, sidebarMenu }) => {
                 <i className="fa fa-angle-down" />
               )} */}
             </Link>
+
             {/* <ul className="mega-menu">
               <li>
                 <ul>
@@ -397,8 +397,9 @@ const LeftSideNav = ({ menuWhiteClass, sidebarMenu }) => {
             </ul> */}
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/experience"}>
-              {t("EXPERIENCE")}
+
+            <Link to={process.env.PUBLIC_URL + "/locations"}>
+              {t("LOCATIONS")}
             </Link>
           </li>
           {/* <li>
@@ -460,7 +461,7 @@ const LeftSideNav = ({ menuWhiteClass, sidebarMenu }) => {
               </li>
             </ul>
           </li> */}
-          
+
           {/* <li>
             <Link to={process.env.PUBLIC_URL + "/contact"}>
               {t("contact_us")}

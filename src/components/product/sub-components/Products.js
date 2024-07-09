@@ -11,7 +11,7 @@ const Products = (spaceBottomClass) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://tiipl.sixorbit.com/?urlq=service&version=1.0&key=123&task=variation/fetch&user_id=410001927&access_token=5435414542412619780&last_updated&limit=10&searchtext&limit_bit=0');
+        const response = await axios.get('http://tiipl.sixorbit.com/?urlq=service&version=1.0&key=123&task=variation/fetch&user_id=410001927&access_token=6774974255325507588&last_updated&limit=10&searchtext&limit_bit=0');
         setProductsList(response.data); 
         console.log(response, 'Productsss')
 

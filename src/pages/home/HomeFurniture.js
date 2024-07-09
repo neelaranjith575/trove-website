@@ -8,6 +8,7 @@ import Portofolio from "../portfolio/Portfolio";
 import HeroSliderEleven from "../../wrappers/hero-slider/HeroSliderEleven";
 import HomeSlider from "../../data/hero-sliders/homeSlider";
 import { Stack } from "@mui/material";
+// import ProductList from "../productss/ProductList.js"
 // import Products from "../../components/product/sub-components/Products"
 // import Slider from "./../../data/slider/slider"
 
@@ -42,6 +43,7 @@ const HomeFurniture = () => {
           bgImg="/assets/img/bg/bg-1.jpg"
           dateTime="November 13, 2023 12:12:00"
         /> */}
+
 
         {/* category section */}
         <Features  />

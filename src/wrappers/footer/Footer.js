@@ -88,6 +88,11 @@ const Footer = (sideMenu) => {
                             {/* <a href="/locations" >
                             <Typography sx={{ fontSize: '18px', color: '#ffffff', fontFamily: 'Montserrat' }}>Find your nearest Trove <ArrowIcon1 sx={{ color: "white" }} /> </Typography>
                             </a> */}
+                            <Link to="/locations" style={{
+                                    textDecoration: 'none', alignItems: 'center',
+                                    justifyContent: 'center',
+                                    display: 'flex'
+                                }}>
                             <Button
                                href="/locations" 
                                 // variant="outlined"
@@ -110,6 +115,7 @@ const Footer = (sideMenu) => {
                                 Find your nearest Trove
                                 <ArrowIcon1 sx={{ color: "#ffffff", pl:2 }} />
                             </Button>
+                            </Link>
                         </Paper>
                     </Stack>
                 )}

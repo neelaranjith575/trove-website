@@ -395,7 +395,7 @@ const MobileNavMenu = () => {
         </li> */}
         <li >
         {/* <li className="menu-item-has-children"> for sub Menu */} 
-          <Link to={process.env.PUBLIC_URL + "/hop-grid-standard"}>
+          <Link to={process.env.PUBLIC_URL + "/all-products"}>
             {t("PRODUCTS")}
           </Link>
           {/* <ul className="sub-menu">

@@ -58,13 +58,13 @@ const HeaderOne = ({
       >
         <div className={layout === "container-fluid" ? layout : "container"}>
           <div className="row">
-            <div className="col-xl-5 col-lg-5 d-none d-lg-block">
+            <div className="col-xl-5 col-lg-5 col-md-5 d-none d-lg-block">
               {/* Nav menu */}
               <LeftSideNav />
             </div>
-            <div className="col-xl-2 col-lg-2 col-md-6 col-4">
+            <div className="col-xl-2 col-lg-2 col-md-2 col-4" >
               {/* header logo */}
-              <Logo imageUrl="/assets/img/logo/Trovelogo.png" logoClass="logo"   />
+              <Logo imageUrl="/assets/img/logo/Trovelogo.png" logoClass="logo" style={{ marginLeft: '50px' }} />
               {/* <Link to="/" style={{
                 textDecoration: 'none', alignItems: 'center',
                 justifyContent: 'center',
@@ -74,11 +74,11 @@ const HeaderOne = ({
                   component="img"
                   src={require("../../assets/img/Logo/Trovelogo.png")}
                   alt=""
-                  sx={{ width: "80%" }}
+                  sx={{ width: "100%", mr: 8 }}
                 />
               </Link> */}
             </div>
-            <div className="col-xl-5 col-lg-5 col-md-6 col-8">
+            <div className="col-xl-5 col-lg-5 col-md-5 col-8">
               {/* Icon group */}
               <IconGroup />
 
