@@ -223,11 +223,11 @@ const MobileNavMenu = () => {
             </li>
           </ul> */}
         </li>
-        
+
 
         <li >
-          <Link to={process.env.PUBLIC_URL + "/experience"}>
-            {t("EXPERIENCE")}
+          <Link to={process.env.PUBLIC_URL + "/all-products"}>
+            {t("PRODUCTS")}
           </Link>
           {/* <ul className="sub-menu">
             <li className="menu-item-has-children">
@@ -339,11 +339,11 @@ const MobileNavMenu = () => {
           </ul> */}
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + "/franchise"}>
-            {t("FRANCHISE")}
+          <Link to={process.env.PUBLIC_URL + "/locations"}>
+            {t("LOCATIONS")}
           </Link>
         </li>
-         {/*<li >
+        {/*<li >
           <Link to={process.env.PUBLIC_URL + "/"}>{t("pages")}</Link>
            <ul className="sub-menu">
             <li>
@@ -394,9 +394,9 @@ const MobileNavMenu = () => {
           </ul> 
         </li> */}
         <li >
-        {/* <li className="menu-item-has-children"> for sub Menu */} 
-          <Link to={process.env.PUBLIC_URL + "/all-products"}>
-            {t("PRODUCTS")}
+          {/* <li className="menu-item-has-children"> for sub Menu */}
+          <Link to={process.env.PUBLIC_URL + "/experience"}>
+            {t("EXPERIENCE")}
           </Link>
           {/* <ul className="sub-menu">
             <li>
@@ -421,15 +421,15 @@ const MobileNavMenu = () => {
             </li>
           </ul> */}
         </li>
-        
+
         <li>
-          <Link to={process.env.PUBLIC_URL + "/contact"}>
-            {t("Careers")}
+          <Link to={process.env.PUBLIC_URL + "/franchise"}>
+            {t("FRANCHISE")}
           </Link>
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + "/locations"}>
-            {t("Location")}
+          <Link to={process.env.PUBLIC_URL + "/coming-soon"}>
+            {t("CAREERS")}
           </Link>
         </li>
       </ul>

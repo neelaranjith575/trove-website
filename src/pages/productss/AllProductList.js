@@ -1,12 +1,11 @@
 import React, { Fragment, useState, useEffect, useCallback } from 'react';
 import { Container, Grid, Typography, Pagination } from '@mui/material';
 import axios from 'axios';
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import clsx from "clsx";
 import SEO from "../../components/seo";
 import LayoutOne from '../../layouts/LayoutOne';
 import Breadcrumb from '../../wrappers/breadcrumb/Breadcrumb';
-import { useLocation } from "react-router-dom";
 import Loader from "./Loader";
 import { debounce } from 'lodash';
 
@@ -20,6 +19,7 @@ const ProductList = ({ spaceBottomClass }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const PRODUCTS_PER_PAGE = 100;
 
+  const navigate = useNavigate();
   const { pathname } = useLocation();
 
   const fetchProducts = useCallback(async () => {
@@ -44,6 +44,7 @@ const ProductList = ({ spaceBottomClass }) => {
 
   const handlePageChange = debounce((event, value) => {
     setPage(value);
+    navigate(`${pathname}?page=${value}`);
   }, 300);
 
   const handleSearchChange = (event) => {
@@ -95,18 +96,18 @@ const ProductList = ({ spaceBottomClass }) => {
           ]}
         />
         <Container>
-          <Grid container spacing={{ xs: 15, md: 15 }} display={'flex'} alignItems={'center'} sx={{ paddingTop: '30px' }} >
+          <Grid container spacing={{ xs: 10, md: 15 }} display={'flex'} alignItems={'center'} sx={{ paddingTop: '30px' }} >
             <Grid item xs={8} md={9}>
               <input
                 type="text"
-                placeholder="Search Products..."
+                placeholder="Search by Product Name or ID"
                 value={searchQuery}
                 onChange={handleSearchChange}
-                style={{ width: '100%', padding: '10px', fontSize: '16px', borderRadius: '30px' }}
+                style={{ width: '100%', padding: '10px', fontSize: '13px', borderRadius: '30px' }}
               />
             </Grid>
             <Grid item xs={4} md={3}>
-              <Typography sx={{ fontSize: '15px', fontFamily: 'Montserrat', fontWeight: 500 }}>{searchQuery ? filteredProducts.length : products?.length} Products</Typography>
+              <Typography sx={{ fontSize: { xs: '13px', md: '15px' }, fontFamily: 'Montserrat', fontWeight: 500 }}>{searchQuery ? filteredProducts.length : products?.length} ITEMS</Typography>
             </Grid>
           </Grid>
           {loading ? (
@@ -147,7 +148,7 @@ const ProductList = ({ spaceBottomClass }) => {
                         </div>
                       </div>
                       <Link to={`${process.env.PUBLIC_URL}/product/${product?.isvid}`}>
-                        <Typography sx={{ fontSize: '15px', fontFamily: 'Montserrat', fontWeight: 500, textTransform: 'capitalize', pt: 0.5 }}>{product?.item_name}</Typography>
+                        <Typography sx={{ fontSize: { xs: '12px', md: '15px' }, fontFamily: 'Montserrat', fontWeight: 500, textTransform: 'capitalize', pt: 0.5 }}>{product?.item_name}</Typography>
                       </Link>
                     </div>
                   </Grid>

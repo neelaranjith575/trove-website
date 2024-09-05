@@ -71,7 +71,7 @@ const ProductDetails = (spaceBottomClass) => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-6 col-md-6">
-                                        <div className="single-image" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <div className="single-image" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid grey' }}>
                                             <img
                                                 src={`https://tiipl.sixorbit.com/${productDetails.image}`} alt={productDetails.variation_name}
                                                 className="img-fluid"
@@ -98,7 +98,7 @@ const ProductDetails = (spaceBottomClass) => {
                                             <p style={{ fontFamily: 'Montserrat', fontSize: '15px' }}><strong>Size: </strong>{
                                                 productDetails?.attributes?.find(attr => attr.attr_name === "Size")?.attr_value
                                             } MM</p>
-                                            <p style={{ fontFamily: 'Montserrat', fontSize: '15px' }}><strong>Coverage:</strong> {productDetails?.measured_qty / 92903} {productDetails?.measured_unit} / {productDetails?.unit}</p >
+                                            <p style={{ fontFamily: 'Montserrat', fontSize: '15px' }}><strong>Coverage:</strong> {(productDetails?.measured_qty / 92903).toFixed(3)} {productDetails?.measured_unit} / {productDetails?.unit}</p >
                                             <p style={{ fontFamily: 'Montserrat', fontSize: '15px' }}><strong>Brand:</strong> {productDetails?.brand}</p>
                                             <p style={{ fontFamily: 'Montserrat', fontSize: '15px' }}><strong>Category:</strong> {productDetails?.category}</p>
                                         </div>
@@ -185,13 +185,18 @@ const ProductDetails = (spaceBottomClass) => {
                                                     </div>
                                                     <div className="product-anotherinfo-wrapper">
                                                         <ul>
-                                                            {productDetails?.attributes?.map(attr => (
-                                                                <li key={attr.aid}>
-                                                                    <strong style={{ textTransform: 'uppercase', fontFamily: 'Montserrat' }}>{attr.attr_name}</strong> {attr.attr_value}
-                                                                </li>
-                                                            ))}
+                                                            {productDetails?.attributes
+                                                                ?.filter(attr =>
+                                                                    ['Minimum quantity', 'Thickness', 'Used for', 'Packing style', 'Delivery time', 'Availability', 'Size', 'Finish', 'Item status', 'Tile quality'].includes(attr.attr_name)
+                                                                )
+                                                                .map(attr => (
+                                                                    <li key={attr.aid}>
+                                                                        <strong style={{ textTransform: 'uppercase', fontFamily: 'Montserrat' }}>{attr.attr_name}</strong> {attr.attr_value}
+                                                                    </li>
+                                                                ))}
                                                         </ul>
                                                     </div>
+
                                                 </Tab.Pane>
 
                                             </Tab.Content>

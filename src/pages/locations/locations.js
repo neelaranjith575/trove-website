@@ -1,4 +1,4 @@
-import { Fragment, useState  } from "react";
+import { Fragment, useState } from "react";
 import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
 import {
@@ -15,7 +15,7 @@ const locations = [
   {
     src: "/assets/img/locations/bangalore.png",
     location: "Indiranagar ",
-    city:"Bengaluru, Karnataka",
+    city: "Bengaluru, Karnataka",
     phone: "+91 89518 92764, +91 89518 92763",
     email: "sales.rkph@troveindia.com",
     address: "Near ‘Rameshwaram Cafe’, 4th Cross, 12th Main, HAL 2nd Stage, Indiranagar, Bengaluru,",
@@ -25,7 +25,7 @@ const locations = [
   {
     src: "/assets/img/features/image 32.png",
     location: "Adugodi",
-    city:"Bengaluru, Karnataka",
+    city: "Bengaluru, Karnataka",
     phone: "+91 63665 47553, +91 99013 97101",
     email: "sales.bgrd@troveindia.com",
     address: "Near ‘Bosch Ltd’, Bannerghatta Road, Lakkasandra, Adugodi, Bengaluru,",
@@ -35,7 +35,7 @@ const locations = [
   {
     src: "/assets/img/features/image 32.png",
     location: "Rajajinagar ",
-    city:"Bengaluru, Karnataka",
+    city: "Bengaluru, Karnataka",
     phone: "+91 97313 16556, +91 92434 98101",
     email: "sales.mstar@troveindia.com",
     address: "Below ‘IVF Access’, Dr. Rajkumar Road, Rajajinagar 2nd Block, Bengaluru,",
@@ -44,8 +44,49 @@ const locations = [
   },
   {
     src: "/assets/img/features/image 32.png",
+    location: "Basavanagudi",
+    city: "Bengaluru, Karnataka",
+    phone: "080 2662 0224, +91 63665 47522",
+    email: "sales.mgc@troveindia.com",
+    address: "Near ‘Nettakallappa Circle’, K R Road, Basavanagudi, Bengaluru,",
+    pincode: "560 004",
+    link: "https://maps.app.goo.gl/WRU6GKSfRGThBe2t8",
+  },
+  {
+    src: "/assets/img/features/image 32.png",
+    location: "Ramamurthy Nagar",
+    city: "Horamavu, Bengaluru, Karnataka",
+    phone: "+91 99000 22106",
+    email: "sales.rmn@troveindia.com",
+    address: "Kalkere Main Road, Ramamurthy Nagar Horamavu Post, Bengaluru,",
+    pincode: "560 043",
+    link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
+  },
+  {
+    src: "/assets/img/features/image 32.png",
+    location: "Whitefield",
+    city: "Thubarahalli, Bengaluru, Karnataka",
+    phone: "+91 99002 64657",
+    email: "sales.east@troveindia.com",
+    address: "Opp. ‘Govt. Digital Library’, Varthur Main Road, Thubarahalli, Whitefield, Bengaluru,",
+    pincode: "577 005",
+    link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
+  },
+  {
+    src: "/assets/img/features/image 32.png",
+    location: "Mysore Road",
+    city: "New Guddadahalli, Bengaluru, Karnataka",
+    phone: "+91 63665 47524, +91 99000 22103",
+    email: "sales.vhpy@troveindia.com",
+    address: "Above ‘Stanley’s Sofas & More’, New Guddadahalli, Mysore Road, Bengaluru,",
+    pincode: "560 026",
+    link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
+  },
+
+  {
+    src: "/assets/img/features/image 32.png",
     location: "Shivamogga",
-    city:" Gandhi Nagar, Shivamogga, Karnataka",
+    city: " Gandhi Nagar, Shivamogga, Karnataka",
     phone: "+91 99002 63095, +91 90351 76006",
     email: "sales.bss@troveindia.com",
     address: "Next to ‘Kautilya Medical’, 100 ft. Road, Gandhi Nagar, Shivamogga,",
@@ -55,27 +96,18 @@ const locations = [
   {
     src: "/assets/img/features/image 32.png",
     location: "Tumakuru",
-    city:"S S Puram, Tumakuru, Karnataka",
+    city: "S S Puram, Tumakuru, Karnataka",
     phone: "+91 87900 00921, +91 87900 00912",
     email: "sales.vvp@troveindia.com",
     address: "Near ‘Maruthi Vidya Kendra’, 16th Cross, S S Puram, Tumakuru,",
     pincode: "572 102",
     link: "https://maps.app.goo.gl/Vyi2Qj53BUeauTze6",
   },
-  {
-    src: "/assets/img/features/image 32.png",
-    location: "Basavanagudi",
-    city:"Bengaluru, Karnataka",
-    phone: "080 2662 0224, +91 63665 47522",
-    email: "sales.mgc@troveindia.com",
-    address: "Near ‘Nettakallappa Circle’, K R Road, Basavanagudi, Bengaluru,",
-    pincode: "560 004",
-    link: "https://maps.app.goo.gl/WRU6GKSfRGThBe2t8",
-  },
+
   {
     src: "/assets/img/features/image 32.png",
     location: "Jigani",
-    city:"Anekal, Bengaluru, Karnataka",
+    city: "Anekal, Bengaluru, Karnataka",
     phone: "+91 80506 70701, +91 98861 56789",
     email: "sales.adi@troveindia.com",
     address: "Bannerghatta Main Road, Begihalli Village Jigani, Anekal Taluk, Bengaluru,",
@@ -85,44 +117,16 @@ const locations = [
   {
     src: "/assets/img/features/image 32.png",
     location: "Davangere",
-    city:"Lokikere Industrial Area, Davangere, Karnataka",
+    city: "Lokikere Industrial Area, Davangere, Karnataka",
     phone: "+91 96633 52359, +91 96323 21666",
     email: "sales.sejal@troveindia.com",
     address: "Opp. ‘Somanath Weigh Bridge’, Lokikere Main Road, Davangere Industrial Area, Davangere,",
     pincode: "577 005",
     link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
   },
-  {
-    src: "/assets/img/features/image 32.png",
-    location: "Mysore Road",
-    city:"New Guddadahalli, Bengaluru, Karnataka",
-    phone: "+91 63665 47524, +91 99000 22103",
-    email: "sales.vhpy@troveindia.com",
-    address: "Above ‘Stanley’s Sofas & More’, New Guddadahalli, Mysore Road, Bengaluru,",
-    pincode: "560 026",
-    link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
-  },
-  {
-    src: "/assets/img/features/image 32.png",
-    location: "Whitefield",
-    city:"Thubarahalli, Bengaluru, Karnataka",
-    phone: "+91 99002 64657",
-    email: "sales.east@troveindia.com",
-    address: "Opp. ‘Govt. Digital Library’, Varthur Main Road, Thubarahalli, Whitefield, Bengaluru,",
-    pincode: "577 005",
-    link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
-  },
-  {
-    src: "/assets/img/features/image 32.png",
-    location: "Ramamurthy Nagar",
-    city:"Horamavu, Bengaluru, Karnataka",
-    phone: "+91 99000 22106",
-    email: "sales.rmn@troveindia.com",
-    address: "Kalkere Main Road, Ramamurthy Nagar Horamavu Post, Bengaluru,",
-    pincode: "560 043",
-    link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
-  },
- 
+
+
+
 ];
 
 const Location = () => {
@@ -132,9 +136,9 @@ const Location = () => {
 
   // Filter images based on search term
   const filteredImages = locations.filter((image) =>
-  image.location.toLowerCase().includes(searchTerm.toLowerCase())
-);
-  console.log(filteredImages, "city")
+    image.location.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  // console.log(filteredImages, "city")
 
 
   const chunkArray = (array, chunkSize) => {
@@ -170,14 +174,14 @@ const Location = () => {
         >
           <Grid item xs={12} sm={12} md={6} lg={5}>
             <Typography
-             
+
               sx={{
                 fontSize: { xs: "30px", md: "35px" },
                 lineHeight: "40px",
                 fontWeight: 500,
                 fontFamily: "Libre Baskerville",
-                textTransform:'uppercase',
-                ml:{xs:3,md:-4},
+                textTransform: 'uppercase',
+                ml: { xs: 3, md: -4 },
                 textAlign: { xs: "left", md: "center", lg: "center" },
               }}
             >
@@ -272,7 +276,7 @@ const MobileLayout = ({ item }) => (
       <Grid item xs={4.5} sm={12} md={12} sx={{ pl: 5 }}>
         <Typography
           sx={{
-            fontWeight: 400,
+            fontWeight: 600,
             fontSize: "15px",
             lineHeight: "40.54px",
             color: "#1A1A1A",
@@ -283,7 +287,7 @@ const MobileLayout = ({ item }) => (
         </Typography>
         <Typography
           sx={{
-            fontWeight: 400,
+            fontWeight: 600,
             fontSize: "15px",
             lineHeight: "40.54px",
             color: "#1A1A1A",
@@ -294,7 +298,7 @@ const MobileLayout = ({ item }) => (
         </Typography>
         <Typography
           sx={{
-            fontWeight: 400,
+            fontWeight: 600,
             fontSize: "15px",
             lineHeight: "40.54px",
             color: "#1A1A1A",
@@ -313,38 +317,38 @@ const MobileLayout = ({ item }) => (
             lineHeight: "40.54px",
             color: "#1A1A1A",
             fontFamily: "Montserrat",
-            textDecoration:'none'
+            textDecoration: 'none'
           }}
         >
           {item.phone}
         </Typography>
-        <a href={item?.link}  target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
-        <Typography
-          sx={{
-            fontWeight: 400,
-            fontSize: "13px",
-            lineHeight: "40.54px",
-            color: "#1A1A1A",
-            fontFamily: "Montserrat",
-            textDecoration:'none'
-          }}
-        >
-          {item.email}
-        </Typography>
+        <a href={item?.link} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+          <Typography
+            sx={{
+              fontWeight: 400,
+              fontSize: "13px",
+              lineHeight: "40.54px",
+              color: "#1A1A1A",
+              fontFamily: "Montserrat",
+              textDecoration: 'none'
+            }}
+          >
+            {item.email}
+          </Typography>
         </a>
-        <a href={item?.link}  target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
-        <Typography
-          sx={{
-            fontWeight: 400,
-            fontSize: "13px",
-            lineHeight: "40.54px",
-            color: "#1A1A1A",
-            fontFamily: "Montserrat",
-            textDecoration:'none'
-          }}
-        >
-          {item.address}
-        </Typography>
+        <a href={item?.link} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+          <Typography
+            sx={{
+              fontWeight: 400,
+              fontSize: "13px",
+              lineHeight: "40.54px",
+              color: "#1A1A1A",
+              fontFamily: "Montserrat",
+              textDecoration: 'none'
+            }}
+          >
+            {item.address}
+          </Typography>
         </a>
       </Grid>
     </Grid>
@@ -382,29 +386,29 @@ const DesktopLayout = ({ item }) => (
   <Grid container rowSpacing={3}>
     <Grid item xs={0.5}></Grid>
     <Grid item xs={12} md={4} sx={{ pb: 5 }}>
-    <a href={item?.link}  target="_blank" rel="noreferrer">
-      <img src={item.src} width={320} height={210} alt="Location" />
+      <a href={item?.link} target="_blank" rel="noreferrer">
+        <img src={item.src} width={320} height={210} alt="Location" />
       </a>
     </Grid>
     <Grid item xs={12} md={3} sx={{ borderTop: "1px solid black" }}>
-      <a href={item?.link}  target="_blank" rel="noreferrer">
-      <Typography
-        sx={{
-          fontSize: "26px",
-          color: "#1A1A1A",
-          textTransform: "capitalize",
-          fontWeight: 500,
-          fontFamily: "Montserrat",
-        }}
-      >
-        {item.location}
-      </Typography>
+      <a href={item?.link} target="_blank" rel="noreferrer">
+        <Typography
+          sx={{
+            fontSize: "26px",
+            color: "#1A1A1A",
+            textTransform: "capitalize",
+            fontWeight: 500,
+            fontFamily: "Montserrat",
+          }}
+        >
+          {item.location}
+        </Typography>
       </a>
       <Typography
         sx={{
           fontWeight: 400,
           fontSize: "15px",
-          ml:"1px",
+          ml: "1px",
           fontFamily: "Montserrat",
           color: "#1A1A1A",
         }}
@@ -415,7 +419,7 @@ const DesktopLayout = ({ item }) => (
     <Grid item xs={8} md={1} sx={{ borderTop: "1px solid black" }}>
       <Typography
         sx={{
-          fontWeight: 400,
+          fontWeight: 600,
           fontSize: "15px",
           lineHeight: "40.54px",
           width: "58px",
@@ -428,7 +432,7 @@ const DesktopLayout = ({ item }) => (
       </Typography>
       <Typography
         sx={{
-          fontWeight: 400,
+          fontWeight: 600,
           fontSize: "15px",
           lineHeight: "40.54px",
           color: "#1A1A1A",
@@ -441,7 +445,7 @@ const DesktopLayout = ({ item }) => (
       </Typography>
       <Typography
         sx={{
-          fontWeight: 400,
+          fontWeight: 600,
           fontSize: "15px",
           lineHeight: "40.54px",
           color: "#1A1A1A",
@@ -465,38 +469,38 @@ const DesktopLayout = ({ item }) => (
       >
         {item.phone}
       </Typography>
-      <a href={`mailto:${item?.email}`}  target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
+      <a href={`mailto:${item?.email}`} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
 
-      <Typography
-        sx={{
-          fontWeight: 400,
-          fontSize: "15px",
-          color: "#1A1A1A",
-          lineHeight: "40.54px",
-          fontFamily: "Montserrat",
-        }}
-      >
-        {item.email}
-      </Typography>
+        <Typography
+          sx={{
+            fontWeight: 400,
+            fontSize: "15px",
+            color: "#1A1A1A",
+            lineHeight: "40.54px",
+            fontFamily: "Montserrat",
+          }}
+        >
+          {item.email}
+        </Typography>
       </a>
-      <a href={item?.link}  target="_blank" rel="noreferrer" style={{textDecoration:"none"}}>
-      <Typography
-        sx={{
-          fontWeight: 400,
-          fontSize: "15px",
-          pt: 1.3,
-          color: "#1A1A1A",
-          fontFamily: "Montserrat",
-        }}
-      >
-        {splitAddress(item.address, 35).map((line, lineIdx) => (
-          <Fragment key={lineIdx}>
-            {line}
-            <br />
-          </Fragment>
-        ))}
-        {item.pincode}
-      </Typography>
+      <a href={item?.link} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+        <Typography
+          sx={{
+            fontWeight: 400,
+            fontSize: "15px",
+            pt: 1.3,
+            color: "#1A1A1A",
+            fontFamily: "Montserrat",
+          }}
+        >
+          {splitAddress(item.address, 35).map((line, lineIdx) => (
+            <Fragment key={lineIdx}>
+              {line}
+              <br />
+            </Fragment>
+          ))}
+          {item.pincode}
+        </Typography>
       </a>
     </Grid>
     <Grid item md={0.5} xs={12}></Grid>

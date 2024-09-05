@@ -5,6 +5,11 @@
     list-style: none; 
     padding: 0; 
 }
+@media (max-width: 600px) {
+    .product-anotherinfo-wrapper ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 .product-anotherinfo-wrapper li {
     display: flex;
