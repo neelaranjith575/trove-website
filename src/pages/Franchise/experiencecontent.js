@@ -1,18 +1,10 @@
 import { Grid, Paper, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import contentimg from "../../assets/img/About/Contentimage1.png";
-import { useEffect, useState } from "react";
+
 
 const ExperienceContent = () => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    const animationTimeout = setTimeout(() => {
-      setAnimate(true);
-    }, 1000); // 1000 milliseconds (1 second) delay before the animation starts
-
-    return () => clearTimeout(animationTimeout); // Clear the timeout on component unmount
-  }, []);
+  
 
   return (
     <>
@@ -43,12 +35,13 @@ const ExperienceContent = () => {
               item
               xs={12}
               md={6}
-              sx={{
-                transform: animate
-                  ? "translateX(0)"
-                  : "translateX(-100%)", // Initial position off-screen
-                transition: "transform 1s ease-in-out",
-              }}
+              data-aos="fade-right"
+                data-duration="5000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"  
+            
             >
               <Box
                 component={"img"}
@@ -61,12 +54,12 @@ const ExperienceContent = () => {
               item
               xs={12}
               md={5}
-              sx={{
-                transform: animate
-                  ? "translateX(0)"
-                  : "translateX(100%)", // Initial position off-screen
-                transition: "transform 1s ease-in-out",
-              }}
+              data-aos="fade-left"
+                data-duration="5000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"  
             >
               <Stack
                 sx={{

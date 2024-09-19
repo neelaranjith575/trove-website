@@ -114,6 +114,7 @@ const NotFound = lazy(() => import("./pages/other/NotFound"));
 
 // About Page
 const About = lazy(() => import("./pages/About/About"))
+const Careers = lazy(() => import("./pages/Careers/Careers"))
 
 
 const App = () => {
@@ -406,6 +407,7 @@ const App = () => {
               path={process.env.PUBLIC_URL + "/experience"}
               element={<Franchise />}
             />
+            <Route path={process.env.PUBLIC_URL + "/careers"} element={<Careers/>}/>
             <Route
               path={process.env.PUBLIC_URL + "/my-account"}
               element={<MyAccount />}

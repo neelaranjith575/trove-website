@@ -7,7 +7,7 @@ import { Card } from "@mui/material";
 const WorkProcess = ({ spaceTopClass, spaceBottomClass }) => {
   return (
     
-    <div className={clsx("support-area", spaceTopClass, spaceBottomClass)}>
+    <div data-aos="fade-up" data-aos-duration="3000" className={clsx("support-area", spaceTopClass, spaceBottomClass)}>
       <div className="container">
       <Card sx={{mt:-10, mb:2}}>
         <div className="row feature-icon-two-wrap">

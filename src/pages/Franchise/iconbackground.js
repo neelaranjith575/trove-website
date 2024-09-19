@@ -7,6 +7,10 @@ import "./Iconbackground.css";
 const IconBackground = ({ spaceTopClass, spaceBottomClass, bgClass }) => {
   return (
     <div
+    data-aos="fade-up"
+                data-duration="5000"
+                data-aos-easing="ease-in-out"
+                data-aos-anchor-placement="top-center"  
       className={clsx(
         "icon-background-area",
         spaceTopClass,

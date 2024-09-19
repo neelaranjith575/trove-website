@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 export default function StandardImageList() {
   return (
     <>
-    <Box sx={{display:{xs:'none', md:'block',},pt:10, pb:5,height:'fit-content'}}>
+    <Box data-aos="fade-up" data-aos-duration="3000" sx={{display:{xs:'none', md:'block',},pt:10, pb:5,height:'fit-content'}}>
     <Stack sx={{pl:10,pr:10}}>
       <Typography
         sx={{

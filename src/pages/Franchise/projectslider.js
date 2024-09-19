@@ -28,8 +28,14 @@ const settings = {
 
 const ProjectSlider = ({ spaceTopClass, spaceBottomClass }) => {
   return (
-    <div className={clsx("collections-area", spaceTopClass, spaceBottomClass)}>
-      <div className="container mt-30">
+    <div data-aos="fade-in"
+    data-duration="5000"
+    data-aos-anchor-placement="top-center"   
+    className={clsx("collections-area", spaceTopClass, spaceBottomClass)}>
+      <div className="container mt-30" 
+                data-aos="fade-in"
+                data-duration="5000"
+                data-aos-anchor-placement="top-center"  >
         {/* section title
         <SectionTitleFour titleText="Collections" spaceBottomClass="mb-40" /> */}
         <Stack>
@@ -47,7 +53,7 @@ const ProjectSlider = ({ spaceTopClass, spaceBottomClass }) => {
             Projects
           </Typography>
         </Stack>
-        <div className="collection-wrap">
+        <div  className="collection-wrap">
           <div className="collection-active">
             {categoryData && (
               <Swiper options={settings}>

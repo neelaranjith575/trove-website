@@ -182,7 +182,7 @@ const Location = () => {
                 fontFamily: "Libre Baskerville",
                 textTransform: 'uppercase',
                 ml: { xs: 3, md: -4 },
-                textAlign: { xs: "left", md: "center", lg: "center" },
+                textAlign: { xs: "center", md: "center", lg: "center" },
               }}
             >
               Find us near you

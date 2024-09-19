@@ -198,7 +198,7 @@ const Footer = (sideMenu) => {
                             <Link href="/all-products" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat', mr: 5 }}>
                                 PRODUCTS
                             </Link>
-                            <Link href="/coming-soon" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat', mr: 5 }}>
+                            <Link href="/careers" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat', mr: 5 }}>
                                 CAREERS
                             </Link>
                             <Link href="/locations" underline="none" sx={{ color: "#1A1A1A", fontSize: '15px', fontWeight: 700, fontFamily: 'Montserrat', mr: 5 }}>
@@ -320,10 +320,10 @@ const Footer = (sideMenu) => {
                             <Link href="/franchise" underline="none" sx={{ color: "#0A142F", fontSize: '12px', fontWeight: 600, fontFamily: 'Montserrat' }}>
                                 FRANCHISE
                             </Link>
-                            <Link href="/coming-soon" underline="none" sx={{ color: "#0A142F", fontSize: '12px', fontWeight: 600, fontFamily: 'Montserrat' }}>
+                            <Link href="/all-products" underline="none" sx={{ color: "#0A142F", fontSize: '12px', fontWeight: 600, fontFamily: 'Montserrat' }}>
                                 PRODUCTS
                             </Link>
-                            <Link href="/coming-soon" underline="none" sx={{ color: "#0A142F", fontSize: '12px', fontWeight: 600, fontFamily: 'Montserrat' }}>
+                            <Link href="/careers" underline="none" sx={{ color: "#0A142F", fontSize: '12px', fontWeight: 600, fontFamily: 'Montserrat' }}>
                                 CAREERS
                             </Link>
                             <Link href="/locations" underline="none" sx={{ color: "#0A142F", fontSize: '12px', fontWeight: 600, fontFamily: 'Montserrat' }}>

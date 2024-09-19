@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Features = () => {
   return (
     <>
-   <Box  sx={{pl:{xs:5, md:10}, pr:{xs:5, md:10}, pt:{xs:5, md:10}, pb:{xs:5, md:5},height:'fit-content'}}>
+   <Box data-aos="fade-up" data-aos-duration="3000" sx={{pl:{xs:5, md:10}, pr:{xs:5, md:10}, pt:{xs:5, md:10}, pb:{xs:5, md:5},height:'fit-content'}}>
   <Stack sx={{ mb: 5,}}>
     <Typography
       sx={{

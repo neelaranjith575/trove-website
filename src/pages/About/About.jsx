@@ -74,13 +74,14 @@ const About = () => {
             />
           </div>
 
-          <div className="slideSec">
+          <div className="slideSec"   data-aos="fade-in"
+              data-duration="3000">
           <Typography
                sx={{
                 position: 'sticky',
                 top: 75,
                 zIndex: 1000,
-                fontSize: {xs:"30", md:"50px"},
+                fontSize: {xs:"30", md:"45px"},
                 color: "#1A1A1A",
                 fontFamily: "Libre Baskerville",
                 fontWeight: 500,

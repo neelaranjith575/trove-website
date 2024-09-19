@@ -26,7 +26,9 @@ const TestimonialOne = ({
   testimonialClass,
 }) => {
   return (
-    <div className={clsx("testimonial-area", spaceTopClass, spaceBottomClass, spaceLeftClass, spaceRightClass, bgColorClass)}>
+    <div data-aos="fade-up"
+    data-duration="5000"
+    data-aos-anchor-placement="top-center"  className={clsx("testimonial-area", spaceTopClass, spaceBottomClass, spaceLeftClass, spaceRightClass, bgColorClass)}>
       <div className="container">
         <div className="row">
           <div className="col-lg-10 mx-auto">

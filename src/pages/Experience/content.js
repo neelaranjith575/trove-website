@@ -1,18 +1,10 @@
 import { Grid, Paper, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
-import contentimg from "../../assets/img/About/Contentimage.png";
-import { useEffect, useState } from "react";
+import contentImg from "../../assets/img/About/Contentimage.png";
+
 
 const Content = () => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    const animationTimeout = setTimeout(() => {
-      setAnimate(true);
-    }, 1000); // 1000 milliseconds (1 second) delay before the animation starts
-
-    return () => clearTimeout(animationTimeout); // Clear the timeout on component unmount
-  }, []);
+ 
 
   return (
     <>
@@ -35,16 +27,17 @@ const Content = () => {
             display={"flex"}
             sx={{ flexDirection: { xs: "row", md: "row" } }}
           >
+                <Grid item xs={1}></Grid>
             <Grid
               item
               xs={12}
               md={5}
-              sx={{
-                transform: animate
-                  ? "translateX(0)"
-                  : "translateX(-100%)", // Initial position off-screen
-                transition: "transform 1s ease-in-out",
-              }}
+              data-aos="fade-right"
+              data-duration="5000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+             data-aos-once="false"
+             data-aos-anchor-placement="top-center"
             >
               <Stack
                 sx={{
@@ -68,7 +61,7 @@ const Content = () => {
                   <Typography
                     sx={{
                       fontFamily: "Montserrat",
-                      color: "#1A2D4C",
+                      color: "#1A1A1A",
                       fontSize: { xs: "13px", md: "17px" },
                       lineHeight: "30px",
                       textAlign: { xs: "center", md: "left" },
@@ -88,16 +81,16 @@ const Content = () => {
               item
               xs={12}
               md={6}
-              sx={{
-                transform: animate
-                  ? "translateX(0)"
-                  : "translateX(100%)", // Initial position off-screen
-                transition: "transform 1s ease-in-out",
-              }}
+                data-aos="fade-left"
+              data-duration="5000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"          
             >
               <Box
                 component={"img"}
-                src={contentimg}
+                src={contentImg}
                 alt=""
                 sx={{ width: "100%" }}
               />

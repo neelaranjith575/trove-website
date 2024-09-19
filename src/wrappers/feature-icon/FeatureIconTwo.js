@@ -6,7 +6,7 @@ import { Typography, Box } from "@mui/material";
 
 const FeatureIconTwo = ({ spaceTopClass, spaceBottomClass }) => {
   return (
-    <Box sx={{height:'fit-content',pt:{xs:5, md:5}, pb:{xs:5, md:10}}}>
+    <Box  data-aos="fade-up" data-aos-duration="3000" sx={{height:'fit-content',pt:{xs:5, md:5}, pb:{xs:5, md:10}}}>
     <div className={clsx("support-area", spaceTopClass, spaceBottomClass)}>
       <div className="container">
         <div className="row feature-icon-two-wrap">

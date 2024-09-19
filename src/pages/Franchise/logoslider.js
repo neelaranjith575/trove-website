@@ -28,7 +28,9 @@ const settings = {
 
 const LogoSlider = ({ spaceBottomClass, spaceTopClass }) => {
   return (
-    <div className={clsx("brand-logo-area", spaceBottomClass, spaceTopClass)}>
+    <div  data-aos="fade-up"
+    data-duration="3000"
+    data-aos-anchor-placement="top-center"  className={clsx("brand-logo-area", spaceBottomClass, spaceTopClass)}>
       <Stack>
         <Typography
           sx={{
