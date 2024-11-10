@@ -6,7 +6,6 @@ import { Card } from "@mui/material";
 
 const WorkProcess = ({ spaceTopClass, spaceBottomClass }) => {
   return (
-
     <div data-aos="fade-up" data-aos-duration="3000" className={clsx("support-area", spaceTopClass, spaceBottomClass)}>
       <div className="container">
         <Card sx={{ mt: -10, mb: 2 }}>
@@ -23,15 +22,9 @@ const WorkProcess = ({ spaceTopClass, spaceBottomClass }) => {
           </div>
         </Card>
       </div>
-
     </div>
 
   );
-};
-
-WorkProcess.propTypes = {
-  spaceBottomClass: PropTypes.string,
-  spaceTopClass: PropTypes.string
 };
 
 export default WorkProcess;
