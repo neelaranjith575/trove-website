@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+
 import clsx from "clsx";
 import IconData from "./IconData.json";
 import IconContent from "./iconcontent";

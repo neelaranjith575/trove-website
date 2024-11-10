@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import background from "../../assets/img/About/Banner.webp";
 import LayoutOne from "../../layouts/LayoutOne";
-import WorkProcess from "./WorkProcess";
+// import WorkProcess from "./WorkProcess";
 import Content from "./content";
 import SEO from "../../components/seo";
 import About from "../About/About"
@@ -72,7 +72,7 @@ const Experience = () => {
                         </Typography>
                     </Stack>
                 </Box>
-                <WorkProcess />
+                {/* <WorkProcess /> */}
                 <Content />
                 <About />
                 {/* <Business  /> */}
