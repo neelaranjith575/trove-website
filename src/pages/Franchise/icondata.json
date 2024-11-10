@@ -1,36 +1,35 @@
 [
-    {
-      "id": "1",
-      "countNum": 40000,
-      "numbers" :"40,000 +",
-      "title1": "Houses Completed",
-      "title2": "",
-      "imageUrl": "/assets/img/brand-logo/loan.png"
-    },
-    {
-      "id": "2",
-      "imageUrl": "/assets/img/brand-logo/completion.png",
-      "countNum": 4050,
-      "numbers" :"4,050 +",
-      "title1": "Projects Completed",
-      "title2": ""
-    },
-    {
-      "id": "3",
-      "countNum": 800,
-      "numbers" :"800 +",
-      "title1": "Restaurants Tiled",
-      "title2": "",
-      "imageUrl": "/assets/img/brand-logo/pattern.png"
-    },
-    {
-      "id": "4",
-      "iconClass": "pe-7s-smile",
-      "countNum": 40,
-      "numbers" :"40 +",
-      "title1": "Mega-Spaces Tiled",
-      "title2": "",
-      "imageUrl": "/assets/img/brand-logo/skyscrapers.png"
-    }
-  ]
-  
+  {
+    "id": "1",
+    "countNum": 40000,
+    "numbers": "60,000+",
+    "title1": "Houses Completed",
+    "title2": "",
+    "imageUrl": "/assets/img/brand-logo/loan.png"
+  },
+  {
+    "id": "2",
+    "imageUrl": "/assets/img/brand-logo/completion.png",
+    "countNum": 4920,
+    "numbers": "4,900+",
+    "title1": "Projects Completed",
+    "title2": ""
+  },
+  {
+    "id": "3",
+    "countNum": 800,
+    "numbers": "920+",
+    "title1": "Restaurants Tiled",
+    "title2": "",
+    "imageUrl": "/assets/img/brand-logo/pattern.png"
+  },
+  {
+    "id": "4",
+    "iconClass": "pe-7s-smile",
+    "countNum": 40,
+    "numbers": "40+",
+    "title1": "Mega-Spaces Tiled",
+    "title2": "",
+    "imageUrl": "/assets/img/brand-logo/skyscrapers.png"
+  }
+]

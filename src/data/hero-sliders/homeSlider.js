@@ -3,14 +3,15 @@ import "react-multi-carousel/lib/styles.css";
 import { Box } from "@mui/material";
 import "./homeSlider.css";
 
+
 const HomeSlider = () => {
     const banners = [
-        { id: 1, imageUrl: "/assets/img/slider/Banner1.webp" },
-        { id: 2, imageUrl: "/assets/img/slider/Banner2.webp" },
-        { id: 3, imageUrl: "/assets/img/slider/Banner3.webp" },
-        { id: 4, imageUrl: "/assets/img/slider/Banner4.webp"},
-        { id: 5, imageUrl: "/assets/img/slider/Banner5.webp"},
-        { id: 6, imageUrl: "/assets/img/slider/Banner6.webp"},
+        { id: 1, imageUrl: "./../../assets/img/slider/Banner1.webp" },
+        { id: 2, imageUrl: "./../../assets/img/slider/Banner2.webp" },
+        { id: 3, imageUrl: "./../../assets/img/slider/Banner3.webp" },
+        { id: 4, imageUrl: "./../../assets/img/slider/Banner4.webp" },
+        { id: 5, imageUrl: "./../../assets/img/slider/Banner5.webp" },
+        { id: 6, imageUrl: "./../../assets/img/slider/Banner6.webp" },
         // Add more banner objects as needed
     ];
 
@@ -22,7 +23,7 @@ const HomeSlider = () => {
             slidesToSlide: 1,
             fadeEffect: {
                 crossFade: true
-              },
+            },
             style: {
                 padding: '20px'
             }
@@ -33,7 +34,7 @@ const HomeSlider = () => {
             items: 1.80,
             fadeEffect: {
                 crossFade: true
-              },
+            },
             slidesToSlide: 1,
         },
         tablet: {
@@ -50,26 +51,26 @@ const HomeSlider = () => {
         },
     };
 
-    
+
 
     return (
         <>
-            <Box sx={{ pl: {xs:3, md:12}, pr:{xs:3, md:12}, pt:{xs:3, md:5}, pb:{xs:4, md:5}}}>
-                <Carousel 
-                    showDots={true} 
-                    arrows={false} 
+            <Box sx={{ pl: { xs: 3, md: 12 }, pr: { xs: 3, md: 12 }, pt: { xs: 3, md: 5 }, pb: { xs: 4, md: 5 } }}>
+                <Carousel
+                    showDots={true}
+                    arrows={false}
                     responsive={responsive}
                     autoPlay={true} // Enable auto-loop
                     autoPlaySpeed={2000} // Set auto-loop speed in milliseconds (optional)
                     infinite={true} // Enable infinite loop
-                    transitionDuration={1000} 
+                    transitionDuration={1000}
                     itemClass="carousel-item-padding-40"
                     containerClass="carousel-container"
                 >
-                     {banners.map((banner) => (
-                        <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{ width:'100%', height: "550px" }} />
+                    {banners.map((banner) => (
+                        <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{ width: '100%', height: "550px" }} />
                     ))}
-                    
+
                 </Carousel>
             </Box>
         </>

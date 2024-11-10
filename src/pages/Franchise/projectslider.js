@@ -13,6 +13,10 @@ const settings = {
     delay: 5000,
     disableOnInteraction: false,
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -20,32 +24,27 @@ const settings = {
     640: {
       slidesPerView: 3,
     },
-    // 992: {
-    //   slidesPerView: 4
-    // },
   },
 };
 
 const ProjectSlider = ({ spaceTopClass, spaceBottomClass }) => {
   return (
-    <div data-aos="fade-in"
-    data-duration="5000"
-    data-aos-anchor-placement="top-center"   
-    className={clsx("collections-area", spaceTopClass, spaceBottomClass)}>
-      <div className="container mt-30" 
-                data-aos="fade-in"
-                data-duration="5000"
-                data-aos-anchor-placement="top-center"  >
-        {/* section title
-        <SectionTitleFour titleText="Collections" spaceBottomClass="mb-40" /> */}
+    <div
+      data-aos="fade-in"
+      data-duration="5000"
+      data-aos-anchor-placement="top-center"
+      className={clsx("collections-area", spaceTopClass, spaceBottomClass)}
+    >
+
+
+      <div className="container mt-30" data-aos="fade-in" data-duration="5000" data-aos-anchor-placement="top-center">
         <Stack>
           <Typography
             sx={{
               color: "#1A1A1A",
-              
-                         fontSize: { xs: "30px", md: "50px" },
-                        fontFamily: 'Libre Baskerville',
-                        textTransform: 'uppercase',
+              fontSize: { xs: "30px", md: "50px" },
+              fontFamily: 'Libre Baskerville',
+              textTransform: 'uppercase',
               textAlign: "center",
               pb: 4,
             }}
@@ -53,7 +52,7 @@ const ProjectSlider = ({ spaceTopClass, spaceBottomClass }) => {
             Projects
           </Typography>
         </Stack>
-        <div  className="collection-wrap">
+        <div className="collection-wrap">
           <div className="collection-active">
             {categoryData && (
               <Swiper options={settings}>

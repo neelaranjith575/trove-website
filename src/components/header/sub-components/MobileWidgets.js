@@ -8,11 +8,11 @@ const MobileWidgets = () => {
           <ul className="header-contact-info__list">
             <li>
               <i className="fa fa-phone"></i>{" "}
-              <a href="tel:9900022102">+91 99000 22102</a>
+              <a href="tel:6366975407">+91 6366975407</a>
             </li>
             <li>
               <i className="fa fa-envelope"></i>{" "}
-              <a href="mailto:info@troveindia.com">info@troveindia.com</a>
+              <a href="mailto:sales@troveindia.com">sales@troveindia.com</a>
             </li>
           </ul>
         </div>

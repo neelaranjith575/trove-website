@@ -4,7 +4,7 @@ import contentimg from "../../assets/img/About/Contentimage1.png";
 
 
 const ExperienceContent = () => {
-  
+
 
   return (
     <>
@@ -36,30 +36,30 @@ const ExperienceContent = () => {
               xs={12}
               md={6}
               data-aos="fade-right"
-                data-duration="5000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center"  
-            
+              data-duration="5000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+
             >
               <Box
                 component={"img"}
                 src={contentimg}
                 alt=""
-                sx={{ width: "100%" }}
+                sx={{ width: { xs: "100%", md: '90%' } }}
               />
             </Grid>
             <Grid
               item
               xs={12}
-              md={5}
+              md={6}
               data-aos="fade-left"
-                data-duration="5000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center"  
+              data-duration="5000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
             >
               <Stack
                 sx={{

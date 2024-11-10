@@ -88,13 +88,13 @@ const Footer = (sideMenu) => {
                             {/* <a href="/locations" >
                             <Typography sx={{ fontSize: '18px', color: '#ffffff', fontFamily: 'Montserrat' }}>Find your nearest Trove <ArrowIcon1 sx={{ color: "white" }} /> </Typography>
                             </a> */}
-                            <Link to="/locations" style={{
+                            <Link to="https://www.google.com/maps/search/trove/" style={{
                                 textDecoration: 'none', alignItems: 'center',
                                 justifyContent: 'center',
                                 display: 'flex'
                             }}>
                                 <Button
-                                    href="/locations"
+                                    href="https://www.google.com/maps/search/trove/"
                                     // variant="outlined"
                                     sx={{
                                         backgroundColor: "#000000",
@@ -246,7 +246,7 @@ const Footer = (sideMenu) => {
                             {/* <a href="/locations" >
                             <Typography sx={{ fontSize: '10px', color: '#ffffff', fontFamily: 'Montserrat' }}>Find your nearest Trove <ArrowIcon1 sx={{ color: "white" }} /> </Typography>
                             </a> */}
-                            <Link to="/locations" style={{
+                            <Link to="https://www.google.com/maps/search/trove/" style={{
                                 textDecoration: 'none', alignItems: 'center',
                                 justifyContent: 'center',
                                 display: 'flex'

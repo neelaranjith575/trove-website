@@ -10,11 +10,13 @@ import { Stack } from "@mui/system";
 const settings = {
   slidesPerView: 1,
   loop: true,
+  grabCursor: true,
   autoplay: true,
   speed: 5000,
-  
-  
-
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 };
 
 const TestimonialOne = ({
@@ -27,40 +29,40 @@ const TestimonialOne = ({
 }) => {
   return (
     <div data-aos="fade-up"
-    data-duration="5000"
-    data-aos-anchor-placement="top-center"  className={clsx("testimonial-area", spaceTopClass, spaceBottomClass, spaceLeftClass, spaceRightClass, bgColorClass)}>
+      data-duration="5000"
+      data-aos-anchor-placement="top-center" className={clsx("testimonial-area", spaceTopClass, spaceBottomClass, spaceLeftClass, spaceRightClass, bgColorClass)}>
       <div className="container">
         <div className="row">
           <div className="col-lg-10 mx-auto">
-          <Stack sx={{height:{xs:'800px', md:'550px'}}}>
-          <div className="testimonial-active nav-style-1 nav-testi-style" >
-        <Typography
-          sx={{
-            color: "#1A1A1A",
-            fontSize: { xs: "30px", md: "50px" },
-            fontFamily: 'Libre Baskerville',
-            textTransform: 'uppercase',
-            textAlign: "center",
-            pt:2,
-            pb:5
-          }}
-        >
-          CLIENT REVIEWS
-        </Typography>
-    
-              {testimonialData && (
-                <Swiper options={settings}>
-                  {testimonialData.map((single, key) => (
+            <Stack sx={{ height: { xs: '800px', md: '550px' } }}>
+              <div className="testimonial-active nav-style-1 nav-testi-style" >
+                <Typography
+                  sx={{
+                    color: "#1A1A1A",
+                    fontSize: { xs: "30px", md: "50px" },
+                    fontFamily: 'Libre Baskerville',
+                    textTransform: 'uppercase',
+                    textAlign: "center",
+                    pt: 2,
+                    pb: 5
+                  }}
+                >
+                  CLIENT REVIEWS
+                </Typography>
+
+                {testimonialData && (
+                  <Swiper options={settings}>
+                    {testimonialData.map((single, key) => (
                       <SwiperSlide key={key} >
                         <TestimonialOneSingle
                           data={single}
                           testimonialClass={testimonialClass}
                         />
                       </SwiperSlide>
-                  ))}
-                </Swiper>
-              )}
-            </div>
+                    ))}
+                  </Swiper>
+                )}
+              </div>
             </Stack>
           </div>
         </div>

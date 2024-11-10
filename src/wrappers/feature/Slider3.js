@@ -1,12 +1,14 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Box } from "@mui/material";
+import Image1 from "../../assets/img//features/right1.webp"
+import Image2 from "../../assets/img//features/right2.webp"
 
 
 const SliderThree = () => {
     const banners = [
-        { id: 1, imageUrl: "/assets/img/features/right1.webp" },
-        { id: 2, imageUrl: "/assets/img/features/right1.webp" },
+        { id: 1, imageUrl: `${Image1}` },
+        { id: 2, imageUrl: `${Image2}` },
         // Add more banner objects as needed
     ];
 
@@ -15,7 +17,7 @@ const SliderThree = () => {
             breakpoint: { max: 4000, min: 1024 },
             items: 1,
             slidesToSlide: 1,
-            
+
         },
         desktop: {
             breakpoint: { max: 1024, min: 800 },
@@ -36,15 +38,15 @@ const SliderThree = () => {
 
     return (
         <>
-            <Box sx={{ }}>
+            <Box sx={{}}>
                 <Carousel showDots={false} arrows={false} responsive={responsive}
-                autoPlay={true} // Enable auto-loop
-                autoPlaySpeed={3000} // Set auto-loop speed in milliseconds (optional)
-                infinite={true} // Enable infinite loop
-                transitionDuration={2000} 
+                    autoPlay={true} // Enable auto-loop
+                    autoPlaySpeed={3000} // Set auto-loop speed in milliseconds (optional)
+                    infinite={true} // Enable infinite loop
+                    transitionDuration={2000}
                 >
                     {banners.map((banner) => (
-                        <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{  width:'100%', height: "300px" }} />
+                        <img key={banner.id} src={banner.imageUrl} alt={`Banner ${banner.id}`} style={{ width: '100%', height: "300px" }} />
                     ))}
                 </Carousel>
             </Box>

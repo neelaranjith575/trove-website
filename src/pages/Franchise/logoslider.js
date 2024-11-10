@@ -10,6 +10,10 @@ const settings = {
   loop: true,
   autoplay: true,
   grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -28,9 +32,9 @@ const settings = {
 
 const LogoSlider = ({ spaceBottomClass, spaceTopClass }) => {
   return (
-    <div  data-aos="fade-up"
-    data-duration="3000"
-    data-aos-anchor-placement="top-center"  className={clsx("brand-logo-area", spaceBottomClass, spaceTopClass)}>
+    <div data-aos="fade-up"
+      data-duration="3000"
+      data-aos-anchor-placement="top-center" className={clsx("brand-logo-area", spaceBottomClass, spaceTopClass)}>
       <Stack>
         <Typography
           sx={{
@@ -40,7 +44,7 @@ const LogoSlider = ({ spaceBottomClass, spaceTopClass }) => {
             fontFamily: 'Libre Baskerville',
             textTransform: 'uppercase',
             textAlign: "center",
-            pt:5,
+            pt: 5,
 
 
           }}

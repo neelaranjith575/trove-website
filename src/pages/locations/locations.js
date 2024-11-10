@@ -4,124 +4,135 @@ import LayoutOne from "../../layouts/LayoutOne";
 import {
   Divider,
   Grid,
-  Stack,
   Typography,
-  TextField,
   useMediaQuery,
+  Box
 } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+import Image from "./../../assets/img/locations/2024.webp"
+
 
 const locations = [
   {
-    src: "/assets/img/locations/bangalore.png",
+    src: `${Image}`,
     location: "Indiranagar ",
     city: "Bengaluru, Karnataka",
-    phone: "+91 89518 92764, +91 89518 92763",
+    phone: "+91 8951892764, +91 8951892763",
     email: "sales.rkph@troveindia.com",
     address: "Near ‘Rameshwaram Cafe’, 4th Cross, 12th Main, HAL 2nd Stage, Indiranagar, Bengaluru,",
-    pincode: "560 038",
+    pincode: "560038",
     link: "https://maps.app.goo.gl/vdDp9iGeVowJMLfW9",
   },
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Adugodi",
     city: "Bengaluru, Karnataka",
-    phone: "+91 63665 47553, +91 99013 97101",
+    phone: "+91 6366547553, +91 9901397101",
     email: "sales.bgrd@troveindia.com",
     address: "Near ‘Bosch Ltd’, Bannerghatta Road, Lakkasandra, Adugodi, Bengaluru,",
-    pincode: "560 030",
+    pincode: "560030",
     link: "https://maps.app.goo.gl/ZxEGdAPZop2GzEz56",
   },
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Rajajinagar ",
     city: "Bengaluru, Karnataka",
-    phone: "+91 97313 16556, +91 92434 98101",
+    phone: "+91 9731316556, +91 9243498101",
     email: "sales.mstar@troveindia.com",
     address: "Below ‘IVF Access’, Dr. Rajkumar Road, Rajajinagar 2nd Block, Bengaluru,",
-    pincode: "560 010",
+    pincode: "560010",
     link: "https://maps.app.goo.gl/7F8Gq9QxkNEziMRN7",
   },
+
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Basavanagudi",
     city: "Bengaluru, Karnataka",
-    phone: "080 2662 0224, +91 63665 47522",
+    phone: "08026620224, +91 6366547522",
     email: "sales.mgc@troveindia.com",
     address: "Near ‘Nettakallappa Circle’, K R Road, Basavanagudi, Bengaluru,",
-    pincode: "560 004",
+    pincode: "560004",
     link: "https://maps.app.goo.gl/WRU6GKSfRGThBe2t8",
   },
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
+    location: "JP Nagar",
+    city: "Bengaluru, Karnataka",
+    phone: "+91 9900584436, +91 9886354744",
+    email: "sales.flo@troveindia.com",
+    address: "Near ‘Zudio’, Vittal Plaza, 24th Main Road, JP Nagar 1st Phase, Bengaluru,",
+    pincode: "560078",
+    link: "",
+  },
+  {
+    src: `${Image}`,
     location: "Ramamurthy Nagar",
     city: "Horamavu, Bengaluru, Karnataka",
-    phone: "+91 99000 22106",
+    phone: "+91 9900022106, +91 6366975401 ",
     email: "sales.rmn@troveindia.com",
     address: "Kalkere Main Road, Ramamurthy Nagar Horamavu Post, Bengaluru,",
-    pincode: "560 043",
-    link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
+    pincode: "560043",
+    link: "https://maps.app.goo.gl/AhzbgtBL1ScM9Yb96",
   },
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Whitefield",
     city: "Thubarahalli, Bengaluru, Karnataka",
-    phone: "+91 99002 64657",
+    phone: "+91 9900264657, +91 8951892761",
     email: "sales.east@troveindia.com",
     address: "Opp. ‘Govt. Digital Library’, Varthur Main Road, Thubarahalli, Whitefield, Bengaluru,",
-    pincode: "577 005",
-    link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
+    pincode: "577005",
+    link: "https://maps.app.goo.gl/uB6kcSDqiTiqU8tM8",
   },
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Mysore Road",
     city: "New Guddadahalli, Bengaluru, Karnataka",
-    phone: "+91 63665 47524, +91 99000 22103",
+    phone: "+91 6366547524, +91 9900022103",
     email: "sales.vhpy@troveindia.com",
     address: "Above ‘Stanley’s Sofas & More’, New Guddadahalli, Mysore Road, Bengaluru,",
-    pincode: "560 026",
+    pincode: "560026",
     link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
   },
 
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Shivamogga",
     city: " Gandhi Nagar, Shivamogga, Karnataka",
-    phone: "+91 99002 63095, +91 90351 76006",
+    phone: "+91 9900263095, +91 9035176006",
     email: "sales.bss@troveindia.com",
     address: "Next to ‘Kautilya Medical’, 100 ft. Road, Gandhi Nagar, Shivamogga,",
-    pincode: "577 201",
+    pincode: "577201",
     link: "https://maps.app.goo.gl/LEcncupArvSVunQq7",
   },
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Tumakuru",
     city: "S S Puram, Tumakuru, Karnataka",
-    phone: "+91 87900 00921, +91 87900 00912",
+    phone: "+91 8790000921, +91 8790000912",
     email: "sales.vvp@troveindia.com",
     address: "Near ‘Maruthi Vidya Kendra’, 16th Cross, S S Puram, Tumakuru,",
-    pincode: "572 102",
+    pincode: "572102",
     link: "https://maps.app.goo.gl/Vyi2Qj53BUeauTze6",
   },
 
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Jigani",
     city: "Anekal, Bengaluru, Karnataka",
-    phone: "+91 80506 70701, +91 98861 56789",
+    phone: "+91 8050670701, +91 9886156789",
     email: "sales.adi@troveindia.com",
     address: "Bannerghatta Main Road, Begihalli Village Jigani, Anekal Taluk, Bengaluru,",
-    pincode: "560 105",
-    link: "http://",
+    pincode: "560105",
+    link: "https://maps.app.goo.gl/hRizJnyTTTKf7aio8",
   },
   {
-    src: "/assets/img/features/image 32.png",
+    src: `${Image}`,
     location: "Davangere",
     city: "Lokikere Industrial Area, Davangere, Karnataka",
-    phone: "+91 96633 52359, +91 96323 21666",
+    phone: "+91 9663352359, +91 9632321666",
     email: "sales.sejal@troveindia.com",
     address: "Opp. ‘Somanath Weigh Bridge’, Lokikere Main Road, Davangere Industrial Area, Davangere,",
-    pincode: "577 005",
+    pincode: "577005",
     link: "https://maps.app.goo.gl/gujVhpZ6PHEdBoKc6",
   },
 
@@ -354,7 +365,7 @@ const MobileLayout = ({ item }) => (
     </Grid>
 
     <Grid item xs={12} sm={12} md={12} sx={{ textAlign: "center" }}>
-      <img src={item.src} width={320} height={210} alt="Location" />
+      <Box component={"img"} src={item.src} width={320} height={210} alt="Location" />
     </Grid>
   </Fragment>
 );
@@ -387,7 +398,7 @@ const DesktopLayout = ({ item }) => (
     <Grid item xs={0.5}></Grid>
     <Grid item xs={12} md={4} sx={{ pb: 5 }}>
       <a href={item?.link} target="_blank" rel="noreferrer">
-        <img src={item.src} width={320} height={210} alt="Location" />
+        <Box component={"img"} src={item.src} width={320} height={210} alt="Location" />
       </a>
     </Grid>
     <Grid item xs={12} md={3} sx={{ borderTop: "1px solid black" }}>
@@ -503,7 +514,7 @@ const DesktopLayout = ({ item }) => (
         </Typography>
       </a>
     </Grid>
-    <Grid item md={0.5} xs={12}></Grid>
+    {/* <Grid item md={0.5} xs={12}></Grid> */}
   </Grid>
 );
 
