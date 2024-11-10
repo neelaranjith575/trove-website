@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
 import {
@@ -143,12 +143,12 @@ const locations = [
 const Location = () => {
   // Function to chunk the array into smaller arrays
 
-  const [searchTerm, setSearchTerm] = useState("");
+  // const [searchTerm, setSearchTerm] = useState("");
 
   // Filter images based on search term
-  const filteredImages = locations.filter((image) =>
-    image.location.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // const filteredImages = locations.filter((image) =>
+  //   image.location.toLowerCase().includes(searchTerm.toLowerCase())
+  // );
   // console.log(filteredImages, "city")
 
 
