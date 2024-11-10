@@ -96,7 +96,7 @@ const BlogDetailsStandard = lazy(() =>
 );
 
 // other pages
-const Locations = lazy(() => import("./pages/Locations/Locations"));
+const Locations = lazy(() => import("./pages/Locations/LocationsList"));
 const ProductList = lazy(() => import("./pages/ProductsList/ProductList"));
 const Experience = lazy(() => import("./pages/Experience/Experiences"));
 const Franchise = lazy(() => import("./pages/Franchise/Franchise"));
