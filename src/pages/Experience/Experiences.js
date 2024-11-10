@@ -3,10 +3,8 @@ import { Box, Stack } from "@mui/system";
 import background from "../../assets/img/About/Banner.webp";
 import LayoutOne from "../../layouts/LayoutOne";
 import WorkProcess from "./workprocess";
-import Content from "../Experience/content";
-import Business from "./business";
+import Content from "./content";
 import SEO from "../../components/seo";
-import Whyus from "../Whyus/Whyus";
 import About from "../About/About"
 // import Counter from "./counter";
 
@@ -15,18 +13,18 @@ import About from "../About/About"
 const Experience = () => {
     return (
         <>
-        <SEO
-        titleTemplate="FRANCHISE"
-        description="The Ultimste Tile Studio."
-      />
+            <SEO
+                titleTemplate="FRANCHISE"
+                description="The Ultimste Tile Studio."
+            />
             <LayoutOne headerTop="visible">
                 <Box
-                data-aos="fade-in"
-                data-duration="5000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center"  
+                    data-aos="fade-in"
+                    data-duration="5000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
                     sx={{
                         backgroundImage: `url(${background})`,
                         backgroundSize: "cover",
@@ -36,7 +34,7 @@ const Experience = () => {
                         justifyContent: "center",
                         overflow: "hidden",
                         height: { xs: "75vh", md: "120vh" },
-                        mt:-13.5
+                        mt: -13.5
                     }}
                 >
                     {" "}
@@ -78,9 +76,9 @@ const Experience = () => {
                 <Content />
                 <About />
                 {/* <Business  /> */}
-               
+
                 {/* <Counter /> */}
-               
+
 
             </LayoutOne>
 

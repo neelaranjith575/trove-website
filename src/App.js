@@ -60,8 +60,8 @@ const HomeValentinesDay = lazy(() => import("./pages/home/HomeValentinesDay"));
 
 // shop pages
 const ShopGridStandard = lazy(() => import("./pages/shop/ShopGridStandard"));
-const AllProductList = lazy(() => import("./pages/productss/AllProductList"))
-const ProductDetails = lazy(() => import("./pages/productss/ProductDetails"))
+const AllProductList = lazy(() => import("./pages/ProductsList/AllProductList"))
+const ProductDetails = lazy(() => import("./pages/ProductsList/ProductDetails"))
 const ShopGridFilter = lazy(() => import("./pages/shop/ShopGridFilter"));
 const ShopGridTwoColumn = lazy(() => import("./pages/shop/ShopGridTwoColumn"));
 const ShopGridNoSidebar = lazy(() => import("./pages/shop/ShopGridNoSidebar"));
@@ -96,9 +96,9 @@ const BlogDetailsStandard = lazy(() =>
 );
 
 // other pages
-const Locations = lazy(() => import("./pages/locations/locations"));
-const ProductList = lazy(() => import("./pages/productss/ProductList"));
-const Experience = lazy(() => import("./pages/Experience/experience"));
+const Locations = lazy(() => import("./pages/Locations/Locations"));
+const ProductList = lazy(() => import("./pages/ProductsList/ProductList"));
+const Experience = lazy(() => import("./pages/Experience/Experiences"));
 const Franchise = lazy(() => import("./pages/Franchise/Franchise"));
 const ComingSoon = lazy(() => import("./pages/ComingSoon/ComingSoon"));
 const Contact = lazy(() => import("./pages/other/Contact"));
@@ -407,7 +407,7 @@ const App = () => {
               path={process.env.PUBLIC_URL + "/experience"}
               element={<Franchise />}
             />
-            <Route path={process.env.PUBLIC_URL + "/careers"} element={<Careers/>}/>
+            <Route path={process.env.PUBLIC_URL + "/careers"} element={<Careers />} />
             <Route
               path={process.env.PUBLIC_URL + "/my-account"}
               element={<MyAccount />}
